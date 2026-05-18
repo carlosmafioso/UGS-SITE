@@ -136,7 +136,7 @@ export default function Home() {
               <div className="relative group/about">
                 <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover/about:scale-[1.02]">
                   <Image
-                    src="/images/Legado.jpg"
+                    src="/images/legado.jpg"
                     alt="Nosso Legado - Graduação UGS"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -439,7 +439,7 @@ export default function Home() {
                                     <div className="relative rounded-[2rem] overflow-hidden bg-institutional aspect-[4/5] flex items-end justify-center">
                                         <div className="absolute inset-0 bg-gradient-to-t from-institutional via-institutional/40 to-transparent z-10 opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
                                         <img 
-                                            src="/images/LUCY.png" 
+                                            src="/images/lucy.png" 
                                             alt="LUCY AI - Assistente Virtual AEUGS" 
                                             className="w-full h-full object-cover relative z-0 transform group-hover:scale-110 transition-transform duration-700"
                                         />

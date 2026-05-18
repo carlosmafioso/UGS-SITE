@@ -205,7 +205,7 @@ export function LucyChatWidget() {
                         {/* Profile Image */}
                         <div className="size-10 rounded-full bg-primary/20 relative overflow-hidden flex items-center justify-center border border-white/20">
                             <Image
-                                src="/images/LUCY.png"
+                                src="/images/lucy.png"
                                 alt="LUCY"
                                 fill
                                 className="object-cover"

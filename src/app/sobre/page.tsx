@@ -300,13 +300,13 @@ export default function SobrePage() {
                                                     name: "Prof. Doutor Manuel Afonso",
                                                     role: "Vice-Reitor para Área Académica e Apoio ao Estudante",
                                                     desc: "",
-                                                    img: "/images/Vice-Reitor-para-Area-Academica-e-Apoio-ao-Estudante-Prof.-Doutor-Manuel-Afonso-1272x1536.jpg",
+                                                    img: "/images/vice-reitor-para-area-academica-e-apoio-ao-estudante-prof-doutor-manuel-afonso-1272x1536.jpg",
                                                 },
                                                 {
                                                     name: "Prof. Doutor Mpanzo Domingos",
                                                     role: "Vice-Reitor para Área Científica e Pós-graduação",
                                                     desc: "",
-                                                    img: "/images/Vice-Reitor-para-Area-Cientifica-e-Pos-graduacao-Prof.-Doutor-Mpanzo-Domingos-1149x1536.jpg",
+                                                    img: "/images/vice-reitor-para-area-cientifica-e-pos-graduacao-prof-doutor-mpanzo-domingos-1149x1536.jpg",
                                                 },
                                             ].map((person, idx) => (
                                                 <ScrollReveal key={idx} delay={idx * 0.1} variant="scale-up">
@@ -398,7 +398,7 @@ export default function SobrePage() {
                                                     {
                                                         name: "Carlos Alberto Messani",
                                                         role: "Decano",
-                                                        img: "/images/decania/3.-Carlos-Alberto-Messani-Decano-da-Faculdade-de-Engenharia-e-Novas-Tecnologias.jpg",
+                                                        img: "/images/decania/3-carlos-alberto-messani-decano-da-faculdade-de-engenharia-e-novas-tecnologias.jpg",
                                                     },
                                                     {
                                                         name: "Pedro Senga Zódima",
@@ -408,7 +408,7 @@ export default function SobrePage() {
                                                     {
                                                         name: "Yosbel C. Izquierdo",
                                                         role: "Vice-Decano para Área Científica",
-                                                        img: "/images/decania/4.-Yosbel-C.-Izquierdo-Vice-Decano-para-Area-Cientifica-da-Faculdade-de-Engenharia-e-Novas-Tecnologias-768x1024.jpg",
+                                                        img: "/images/decania/4-yosbel-c-izquierdo-vice-decano-para-area-cientifica-da-faculdade-de-engenharia-e-novas-tecnologias-768x1024.jpg",
                                                     },
                                                 ].map((person, idx) => (
                                                     <ScrollReveal key={idx} delay={idx * 0.1} variant="scale-up">
@@ -443,17 +443,17 @@ export default function SobrePage() {
                                                     {
                                                         name: "Prof. Doutor Crispim Camango",
                                                         role: "Decano",
-                                                        img: "/images/decania/Decano-da-Faculdade-de-Ciencias-Economicas-e-Empresariais-1369x1536.jpg",
+                                                        img: "/images/decania/decano-da-faculdade-de-ciencias-economicas-e-empresariais-1369x1536.jpg",
                                                     },
                                                     {
                                                         name: "Osmerivaldo Simão",
                                                         role: "Vice-Decano para Área Académica",
-                                                        img: "/images/decania/Vice-Decano-para-Area-Academica-da-Faculdade-de-Ciencias-Economicas-e-Empresariais-768x963.jpg",
+                                                        img: "/images/decania/vice-decano-para-area-academica-da-faculdade-de-ciencias-economicas-e-empresariais-768x963.jpg",
                                                     },
                                                     {
                                                         name: "Prof. Doutora Elizabeth Chaviano",
                                                         role: "Vice-Decana para Área Científica",
-                                                        img: "/images/decania/Vice-Decana-para-Area-Cientifica-da-Faculdade-de-Ciencias-Economicas-e-Empresariais-768x971.jpg",
+                                                        img: "/images/decania/vice-decana-para-area-cientifica-da-faculdade-de-ciencias-economicas-e-empresariais-768x971.jpg",
                                                     },
                                                 ].map((person, idx) => (
                                                     <ScrollReveal key={idx} delay={idx * 0.1} variant="scale-up">
@@ -493,12 +493,12 @@ export default function SobrePage() {
                                                     {
                                                         name: "Justino Chiyo",
                                                         role: "Vice-Decano para Área Académica",
-                                                        img: "/images/decania/Vice-Decano-para-Area-Academica-da-Faculdade-de-Ciencias-Sociais-e-Desenvolvimento-Humano-768x875.jpg",
+                                                        img: "/images/decania/vice-decano-para-area-academica-da-faculdade-de-ciencias-sociais-e-desenvolvimento-humano-768x875.jpg",
                                                     },
                                                     {
                                                         name: "Ivanov César",
                                                         role: "Vice-Decano para Área Científica",
-                                                        img: "/images/decania/Vice-Decano-para-Area-Cientifica-da-Faculdade-de-Ciencias-Sociais-e-Desenvolvimento-Humano-768x905.jpg",
+                                                        img: "/images/decania/vice-decano-para-area-cientifica-da-faculdade-de-ciencias-sociais-e-desenvolvimento-humano-768x905.jpg",
                                                     },
                                                 ].map((person, idx) => (
                                                     <ScrollReveal key={idx} delay={idx * 0.1} variant="scale-up">
@@ -533,7 +533,7 @@ export default function SobrePage() {
                                                     {
                                                         name: "Pedro Afonso",
                                                         role: "Vice-Decano para Área Científica",
-                                                        img: "/images/decania/6.-Pedro-Afonso-Vice-Decano-para-Area-Cientifica-da-da-Faculdade-de-Ciencias-e-Juridicas-e-Politicas-768x1024.jpg",
+                                                        img: "/images/decania/6-pedro-afonso-vice-decano-para-area-cientifica-da-da-faculdade-de-ciencias-e-juridicas-e-politicas-768x1024.jpg",
                                                     },
                                                 ].map((person, idx) => (
                                                     <ScrollReveal key={idx} delay={idx * 0.1} variant="scale-up">

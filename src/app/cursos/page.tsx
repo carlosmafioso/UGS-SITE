@@ -16,7 +16,7 @@ export const courses = [
         duration: "4 Anos",
         level: "Licenciatura",
         desc: "Compreenda a dinâmica do poder, as políticas públicas e o desenvolvimento sustentável das regiões e municípios angolanos.",
-        img: "/images/cursos/licenciatura/ciencia politica e administração do territorio.jpg",
+        img: "/images/cursos/licenciatura/ciencia-politica-e-administracao-do-territorio.jpg",
     },
     {
         id: "direito",
@@ -34,7 +34,7 @@ export const courses = [
         duration: "4 Anos",
         level: "Licenciatura",
         desc: "Cobre o desenvolvimento de software corporativo, administração de redes e sistemas, preparando engenheiros para a economia digital global.",
-        img: "/images/cursos/licenciatura/engenharia informática.jpg",
+        img: "/images/cursos/licenciatura/engenharia-informatica.jpg",
     },
     {
         id: "informatica-gestao-financeira",
@@ -43,7 +43,7 @@ export const courses = [
         duration: "4 Anos",
         level: "Licenciatura",
         desc: "Uma aliança poderosa entre a tecnologia da informação e as finanças corporativas, focada em análise de dados e sistemas financeiros.",
-        img: "/images/cursos/licenciatura/informática de gestão financeira.jpg",
+        img: "/images/cursos/licenciatura/informatica-de-gestao-financeira.jpg",
     },
     {
         id: "gestao-comercial-marketing",
@@ -52,7 +52,7 @@ export const courses = [
         duration: "4 Anos",
         level: "Licenciatura",
         desc: "Formação em estratégias de mercado, comportamento do consumidor e vendas para construir marcas e negócios de sucesso.",
-        img: "/images/cursos/licenciatura/gestão comercial e marketing1.jpg",
+        img: "/images/cursos/licenciatura/gestao-comercial-e-marketing1.jpg",
     },
     {
         id: "organizacao-gestao-empresas",
@@ -61,7 +61,7 @@ export const courses = [
         duration: "4 Anos",
         level: "Licenciatura",
         desc: "Competências de liderança, análise financeira e operações estruturadas para a criação, transformação e gestão de PMEs e multinacionais.",
-        img: "/images/cursos/licenciatura/organização e gestão de empresas.jpg",
+        img: "/images/cursos/licenciatura/organizacao-e-gestao-de-empresas.jpg",
     },
     {
         id: "gestao-recursos-humanos",
@@ -79,7 +79,7 @@ export const courses = [
         duration: "4 Anos",
         level: "Licenciatura",
         desc: "Desenvolvimento de perfis especialistas em comunicação corporativa, relações públicas e proficiência multilinguística.",
-        img: "/images/cursos/licenciatura/comunicação empresarial e linguas.jpg",
+        img: "/images/cursos/licenciatura/comunicacao-empresarial-e-linguas.jpg",
     },
 
     // MESTRADO COURSES
@@ -99,7 +99,7 @@ export const courses = [
         duration: "2 Anos",
         level: "Mestrado",
         desc: "Especialidades em Desenvolvimento Mobile e Gestão de Redes de Computadores, preparando profissionais para os modernos desafios tecnológicos.",
-        img: "/images/cursos/mestrado/engenharia informática.png",
+        img: "/images/cursos/mestrado/engenharia-informatica.png",
     },
     {
         id: "mestrado-gestao-empresas",
@@ -108,7 +108,7 @@ export const courses = [
         duration: "2 Anos",
         level: "Mestrado",
         desc: "Especialidades em Gestão Comercial, Finanças, Logística e Marketing para o desenvolvimento de competências estratégicas e práticas empresariais.",
-        img: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        img: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
     },
     {
         id: "mestrado-recursos-humanos",
@@ -117,7 +117,7 @@ export const courses = [
         duration: "2 Anos",
         level: "Mestrado",
         desc: "Especialidades em Gestão do Potencial Humano e Gestão Estratégica, focadas na liderança organizacional e valorização das pessoas.",
-        img: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        img: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
     },
 
     // PÓS-GRADUAÇÕES COURSES
@@ -128,7 +128,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Especialização avançada na criação e arquitetura de aplicações nativas e multiplataforma para ecossistemas mobile.",
-        img: "/images/cursos/mestrado/engenharia informática.png",
+        img: "/images/cursos/mestrado/engenharia-informatica.png",
     },
     {
         id: "pos-direito-empresarial",
@@ -155,7 +155,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Desenvolvimento de perícia técnica na administração, segurança e infraestrutura de redes empresariais.",
-        img: "/images/cursos/mestrado/engenharia informática.png",
+        img: "/images/cursos/mestrado/engenharia-informatica.png",
     },
     {
         id: "pos-estrategia-rh",
@@ -164,7 +164,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Capacitação para alinhar o capital humano aos objetivos estratégicos e de rentabilidade da organização.",
-        img: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        img: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
     },
     {
         id: "pos-potencial-humano",
@@ -173,7 +173,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Foco na retenção de talentos, mentoring, coaching corporativo e criação de ambientes de trabalho de alta performance.",
-        img: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        img: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
     },
     {
         id: "pos-marketing-publicidade",
@@ -182,7 +182,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Especialização em planeamento de campanhas omnicanal, branding e comunicação corporativa digital e tradicional.",
-        img: "/images/cursos/licenciatura/gestão comercial e marketing1.jpg",
+        img: "/images/cursos/licenciatura/gestao-comercial-e-marketing1.jpg",
     },
     {
         id: "pos-financas-mercados",
@@ -191,7 +191,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Análise avançada de investimentos, gestão de carteiras, risco corporativo e dinâmica dos mercados de capitais.",
-        img: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        img: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
     },
     {
         id: "pos-gestao-comercial",
@@ -200,7 +200,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Estratégias avançadas de negociação, gestão de equipas de vendas e expansão de quota de mercado.",
-        img: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        img: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
     },
     {
         id: "pos-gestao-logistica",
@@ -209,7 +209,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Otimização de cadeias de abastecimento, gestão de frota, importação/exportação e operações aduaneiras.",
-        img: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        img: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
     },
     {
         id: "pos-governanca-corporativa",
@@ -218,7 +218,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Mecanismos de compliance, ética empresarial, auditoria interna e responsabilidade social em grandes organizações.",
-        img: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        img: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
     },
     {
         id: "pos-gestao-projectos",
@@ -227,7 +227,7 @@ export const courses = [
         duration: "1 Ano",
         level: "Pós-Graduação",
         desc: "Metodologias ágeis e tradicionais (PMBOK) para a conceção, execução e entrega de projetos complexos.",
-        img: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        img: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
     }
 ];
 

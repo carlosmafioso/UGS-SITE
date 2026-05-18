@@ -13,7 +13,7 @@ const courseData = {
     "ciencias-politicas": {
         title: "Licenciatura em Ciências Políticas e Administração do Território",
         faculty: "Faculdade de Ciências Humanas e Letras",
-        banner: "/images/cursos/licenciatura/ciencia politica e administração do territorio.jpg",
+        banner: "/images/cursos/licenciatura/ciencia-politica-e-administracao-do-territorio.jpg",
         intro: "Compreenda a dinâmica do poder, as políticas públicas e o desenvolvimento sustentável das regiões e municípios angolanos. Prepare-se para funções chave na governação local e diplomacia.",
         aboutParagraphs: [
             "O curso de Ciências Políticas e Administração do Território da UGS forma quadros de excelência focados no desenvolvimento regional e nacional. Proporcionamos uma visão aprofundada sobre formulação de políticas públicas, governação local e processos democráticos.",
@@ -24,7 +24,7 @@ const courseData = {
             { icon: "handshake", title: "Protocolos Institucionais", desc: "Acesso a estágios e protocolos práticos com entidades do Estado.", color: "orange" },
             { icon: "map", title: "Estudos Territoriais", desc: "Laboratórios práticos de mapeamento e análise de políticas territoriais.", color: "green" },
         ],
-        videoImg: "/images/cursos/licenciatura/ciencia politica e administração do territorio.jpg",
+        videoImg: "/images/cursos/licenciatura/ciencia-politica-e-administracao-do-territorio.jpg",
         videoTitle: "O Papel do Cientista Político",
         videoSubtitle: "Assista a uma simulação de Assembleia presidida pelos alunos.",
         careers: ["Administração Pública Local e Central", "Consultoria Política e Estratégica", "Diplomacia e Relações Internacionais", "Assessoria de Comunicação Governamental", "Organizações Não Governamentais (ONGs)"],
@@ -56,7 +56,7 @@ const courseData = {
     "engenharia-informatica": {
         title: "Licenciatura em Engenharia Informática",
         faculty: "Faculdade de Engenharia e Arquitetura",
-        banner: "/images/cursos/licenciatura/engenharia informática.jpg",
+        banner: "/images/cursos/licenciatura/engenharia-informatica.jpg",
         intro: "Cobre o desenvolvimento de software corporativo, administração de redes e sistemas, preparando engenheiros para dominar a economia digital global.",
         aboutParagraphs: [
             "O curso de Engenharia Informática providencia a base e ferramentas tecnológicas de última geração, para arquitetar, projetar e construir modernos sistemas de informação que alavancam negócios e sustentam redes de comunicações estruturais.",
@@ -68,7 +68,7 @@ const courseData = {
             { icon: "security", title: "Foco em Cibersegurança", desc: "Módulos intensivos nas vertentes de ethical hacking e defesas de redes.", color: "green" },
             { icon: "cloud", title: "Cloud Computing", desc: "Certificações em AWS e Azure perfeitamente integradas no currículo.", color: "purple" }
         ],
-        videoImg: "/images/cursos/licenciatura/engenharia informática.jpg",
+        videoImg: "/images/cursos/licenciatura/engenharia-informatica.jpg",
         videoTitle: "Inovação no Laboratório Tecnológico",
         videoSubtitle: "Conheça os projetos premiados desenvolvidos por alunos.",
         careers: ["Desenvolvimento de Software", "Arquitetura de Sistemas", "Engenharia de Redes", "Administração de Bases de Dados", "Consultoria Tecnológica", "Gestão de Projetos IT"],
@@ -78,7 +78,7 @@ const courseData = {
     "informatica-gestao-financeira": {
         title: "Licenciatura em Informática de Gestão Financeira",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/licenciatura/informática de gestão financeira.jpg",
+        banner: "/images/cursos/licenciatura/informatica-de-gestao-financeira.jpg",
         intro: "Uma aliança poderosa entre a tecnologia da informação e as finanças corporativas, focada em análise de dados e sistemas financeiros.",
         aboutParagraphs: [
             "Este curso vanguardista preenche o fosso crucial entre as equipas de tecnologia (IT) e os responsáveis pela gestão e tomada de decisão de negócio financeiro. O foco recai na otimização de fluxos económicos com sistemas digitais.",
@@ -89,7 +89,7 @@ const courseData = {
             { icon: "account_balance", title: "Fintech Avançada", desc: "Integração das tendências atuais dos mercados e bancas eletrónicas.", color: "green" },
             { icon: "work_history", title: "Estágios Estratégicos", desc: "Protocolos ativos na banca nacional e principais consultoras Big 4.", color: "purple" }
         ],
-        videoImg: "/images/cursos/licenciatura/informática de gestão financeira.jpg",
+        videoImg: "/images/cursos/licenciatura/informatica-de-gestao-financeira.jpg",
         videoTitle: "A Ponte entre Tech e Negócios",
         videoSubtitle: "Como os nossos alunos revolucionam as empresas.",
         careers: ["Analista de Negócios e Sistemas", "Consultor Financeiro IT", "Auditor de Sistemas de Informação", "Gestor de Projetos Digitais"],
@@ -99,7 +99,7 @@ const courseData = {
     "gestao-comercial-marketing": {
         title: "Licenciatura em Gestão Comercial e Marketing",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/licenciatura/gestão comercial e marketing1.jpg",
+        banner: "/images/cursos/licenciatura/gestao-comercial-e-marketing1.jpg",
         intro: "Formação em estratégias de mercado, comportamento do consumidor e vendas para construir marcas e negócios de sucesso.",
         aboutParagraphs: [
             "Voltado para o estímulo incansável de criatividade aliada aos números, a Gestão Comercial e Marketing é um programa pragmático para formar os melhores estrategistas dos mercados em crescendo.",
@@ -110,7 +110,7 @@ const courseData = {
             { icon: "storefront", title: "Gestão Retalhista", desc: "Módulos de especialização no setor retail que dominam a empregabilidade.", color: "blue" },
             { icon: "trending_up", title: "Growth Digital", desc: "Fundamentos fortes de tráfego, conversão em e-commerce e social media.", color: "purple" }
         ],
-        videoImg: "/images/cursos/licenciatura/gestão comercial e marketing1.jpg",
+        videoImg: "/images/cursos/licenciatura/gestao-comercial-e-marketing1.jpg",
         videoTitle: "Criatividade e Resultados",
         videoSubtitle: "Masterclasses frequentes de Diretores de Marketing de relevo.",
         careers: ["Direção Comercial", "Gestão de Marketing (CMO)", "Key Account Manager", "Marketing Digital & E-Commerce", "Analista de Mercado"],
@@ -120,7 +120,7 @@ const courseData = {
     "organizacao-gestao-empresas": {
         title: "Licenciatura em Organização e Gestão de Empresas",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/licenciatura/organização e gestão de empresas.jpg",
+        banner: "/images/cursos/licenciatura/organizacao-e-gestao-de-empresas.jpg",
         intro: "Competências de liderança, análise financeira e operações estruturadas para a criação, transformação e gestão de PMEs e multinacionais.",
         aboutParagraphs: [
             "Considerada uma das licenciaturas pilares na formação económica do país, organiza e incute o mindset estrutural necessário para alavancar carreiras focadas na Alta Direção e Empreendedorismo audaz mas planificado.",
@@ -131,7 +131,7 @@ const courseData = {
             { icon: "pie_chart", title: "Finanças Corporativas", desc: "Formulários rigorosos baseados na gestão das grandes firmas.", color: "orange" },
             { icon: "public", title: "Visão Global", desc: "Seminários de contextualização económica comparada entre continentes.", color: "green" },
         ],
-        videoImg: "/images/cursos/licenciatura/organização e gestão de empresas.jpg",
+        videoImg: "/images/cursos/licenciatura/organizacao-e-gestao-de-empresas.jpg",
         videoTitle: "O Líder do Futuro",
         videoSubtitle: "Mergulhe no caso prático final avaliado pelo CEO.",
         careers: ["Gestor e Administrador Executivo", "Consultoria Estratégica", "Auditor Financeiro", "Empreendedor / Fundador", "Direção de Operações"],
@@ -162,7 +162,7 @@ const courseData = {
     "comunicacao-empresarial-linguas": {
         title: "Licenciatura em Comunicação Empresarial e Línguas",
         faculty: "Faculdade de Ciências Humanas e Letras",
-        banner: "/images/cursos/licenciatura/comunicação empresarial e linguas.jpg",
+        banner: "/images/cursos/licenciatura/comunicacao-empresarial-e-linguas.jpg",
         intro: "Desenvolvimento de perfis especialistas em comunicação corporativa, relações públicas e proficiência multilinguística.",
         aboutParagraphs: [
             "Preparando os 'embaixadores' vitais das organizações, este inovador programa une o marketing relacional, as mais sensíveis Relações Públicas, a gestão de marcas ao domínio técnico na fala dos principais idiomas diplomáticos e de negócios.",
@@ -173,7 +173,7 @@ const courseData = {
             { icon: "record_voice_over", title: "Relações Públicas", desc: "Laboratório de Comunicação com simulações de imprensa abertas.", color: "orange" },
             { icon: "campaign", title: "Gestão de Crise", desc: "Desafios em tempo real com media training avançado interativo.", color: "purple" }
         ],
-        videoImg: "/images/cursos/licenciatura/comunicação empresarial e linguas.jpg",
+        videoImg: "/images/cursos/licenciatura/comunicacao-empresarial-e-linguas.jpg",
         videoTitle: "A Ponte da Comunicação",
         videoSubtitle: "Dominando os media room e os gabinetes de R.P.",
         careers: ["Direção de Comunicação Corporativa", "Assessor de Imprensa Institucional", "Relações Públicas / Eventos", "Tradução Executiva a Interpretação"],
@@ -205,7 +205,7 @@ const courseData = {
     "mestrado-engenharia-informatica": {
         title: "Mestrado em Engenharia Informática",
         faculty: "Faculdade de Engenharia e Arquitetura",
-        banner: "/images/cursos/mestrado/engenharia informática.png",
+        banner: "/images/cursos/mestrado/engenharia-informatica.png",
         intro: "Especialidades em Desenvolvimento Mobile e Gestão de Redes de Computadores, preparando profissionais para os modernos desafios tecnológicos.",
         aboutParagraphs: [
             "O Mestrado em Engenharia Informática providencia formação avançada para o desenvolvimento de soluções robustas, desde a programação mobile à gestão avançada de infraestruturas tecnológicas.",
@@ -216,7 +216,7 @@ const courseData = {
             { icon: "router", title: "Redes e Comunicações", desc: "Formação avançada em redes informáticas, infraestrutura e sistemas de comunicação.", color: "green" },
             { icon: "trending_up", title: "Foco no Mercado", desc: "Preparação direta para os desafios tecnológicos modernos e elevadas exigências do mercado.", color: "orange" }
         ],
-        videoImg: "/images/cursos/mestrado/engenharia informática.png",
+        videoImg: "/images/cursos/mestrado/engenharia-informatica.png",
         videoTitle: "Inovação Tecnológica",
         videoSubtitle: "Criando o futuro através do desenvolvimento e gestão de redes.",
         careers: ["Desenvolvimento de Software e Mobile", "Arquitetura e Gestão de Redes", "Gestão de Sistemas de Informação", "Consultoria em Infraestruturas Tecnológicas"],
@@ -226,7 +226,7 @@ const courseData = {
     "mestrado-gestao-empresas": {
         title: "Mestrado em Gestão de Empresas",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        banner: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         intro: "Especialidades em Gestão Comercial, Finanças, Logística e Marketing, promovendo o desenvolvimento de competências práticas empresariais.",
         aboutParagraphs: [
             "O Mestrado em Gestão de Empresas está desenhado para responder de forma abrangente às necessidades das organizações nos setores comerciais, financeiros, logísticos e de comunicação.",
@@ -237,7 +237,7 @@ const courseData = {
             { icon: "account_balance", title: "Finanças e Mercados", desc: "Formação aprofundada em finanças empresariais e gestão financeira corporativa.", color: "blue" },
             { icon: "local_shipping", title: "Logística e Transportes", desc: "Especialização tática na gestão de cadeias de abastecimento e planeamento de operações.", color: "green" }
         ],
-        videoImg: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        videoImg: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         videoTitle: "Visão Estratégica",
         videoSubtitle: "Seminários especializados com líderes de mercado.",
         careers: ["Direção Comercial e Marketing", "Gestão Financeira e Análise de Mercados", "Direção de Operações e Logística", "Consultoria Estratégica e Comunicação Corporativa"],
@@ -247,7 +247,7 @@ const courseData = {
     "mestrado-recursos-humanos": {
         title: "Mestrado em Recursos Humanos",
         faculty: "Faculdade de Ciências Humanas",
-        banner: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        banner: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
         intro: "Especialidades em Gestão do Potencial Humano e Gestão Estratégica, focadas na liderança organizacional e desenvolvimento sustentável das pessoas.",
         aboutParagraphs: [
             "O Mestrado em Recursos Humanos foi concebido para reforçar a profissionalização da gestão de talentos, combinando os aspetos humanos do ambiente empresarial com as necessidades organizacionais de alto nível.",
@@ -258,7 +258,7 @@ const courseData = {
             { icon: "insights", title: "Gestão Estratégica", desc: "Reforço direto da profissionalização e estruturação organizacional focada nos recursos humanos.", color: "purple" },
             { icon: "groups", title: "Liderança Organizacional", desc: "Desenvolvimento de competências essenciais para a liderança eficaz no mercado de trabalho atual.", color: "orange" }
         ],
-        videoImg: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        videoImg: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
         videoTitle: "O Centro das Organizações",
         videoSubtitle: "Como potenciar o verdadeiro capital das empresas.",
         careers: ["Direção de Recursos Humanos (CHRO)", "Consultoria de Organização Cívica", "Talent Acquisition e Headhunting", "Responsável por Estratégia de Retenção"],
@@ -268,7 +268,7 @@ const courseData = {
     "pos-dev-mobile": {
         title: "Pós-Graduação em Desenvolvimento de Aplicações para Dispositivos Móveis",
         faculty: "Faculdade de Engenharia e Arquitetura",
-        banner: "/images/cursos/mestrado/engenharia informática.png",
+        banner: "/images/cursos/mestrado/engenharia-informatica.png",
         intro: "Especialização avançada na criação e arquitetura de aplicações nativas e multiplataforma para ecossistemas mobile.",
         aboutParagraphs: [
             "Este programa foca-se nas mais recentes tendências e tecnologias para a criação de soluções móveis robustas, escaláveis e centradas no utilizador.",
@@ -279,7 +279,7 @@ const courseData = {
             { icon: "code", title: "Projetos Práticos", desc: "Construção de um portefólio real durante todo o curso.", color: "orange" },
             { icon: "speed", title: "Otimização de Performance", desc: "Foco na eficiência e usabilidade das aplicações criadas.", color: "green" }
         ],
-        videoImg: "/images/cursos/mestrado/engenharia informática.png",
+        videoImg: "/images/cursos/mestrado/engenharia-informatica.png",
         videoTitle: "O Futuro Mobile",
         videoSubtitle: "Criando as apps do amanhã hoje.",
         careers: ["Engenheiro de Software Mobile", "Arquiteto de Soluções Móveis", "Tech Lead", "Consultor Especialista"],
@@ -331,7 +331,7 @@ const courseData = {
     "pos-redes-computadores": {
         title: "Pós-Graduação em Gestão de Redes de Computadores e Sistemas de Comunicações",
         faculty: "Faculdade de Engenharia e Arquitetura",
-        banner: "/images/cursos/mestrado/engenharia informática.png",
+        banner: "/images/cursos/mestrado/engenharia-informatica.png",
         intro: "Desenvolvimento de perícia técnica na administração, segurança e infraestrutura de redes empresariais.",
         aboutParagraphs: [
             "Um programa intensivo que qualifica os estudantes para desenhar, implementar e gerir as espinhas dorsais de comunicação das organizações.",
@@ -342,7 +342,7 @@ const courseData = {
             { icon: "security", title: "Segurança de Redes", desc: "Estratégias defensivas contra ameaças cibernéticas modernas.", color: "red" },
             { icon: "cloud", title: "Integração Cloud", desc: "Convergência das redes físicas com as plataformas em nuvem.", color: "purple" }
         ],
-        videoImg: "/images/cursos/mestrado/engenharia informática.png",
+        videoImg: "/images/cursos/mestrado/engenharia-informatica.png",
         videoTitle: "Conectando o Mundo",
         videoSubtitle: "Liderando a arquitetura das comunicações.",
         careers: ["Administrador de Redes", "Engenheiro de Telecomunicações", "Especialista em Cibersegurança", "Arquiteto de Sistemas Cloud"],
@@ -352,7 +352,7 @@ const courseData = {
     "pos-estrategia-rh": {
         title: "Pós-Graduação em Gestão Estratégica de Recursos Humanos",
         faculty: "Faculdade de Ciências Humanas",
-        banner: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        banner: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
         intro: "Capacitação para alinhar o capital humano aos objetivos estratégicos e de rentabilidade da organização.",
         aboutParagraphs: [
             "Esta pós-graduação transforma a visão dos Recursos Humanos de uma função de apoio para um pilar central na definição da estratégia corporativa.",
@@ -363,7 +363,7 @@ const courseData = {
             { icon: "psychology", title: "Liderança Transformacional", desc: "Técnicas de gestão para contextos de mudança.", color: "orange" },
             { icon: "groups", title: "Cultura Organizacional", desc: "Construção de ambientes de trabalho atrativos e produtivos.", color: "green" }
         ],
-        videoImg: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        videoImg: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
         videoTitle: "O Poder do Capital Humano",
         videoSubtitle: "Alinhando talento e estratégia corporativa.",
         careers: ["Diretor de Recursos Humanos (HRBP)", "Consultor de Gestão da Mudança", "Especialista em Cultura Organizacional", "Gestor de Talento"],
@@ -373,7 +373,7 @@ const courseData = {
     "pos-potencial-humano": {
         title: "Pós-Graduação em Gestão e Desenvolvimento do Potencial Humano",
         faculty: "Faculdade de Ciências Humanas",
-        banner: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        banner: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
         intro: "Foco na retenção de talentos, mentoring, coaching corporativo e criação de ambientes de trabalho de alta performance.",
         aboutParagraphs: [
             "Destinado a profissionais que desejam aprofundar as competências no empoderamento e crescimento dos colaboradores dentro da empresa.",
@@ -384,7 +384,7 @@ const courseData = {
             { icon: "emoji_people", title: "Coaching Executivo", desc: "Competências de mentoria e desenvolvimento individual.", color: "blue" },
             { icon: "trending_up", title: "Avaliação de Desempenho", desc: "Mecanismos para potenciar a alta performance das equipas.", color: "green" }
         ],
-        videoImg: "/images/cursos/mestrado/gestão de recursos humanos.png",
+        videoImg: "/images/cursos/mestrado/gestao-de-recursos-humanos.png",
         videoTitle: "Desenvolvendo Pessoas",
         videoSubtitle: "A base do sucesso organizacional.",
         careers: ["Coach Corporativo", "Responsável de Formação e Desenvolvimento", "Consultor de Talentos", "Analista de Desempenho"],
@@ -394,7 +394,7 @@ const courseData = {
     "pos-marketing-publicidade": {
         title: "Pós-Graduação em Marketing, Publicidade e Comunicação Empresarial",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/licenciatura/gestão comercial e marketing1.jpg",
+        banner: "/images/cursos/licenciatura/gestao-comercial-e-marketing1.jpg",
         intro: "Especialização em planeamento de campanhas omnicanal, branding e comunicação corporativa digital e tradicional.",
         aboutParagraphs: [
             "Um curso intensivo projetado para criar estrategistas da comunicação capazes de posicionar marcas com impacto e precisão.",
@@ -405,7 +405,7 @@ const courseData = {
             { icon: "language", title: "Comunicação Digital", desc: "Domínio das plataformas online e social media management.", color: "blue" },
             { icon: "brush", title: "Gestão de Marca (Branding)", desc: "Criação e preservação da identidade corporativa.", color: "purple" }
         ],
-        videoImg: "/images/cursos/licenciatura/gestão comercial e marketing1.jpg",
+        videoImg: "/images/cursos/licenciatura/gestao-comercial-e-marketing1.jpg",
         videoTitle: "Marcas com Impacto",
         videoSubtitle: "Criatividade aliada à conversão de mercado.",
         careers: ["Diretor de Marketing Corporativo", "Gestor de Marca (Brand Manager)", "Estrategista de Comunicação", "Diretor Criativo/Publicidade"],
@@ -415,7 +415,7 @@ const courseData = {
     "pos-financas-mercados": {
         title: "Pós-Graduação em Finanças e Mercados Financeiros",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        banner: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         intro: "Análise avançada de investimentos, gestão de carteiras, risco corporativo e dinâmica dos mercados de capitais.",
         aboutParagraphs: [
             "Para profissionais que procuram excelência na análise financeira, esta especialização mergulha profundamente no funcionamento dos mercados locais e internacionais.",
@@ -426,7 +426,7 @@ const courseData = {
             { icon: "monetization_on", title: "Gestão de Carteiras", desc: "Estratégias de investimento em ativos diversificados.", color: "green" },
             { icon: "warning", title: "Gestão de Risco", desc: "Mitigação e cobertura (hedging) de riscos financeiros.", color: "orange" }
         ],
-        videoImg: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        videoImg: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         videoTitle: "A Dinâmica Financeira",
         videoSubtitle: "Maximizando retornos na economia global.",
         careers: ["Analista Financeiro", "Gestor de Carteiras (Portfolio Manager)", "Consultor de Investimentos", "Risk Manager"],
@@ -436,7 +436,7 @@ const courseData = {
     "pos-gestao-comercial": {
         title: "Pós-Graduação em Gestão Comercial",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        banner: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         intro: "Estratégias avançadas de negociação, gestão de equipas de vendas e expansão de quota de mercado.",
         aboutParagraphs: [
             "Focada totalmente no motor das empresas: as vendas. Este programa eleva a perspetiva de gestores sobre a execução tática nos mercados B2B e B2C.",
@@ -447,7 +447,7 @@ const courseData = {
             { icon: "pie_chart", title: "Gestão de Canais", desc: "Otimização de rotas de mercado e distribuidores parceiros.", color: "orange" },
             { icon: "handshake", title: "Negociação Avançada", desc: "Técnicas de fecho de contratos e gestão de grandes contas.", color: "purple" }
         ],
-        videoImg: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        videoImg: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         videoTitle: "Motor de Crescimento",
         videoSubtitle: "Conquistando a vanguarda comercial.",
         careers: ["Diretor Comercial", "Key Account Manager", "Gestor de Vendas Regional", "Consultor de Negócios e Retalho"],
@@ -457,7 +457,7 @@ const courseData = {
     "pos-gestao-logistica": {
         title: "Pós-Graduação em Gestão da Logística e dos Transportes",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        banner: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         intro: "Otimização de cadeias de abastecimento, gestão de frota, importação/exportação e operações aduaneiras.",
         aboutParagraphs: [
             "Um curso crucial para a economia atual, focado em tornar as supply chains empresariais mais eficientes, rápidas e menos dispendiosas.",
@@ -468,7 +468,7 @@ const courseData = {
             { icon: "warehouse", title: "Gestão de Armazéns", desc: "Metodologias lean e sistemas de informação de stock.", color: "blue" },
             { icon: "public", title: "Comércio Internacional", desc: "Operações e trâmites de importação e exportação.", color: "orange" }
         ],
-        videoImg: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        videoImg: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         videoTitle: "A Cadeia de Valor",
         videoSubtitle: "Otimizando a logística do futuro.",
         careers: ["Diretor de Supply Chain", "Gestor de Logística e Frota", "Especialista em Comércio Internacional", "Operations Manager"],
@@ -478,7 +478,7 @@ const courseData = {
     "pos-governanca-corporativa": {
         title: "Pós-Graduação em Governança Corporativa",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        banner: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         intro: "Mecanismos de compliance, ética empresarial, auditoria interna e responsabilidade social em grandes organizações.",
         aboutParagraphs: [
             "Prepara profissionais para garantir a transparência, sustentabilidade e integridade no topo da hierarquia corporativa das grandes empresas.",
@@ -489,7 +489,7 @@ const courseData = {
             { icon: "fact_check", title: "Auditoria Interna", desc: "Mecanismos de supervisão e controlo financeiro/processual.", color: "blue" },
             { icon: "account_balance", title: "Relações com Investidores", desc: "Garantia de transparência para o mercado e acionistas.", color: "green" }
         ],
-        videoImg: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        videoImg: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         videoTitle: "Governação com Transparência",
         videoSubtitle: "O pilar ético das grandes organizações.",
         careers: ["Compliance Officer", "Membro de Conselho de Administração", "Auditor Principal", "Diretor de Risco Corporativo"],
@@ -499,7 +499,7 @@ const courseData = {
     "pos-gestao-projectos": {
         title: "Pós-Graduação em Gestão de Projectos",
         faculty: "Faculdade de Economia e Gestão",
-        banner: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        banner: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         intro: "Metodologias ágeis e tradicionais (PMBOK) para a conceção, execução e entrega de projetos complexos.",
         aboutParagraphs: [
             "Capacita profissionais de todas as áreas a liderar empreitadas dentro do prazo, do orçamento e com a qualidade exigida pelos stakeholders.",
@@ -510,7 +510,7 @@ const courseData = {
             { icon: "sync", title: "Abordagens Ágeis", desc: "Gestão flexível para indústrias em rápida mutação (Agile).", color: "orange" },
             { icon: "request_quote", title: "Controlo Orçamental", desc: "Otimização e justificação rigorosa dos custos.", color: "green" }
         ],
-        videoImg: "/images/cursos/mestrado/organização e gestão de empresas.png",
+        videoImg: "/images/cursos/mestrado/organizacao-e-gestao-de-empresas.png",
         videoTitle: "Do Conceito à Execução",
         videoSubtitle: "Entregando resultados num mundo exigente.",
         careers: ["Gestor de Projetos (Project Manager)", "Scrum Master", "Consultor PMO", "Diretor de Transformação Empresarial"],
