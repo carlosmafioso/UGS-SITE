@@ -144,7 +144,7 @@ export default function SobrePage() {
                                                 <div className="rounded-2xl overflow-hidden h-64 shadow-lg relative group">
                                                     <div
                                                         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                        style={{ backgroundImage: "url('/images/vida académica vibrante.jpg')" }}
+                                                        style={{ backgroundImage: "url('/images/vida-academica-vibrante.jpg')" }}
                                                     ></div>
                                                     <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6">
                                                         <span className="text-white font-bold text-lg">
@@ -155,7 +155,7 @@ export default function SobrePage() {
                                                 <div className="rounded-2xl overflow-hidden h-64 shadow-lg relative group">
                                                     <div
                                                         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                        style={{ backgroundImage: "url('/images/Auditórios de Última Geração.jpg')" }}
+                                                        style={{ backgroundImage: "url('/images/auditorios-de-ultima-geracao.jpg')" }}
                                                     ></div>
                                                     <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6">
                                                         <span className="text-white font-bold text-lg">
@@ -403,7 +403,7 @@ export default function SobrePage() {
                                                     {
                                                         name: "Pedro Senga Zódima",
                                                         role: "Vice-Decano para Área Académica",
-                                                        img: "/images/decania/Vice-Decano para Área Académica da Faculdade de Engenharia e Novas Tecnologias.jpg",
+                                                        img: "/images/decania/vice-decano-academico-engenharia-novas-tecnologias.jpg",
                                                     },
                                                     {
                                                         name: "Yosbel C. Izquierdo",
@@ -488,7 +488,7 @@ export default function SobrePage() {
                                                     {
                                                         name: "Erineu Napoleão Kalupeteca",
                                                         role: "Decano",
-                                                        img: "/images/decania/Decano da Faculdade de Ciências Sociais e Desenvolvimento Humano.jpeg",
+                                                        img: "/images/decania/decano-ciencias-sociais-desenvolvimento-humano.jpeg",
                                                     },
                                                     {
                                                         name: "Justino Chiyo",

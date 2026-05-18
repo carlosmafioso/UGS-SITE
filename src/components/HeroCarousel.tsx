@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/images/BANNER_Slogan_2048X1157.jpg",
+  "/images/banner-slogan-2048x1157.jpg",
   "/images/campus-ugs-entrada.jpg"
 ];
 
