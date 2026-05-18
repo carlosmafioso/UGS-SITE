@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "surface-tint": "#f27f0d",
+                    "on-primary-fixed-variant": "#713700",
+                    "on-background": "#0f172a",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#7c2d12",
+                    "background": "#ffffff",
+                    "surface-variant": "#f1f5f9",
+                    "primary-fixed-dim": "#fed7aa",
+                    "on-primary-fixed": "#241912",
+                    "on-tertiary-fixed": "#241912",
+                    "primary-fixed": "#ffedd5",
+                    "surface-container": "#f1f5f9",
+                    "surface-container-highest": "#cbd5e1",
+                    "on-secondary-container": "#f1f5f9",
+                    "secondary-fixed-dim": "#cbd5e1",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#cbd5e1",
+                    "on-primary-container": "#ffffff",
+                    "inverse-on-surface": "#f8fafc",
+                    "tertiary-fixed-dim": "#fed7aa",
+                    "surface-container-high": "#e2e8f0",
+                    "outline": "#94a3b8",
+                    "secondary-container": "#334155",
+                    "surface-container-low": "#f8fafc",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "on-secondary-fixed": "#0f172a",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#0f172a",
+                    "tertiary-container": "#ffedd5",
+                    "inverse-surface": "#1e293b",
+                    "surface-bright": "#ffffff",
+                    "on-surface-variant": "#475569",
+                    "inverse-primary": "#ffb784",
+                    "surface": "#ffffff",
+                    "tertiary": "#f27f0d",
+                    "secondary-fixed": "#e2e8f0",
+                    "primary-container": "#1e2a4a",
+                    "tertiary-fixed": "#ffedd5",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#f1f5f9",
+                    "secondary": "#1e2a4a",
+                    "on-secondary-fixed-variant": "#1e293b",
+                    "primary": "#f27f0d",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "display": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-low text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30 font-body tracking-tight antialiased">
+<div class="flex items-center gap-8">
+<span class="text-xl font-display font-extrabold text-secondary">UGS Portal</span>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-primary font-bold border-b-2 border-primary" href="#">Notas</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Serviços</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Calendário</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary w-64 text-sm transition-all" placeholder="Pesquisar..." type="text"/>
+</div>
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all active:scale-90">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all active:scale-90">
+<span class="material-symbols-outlined text-on-surface-variant">help</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/20">
+<img alt="Student Profile Picture" data-alt="A professional headshot of a young adult male student with a confident and friendly expression. He is wearing a modern casual outfit in a brightly lit, contemporary academic setting with soft-focus books and architectural details in the background. The lighting is clean and natural, reflecting a modern light-mode UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsHPRVkCNxYQ7IyLF8OBYqKcKn55q4uW-dq6Bu-EjVQGyoRSSP81SIxe1cJ5Dpea8yc3XhfJ7TBHchdM3zrbSy0dKNQC1ZNJcuMvjwk2UvZvXJExwMQauRrmhc4XA5PJ7IF_vWTVESFTdv1iSnuSAuGuK9HFT8pIqO1VE97SoN9m0e-FAQkmdKlKvcRIMUwzk_c-uJ2-PLKj7fxy6DJr1gtJqA5zzno1nqUpcE-dp3I54pcR5JhGVmRAzm8qhhcqPLOBUDvIY8hMS7"/>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Desktop Only) -->
+<aside class="hidden md:flex flex-col fixed left-0 top-0 h-full pt-20 pb-6 w-64 bg-surface-container-low border-r border-outline-variant/20 z-40">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-1">
+<div class="w-8 h-8 bg-secondary rounded flex items-center justify-center">
+<span class="text-primary font-bold text-xs">UGS</span>
+</div>
+<span class="font-display font-bold text-secondary text-lg">UGS Digital</span>
+</div>
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-wider">Portal do Aluno</p>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label text-sm font-medium" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-surface text-primary border-l-4 border-primary font-label text-sm font-bold shadow-sm" href="#">
+<span class="material-symbols-outlined">school</span>
+<span>Académico</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label text-sm font-medium" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span>Financeiro</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label text-sm font-medium" href="#">
+<span class="material-symbols-outlined">edit_note</span>
+<span>Inscrições</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors font-label text-sm font-medium" href="#">
+<span class="material-symbols-outlined text-primary">smart_toy</span>
+<span>LUCY AI</span>
+</a>
+</nav>
+<div class="px-4 mt-auto space-y-1">
+<button class="w-full bg-secondary text-on-primary py-3 rounded-lg font-bold text-sm mb-4 active:scale-95 transition-transform">
+                Solicitar Documento
+            </button>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Definições</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-error hover:bg-error-container transition-colors text-sm" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Sair</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-20 px-6 md:px-10 lg:px-12 max-w-7xl mx-auto min-h-screen">
+<!-- Header Section -->
+<div class="mb-8">
+<h1 class="text-3xl font-display font-extrabold text-secondary tracking-tight mb-2">Notas e Histórico</h1>
+<p class="text-on-surface-variant max-w-2xl">Consulta o teu percurso académico detalhado, médias globais e unidades curriculares concluídas.</p>
+</div>
+<!-- Bento Summary Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+<!-- Global Average -->
+<div class="md:col-span-1 bg-surface p-6 rounded-2xl shadow-lg border-l-4 border-primary flex flex-col justify-between">
+<span class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Média Global</span>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="text-4xl font-extrabold text-secondary">16.4</span>
+<span class="text-on-surface-variant text-sm">/ 20</span>
+</div>
+<div class="mt-4 flex items-center text-primary text-xs font-bold">
+<span class="material-symbols-outlined text-sm mr-1">trending_up</span>
+                    +0.8 em relação ao semestre anterior
+                </div>
+</div>
+<!-- ECTS Progress -->
+<div class="md:col-span-2 bg-primary-container p-6 rounded-2xl shadow-lg text-on-primary relative overflow-hidden">
+<div class="relative z-10">
+<span class="text-sm font-bold uppercase tracking-wider opacity-80">Créditos ECTS Completos</span>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="text-4xl font-extrabold">144</span>
+<span class="opacity-80 text-sm">/ 240 Totais</span>
+</div>
+<div class="mt-6 w-full bg-white/20 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[60%]"></div>
+</div>
+<p class="mt-2 text-xs opacity-80">Faltam 96 créditos para a conclusão da Licenciatura.</p>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+</div>
+<!-- Current Semester -->
+<div class="md:col-span-1 bg-surface p-6 rounded-2xl shadow-lg border-l-4 border-secondary flex flex-col justify-between">
+<span class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Semestre Atual</span>
+<div class="mt-2">
+<span class="text-xl font-bold text-secondary">3º Ano</span>
+<p class="text-sm text-on-surface-variant">1º Semestre</p>
+</div>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-tertiary-container border-2 border-surface flex items-center justify-center text-[10px] font-bold">PT</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container border-2 border-surface flex items-center justify-center text-[10px] font-bold text-white">EN</div>
+</div>
+<span class="text-xs font-bold text-primary">Em Curso</span>
+</div>
+</div>
+</div>
+<!-- Grades Table Container -->
+<div class="bg-surface rounded-2xl shadow-xl overflow-hidden border border-outline-variant/30">
+<div class="p-6 border-b border-outline-variant/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-surface-container-low/50">
+<h2 class="text-xl font-bold text-secondary">Histórico Académico Detalhado</h2>
+<div class="flex items-center gap-3">
+<select class="bg-surface border border-outline-variant rounded-lg px-3 py-1.5 text-sm font-medium focus:ring-primary">
+<option>Todos os Semestres</option>
+<option>2023/24 - 1º Sem</option>
+<option>2022/23 - 2º Sem</option>
+</select>
+<button class="flex items-center gap-2 bg-secondary text-white px-4 py-2 rounded-lg text-sm font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">download</span>
+                        Exportar PDF
+                    </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="text-on-surface-variant font-label text-xs uppercase tracking-widest border-b border-outline-variant/30">
+<th class="px-6 py-4 font-bold">Cadeira / Unidade Curricular</th>
+<th class="px-6 py-4 font-bold text-center">Semestre</th>
+<th class="px-6 py-4 font-bold text-center">Tipo</th>
+<th class="px-6 py-4 font-bold text-center">ECTS</th>
+<th class="px-6 py-4 font-bold text-right">Nota Final</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20">
+<!-- Grade Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5">
+<div class="font-bold text-on-surface group-hover:text-primary transition-colors">Programação Orientada a Objetos</div>
+<div class="text-xs text-on-surface-variant">Engenharia Informática</div>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">2023/24 - 1º</td>
+<td class="px-6 py-5 text-center">
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase">Exame</span>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">6.0</td>
+<td class="px-6 py-5 text-right">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-green-700 font-extrabold text-lg border border-green-200">18</span>
+</td>
+</tr>
+<!-- Grade Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5">
+<div class="font-bold text-on-surface group-hover:text-primary transition-colors">Cálculo Diferencial e Integral I</div>
+<div class="text-xs text-on-surface-variant">Tronco Comum</div>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">2023/24 - 1º</td>
+<td class="px-6 py-5 text-center">
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase">Teste Final</span>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">6.0</td>
+<td class="px-6 py-5 text-right">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-green-700 font-extrabold text-lg border border-green-200">14</span>
+</td>
+</tr>
+<!-- Grade Row 3 (Failing) -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5">
+<div class="font-bold text-on-surface group-hover:text-primary transition-colors">Arquitetura de Computadores</div>
+<div class="text-xs text-on-surface-variant">Engenharia Informática</div>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">2023/24 - 1º</td>
+<td class="px-6 py-5 text-center">
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase">Recurso</span>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">4.0</td>
+<td class="px-6 py-5 text-right">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-error-container text-error font-extrabold text-lg border border-error/20">08</span>
+</td>
+</tr>
+<!-- Grade Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5">
+<div class="font-bold text-on-surface group-hover:text-primary transition-colors">Sistemas Operativos</div>
+<div class="text-xs text-on-surface-variant">Engenharia Informática</div>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">2022/23 - 2º</td>
+<td class="px-6 py-5 text-center">
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase">Exame</span>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">6.0</td>
+<td class="px-6 py-5 text-right">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-green-700 font-extrabold text-lg border border-green-200">16</span>
+</td>
+</tr>
+<!-- Grade Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-6 py-5">
+<div class="font-bold text-on-surface group-hover:text-primary transition-colors">Inglês Técnico II</div>
+<div class="text-xs text-on-surface-variant">Línguas</div>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">2022/23 - 2º</td>
+<td class="px-6 py-5 text-center">
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase">Contínua</span>
+</td>
+<td class="px-6 py-5 text-center text-sm font-medium">2.0</td>
+<td class="px-6 py-5 text-right">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-green-700 font-extrabold text-lg border border-green-200">19</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-6 bg-surface-container-low/30 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-sm text-on-surface-variant">A mostrar 5 de 24 registos</span>
+<div class="flex gap-2">
+<button class="p-2 border border-outline-variant rounded-lg hover:bg-surface-container-high transition-colors disabled:opacity-30">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 bg-primary text-white font-bold rounded-lg shadow-md">1</button>
+<button class="w-10 h-10 border border-outline-variant rounded-lg font-bold hover:bg-surface-container-high transition-colors">2</button>
+<button class="w-10 h-10 border border-outline-variant rounded-lg font-bold hover:bg-surface-container-high transition-colors">3</button>
+<button class="p-2 border border-outline-variant rounded-lg hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Academic Timeline Section (Signature Component) -->
+<div class="mt-12">
+<h3 class="text-lg font-bold text-secondary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history</span>
+                Marcos do Percurso
+            </h3>
+<div class="relative pl-8 border-l-2 border-outline-variant">
+<!-- Node 1 -->
+<div class="relative mb-10">
+<div class="absolute -left-[41px] top-1 w-5 h-5 bg-primary border-4 border-white rounded-full shadow-md z-10"></div>
+<div class="bg-surface p-5 rounded-xl shadow-lg inline-block min-w-[300px]">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">Janeiro 2024</span>
+<h4 class="font-bold text-secondary text-base">Conclusão do 5º Semestre</h4>
+<p class="text-sm text-on-surface-variant mt-1">Média de semestre: 17.2 valores.</p>
+</div>
+</div>
+<!-- Node 2 -->
+<div class="relative mb-10">
+<div class="absolute -left-[41px] top-1 w-5 h-5 bg-outline-variant border-4 border-white rounded-full shadow-md z-10"></div>
+<div class="bg-surface p-5 rounded-xl shadow-sm border border-outline-variant/30 inline-block min-w-[300px]">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Setembro 2023</span>
+<h4 class="font-bold text-secondary text-base">Início do 3º Ano</h4>
+<p class="text-sm text-on-surface-variant mt-1">Matrícula confirmada em Engenharia Informática.</p>
+</div>
+</div>
+<!-- Node 3 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 bg-outline-variant border-4 border-white rounded-full shadow-md z-10"></div>
+<div class="bg-surface p-5 rounded-xl shadow-sm border border-outline-variant/30 inline-block min-w-[300px]">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Julho 2023</span>
+<h4 class="font-bold text-secondary text-base">Fim do 2º Ano</h4>
+<p class="text-sm text-on-surface-variant mt-1">Total acumulado de 120 ECTS.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-outline-variant/10 rounded-t-xl font-label text-xs">
+<a class="flex flex-col items-center justify-center text-on-surface-variant transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-tertiary-container/30 rounded-xl px-4 py-1 transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined">grade</span>
+<span>Notas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span>Serviços</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<span>LUCY</span>
+</a>
+</nav>
+</body></html>

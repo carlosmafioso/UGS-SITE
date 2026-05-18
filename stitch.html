@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AEUGS - Associação dos Estudantes da Universidade Gregório Semedo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#ffedd5",
+                    "secondary-container": "#334155",
+                    "tertiary-fixed-dim": "#fed7aa",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#ffffff",
+                    "on-secondary-fixed-variant": "#1e293b",
+                    "on-tertiary-container": "#7c2d12",
+                    "tertiary-fixed": "#ffedd5",
+                    "secondary-fixed": "#e2e8f0",
+                    "on-tertiary-fixed": "#241912",
+                    "on-primary-fixed-variant": "#713700",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#f27f0d",
+                    "inverse-primary": "#ffb784",
+                    "surface-variant": "#f1f5f9",
+                    "primary-container": "#1e2a4a",
+                    "on-surface-variant": "#475569",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#ffffff",
+                    "on-surface": "#0f172a",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "outline-variant": "#cbd5e1",
+                    "on-primary-container": "#ffffff",
+                    "inverse-on-surface": "#f8fafc",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#cbd5e1",
+                    "on-secondary-fixed": "#0f172a",
+                    "secondary": "#1e2a4a",
+                    "on-background": "#0f172a",
+                    "inverse-surface": "#1e293b",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#f1f5f9",
+                    "primary-fixed-dim": "#fed7aa",
+                    "primary-fixed": "#ffedd5",
+                    "surface-container": "#f1f5f9",
+                    "outline": "#94a3b8",
+                    "background": "#ffffff",
+                    "surface-tint": "#f27f0d",
+                    "primary": "#f27f0d",
+                    "surface-container-low": "#f8fafc",
+                    "surface-container-high": "#e2e8f0",
+                    "secondary-fixed-dim": "#cbd5e1",
+                    "on-primary-fixed": "#241912",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#f1f5f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "display": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<span class="text-xl font-extrabold text-blue-900 dark:text-blue-400 tracking-tighter">Universidade Gregório Semedo</span>
+<div class="hidden md:flex items-center gap-8 font-manrope text-sm font-semibold tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Cursos</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Admissões</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Campus</a>
+<a class="text-orange-600 dark:text-orange-500 border-b-2 border-orange-600 pb-1" href="#">Sobre</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-5 py-2 rounded-lg font-bold text-sm scale-95 active:scale-90 transition-transform">Portal do Aluno</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A diverse group of university students in a modern African campus setting, engaged in a collaborative discussion around a library table. The lighting is bright and airy with warm sunlight filtering through large windows, emphasizing a prestigious and inclusive academic environment. The shot features students wearing business-casual attire in deep navy and subtle orange accents, reflecting the institutional brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6CL7D_3BZD1tIuvVxtBA202z-DhpPoMI65EKzxTsjQdDm7mABxgKdKAI1lGPM5oFglxtiTbWJ1fvhyMEiCnMoNDEejRYA9bQdfjx8O-BAAstiZxnOwEiaKJh5FlYUdKchiuS8OoyfjpXGN8so1SNC2tpTcoHJk-9Q-vgfApzMihWxc-h2ofxs7B_3cRC_nheGFwTmvU-6tbJlJoOf--C45NkNDEvup5j50KTlNqzXtOfTe1l3bTKJLXNQ-wJAMz3D1s4_XyqhfblM"/>
+<div class="absolute inset-0 bg-secondary/80 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 py-24">
+<div class="max-w-3xl">
+<span class="inline-block py-1 px-3 mb-6 bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest rounded-full border border-primary/30">Associação de Estudantes</span>
+<h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tighter mb-6">
+                        AEUGS: A Voz e o Coração da Vida Académica
+                    </h1>
+<p class="text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl">
+                        Comprometidos com a representação estudantil e o fomento de uma cultura de campus vibrante, inovadora e inclusiva para todos os alunos da UGS.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-primary text-white rounded-lg font-bold shadow-lg hover:translate-y-[-2px] transition-all">Juntar-se à AEUGS</button>
+<button class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-lg font-bold hover:bg-white/20 transition-all">Saber Mais</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="border-l-4 border-primary pl-6">
+<h2 class="text-3xl font-extrabold text-secondary tracking-tight">Nossa Missão</h2>
+<p class="mt-4 text-lg text-on-surface-variant leading-relaxed">
+                                Atuamos como a ponte vital entre a comunidade estudantil e a administração universitária. Nossa missão é garantir que cada voz seja ouvida, defendendo os interesses académicos, sociais e profissionais dos nossos estudantes com integridade e paixão.
+                            </p>
+</div>
+<div class="border-l-4 border-outline-variant pl-6">
+<h2 class="text-3xl font-extrabold text-secondary tracking-tight">Nossa Visão</h2>
+<p class="mt-4 text-lg text-on-surface-variant leading-relaxed">
+                                Aspiramos a criar um ecossistema universitário onde a excelência académica caminhe de mãos dadas com o desenvolvimento humano, tornando a UGS uma referência em integração e vivência estudantil em Angola.
+                            </p>
+</div>
+</div>
+<div class="relative">
+<div class="rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full aspect-[4/3] object-cover" data-alt="A professional close-up shot of a modern glass boardroom window overlooking a sunlit university courtyard. In the reflection, silhouettes of students can be seen walking and talking. The image conveys transparency, mediation, and institutional professionalism. The color palette is dominated by soft slates and whites with a hint of warm morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7hOc1TiwmytLI7Em-c-VLLJahvhCfhpwTErg2GmiWTbhS5HJLg3PYbTe8E1-exdq_qCVCO8vMuitSCDrBYLtjjKLkKWQny8JHKSC-GPsdHo6_iUkcDeJWba04zZb2mgjJ5vXzVn_HCkgRFEGoJLtPhO42d41g43hxahXL2OJYo0lbqr3wsnxu7maL89eufcq46Foo5c892w9t1-M3kbA64Z5gJ7TEccAr9JPbC5GboagLW-stt8qtim04dJW_UUip--JZwvsMsjaL"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary p-8 rounded-xl shadow-xl hidden md:block">
+<span class="block text-4xl font-extrabold text-white">15+</span>
+<span class="text-white/80 font-medium text-sm uppercase tracking-wider">Projectos Ativos</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Pillars / Activities -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold text-secondary tracking-tight mb-4">Pilares de Atuação</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Desenvolvemos atividades focadas no crescimento integral do estudante durante a sua jornada académica.</p>
+</div>
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pillar 1 -->
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">Representação Académica</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Defesa dos direitos estudantis e participação ativa nos conselhos diretivos da instituição.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="sports_soccer">sports_soccer</span>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">Desporto e Cultura</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Promoção de torneios, grupos artísticos e eventos que celebram o talento da nossa comunidade.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="diversity_3">diversity_3</span>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">Apoio ao Estudante</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Programas de mentoria, orientação psicológica e apoio à integração de novos alunos.</p>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="festival">festival</span>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">Eventos e Tradições</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Organização da Receção ao Caloiro, Gala da UGS e conferências multidisciplinares.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership / Current Board -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl font-extrabold text-secondary tracking-tight mb-4">Direção AEUGS 2024</h2>
+<p class="text-on-surface-variant">Conheça a equipa dedicada a transformar a experiência universitária na Universidade Gregório Semedo.</p>
+</div>
+<button class="flex items-center gap-2 text-primary font-bold hover:underline">
+                        Ver Estrutura Completa <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Member 1 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional studio portrait of a confident male student leader in a dark navy suit and orange tie. He has a warm, inviting smile against a clean, light grey background. High-end editorial lighting, sharp focus, capturing a sense of authority and approachability in line with the Academic Ember aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJYx11yqwdrzYD8j3LLBegOHC_ITDB9J8dbP2u6o3xOEPSsdn26Wh5iIumydzFP2q-3Vl74X70B6yEjJzJz9jC6mHUikr6vtEzjKZBGDDbHT_3EACX5uIUbQyhssqmI3HzW5ylx5LmHnPmttTWVdCJwcFYNN3-Ud9fdmFd3DL9FMJjEmgEITzr2lQqOpKVAZgv9_u_YWaNvV2UnjY0KZ2OBSeE4ZLijAdbO_qgmJobh8zN4tz3LUfZP61D_2IUnkl8IKdfcX2SQqGp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-lg font-bold text-secondary">Dr. Manuel Cassule</h4>
+<p class="text-primary font-semibold text-sm">Presidente</p>
+</div>
+<!-- Member 2 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elegant professional portrait of a female academic leader in her late 20s. She is wearing a modern blazer in a soft slate color with a small university emblem pin. Her expression is focused and intelligent, with soft lighting that creates a professional, trustworthy atmosphere typical of a high-end university setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACE06M7pDNfF5kKEISV-haZMAzw5P56cA3BeuEFmaNpunlco36tKVo-oDUk0kLe3TW__L2g7jgVkhevG2_AvzQlFOa6LWzkCBLbyT91x0g_y4dF6JhAj15ZFTtWgFp3zwfDSlgFJ3CDCCFOvzyVB2U9zLbVnzuJuwbAfED05o6UycnSgQ21K3Aku3EOT6WsFIHDPL8KsU8dpE4yAAO8h0SE_LVYKpHzGjIMSeKrv3pqftnhkofNWm0j8h3gTRPleQuT3f35e5nwTsr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-lg font-bold text-secondary">Eng.ª Elsa Moreira</h4>
+<p class="text-primary font-semibold text-sm">Vice-Presidente</p>
+</div>
+<!-- Member 3 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Studio headshot of a young professional male executive. He is looking directly at the camera with confidence, wearing a charcoal grey sweater. The style is modern-scholastic, with high contrast and clean lines. The lighting is soft but defined, highlighting an approachable and competent persona." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZXoTk9MHrLdR4jDxEhC_0D4uxvCZiRZP2_0_pClGE6PECDPLRZWtIHky31S_KAMGUeBbp_tJZ_JsMyn1SPmZXpyyrzKqptNS2-KS1lCPaV0i2pax1qNAG7uTIW5T90zBPB_toR2pAfx5u-OphFIFORAgPDAkdf2_OgJk5cmUwFDUpvv0iyAx7lH3xiKfW7Vs_JeVTRI2TadW1Cb4zPTHcNnPVnSjye4HmtSbK9D727YqkiZYGA0UCrA3j4XEuzDmt5NSGZcpYqcmK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-lg font-bold text-secondary">Lic. André Santos</h4>
+<p class="text-primary font-semibold text-sm">Secretário-Geral</p>
+</div>
+<!-- Member 4 -->
+<div class="group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Portrait of a professional young woman in a scholarly setting. She wears a vibrant orange scarf that accents her neutral navy outfit, representing the brand's primary colors. She has a look of leadership and determination. The background is a blurred library with wooden shelves, suggesting a serious academic focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsCDbGIs8_EGMQ9Tc7AoIceASNJBFG0qY3NBk1DFSnoDcu97PxCHA0a0HIeIRP93hcfJZaSXvUU0-xD2iBYXyGGYIC2TFv9Q1DcXLdX21NbR948CnhBOtp1_-OS7zK3hhVZy7XGGHbJ8hlLmTLbvXn1uffrk-3vJDe2ZEjw5t6VD_O-p3Gd-9hjlcxaOyW9PjnOZjDPHPtTl91kQdsYx0khnzv6g_7CbxK2zXZO2BQX8CeDE5VFDUF3pivPRUk_bvRWGUgFReFMdBT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-lg font-bold text-secondary">Dra. Beatriz Lumbo</h4>
+<p class="text-primary font-semibold text-sm">Tesoureira</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="bg-secondary p-12 rounded-3xl relative overflow-hidden text-center">
+<!-- Texture/Accents -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary opacity-10 rounded-full translate-x-32 -translate-y-32"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-primary opacity-20 rounded-full -translate-x-16 translate-y-16"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tighter">Faça Parte da Nossa História</h2>
+<p class="text-slate-300 text-lg mb-10 leading-relaxed">
+                            Seja como membro ativo ou participando nas nossas iniciativas, a sua contribuição é o que torna a UGS um lugar melhor. Juntos construímos o futuro.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="px-8 py-4 bg-primary text-white rounded-lg font-bold shadow-lg hover:bg-orange-600 active:scale-95 transition-all">Juntar-se à AEUGS</button>
+<button class="px-8 py-4 bg-white text-secondary rounded-lg font-bold shadow-lg hover:bg-slate-100 active:scale-95 transition-all">Contactar a Direção</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-100 bg-white dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-bold text-blue-900 dark:text-blue-400">Universidade Gregório Semedo</span>
+<p class="font-manrope text-xs text-slate-500">© 2024 Universidade Gregório Semedo. Todos os direitos reservados.</p>
+</div>
+<div class="flex gap-8 font-manrope text-xs text-slate-500">
+<a class="text-slate-400 hover:text-blue-900 transition-opacity duration-300 underline decoration-orange-500/50" href="#">Privacidade</a>
+<a class="text-slate-400 hover:text-blue-900 transition-opacity duration-300 underline decoration-orange-500/50" href="#">Termos de Uso</a>
+<a class="text-slate-400 hover:text-blue-900 transition-opacity duration-300 underline decoration-orange-500/50" href="#">Suporte Técnico</a>
+</div>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-orange-600 transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-slate-400 hover:text-orange-600 transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

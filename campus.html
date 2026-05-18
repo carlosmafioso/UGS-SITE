@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Campus Life | Universidade Gregório Semedo</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f27f0d",
+                        "institutional": "#1e2a4a",
+                        "background-light": "#ffffff",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<header class="sticky top-0 z-50 w-full border-b border-slate-100 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a class="flex items-center gap-2" href="#">
+<div class="size-10 bg-institutional text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<div>
+<h1 class="text-xl font-extrabold tracking-tight text-institutional dark:text-white leading-none">UGS</h1>
+<p class="text-[10px] font-semibold text-primary uppercase tracking-widest">Gregório Semedo</p>
+</div>
+</a>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Institutional</a>
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Courses</a>
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Research</a>
+<a class="text-sm font-semibold text-primary transition-colors" href="#">Campus Life</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
+<input class="pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg text-sm w-48 focus:ring-2 focus:ring-primary focus:w-64 transition-all duration-300" placeholder="Search..." type="text"/>
+</div>
+<button class="bg-institutional text-white px-5 py-2.5 rounded-lg text-sm font-bold flex items-center gap-2 hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-lg">login</span>
+                Student Portal
+            </button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative w-full h-[500px] flex items-center overflow-hidden bg-institutional">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-institutional/90 via-institutional/60 to-transparent z-10"></div>
+<div class="w-full h-full bg-center bg-cover" data-alt="Diverse group of university students laughing and walking on campus" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfiAGWl_iPonQFmPtmJQl2iD6xtHEA2d0Lkerj_7zBjEoC0gIQHo6aGfNW8W1wYogNsVZsHZjigbw8ZW_eFOjtEeKhAImNPzg8JxrHuLgkL2NwRUmoghgJY6Pap7bjmKdJ_8U0V-dT9lVLvM9lO9Y0RRmM1MBKfDoRixn0nkVNsesDdX1V_hYYah8OLE_LR7VfoY4fVo7ZXnmjf9aqQYxe6rE2gEJbU3mkUf-jPheJW4nh_qf7OlUzAXUpURo1TIX1VfmNzFXas_sR');"></div>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-xs font-bold mb-6 tracking-wide">
+<span class="material-symbols-outlined text-sm text-primary">diversity_2</span>
+                    STUDENT EXPERIENCE
+                </div>
+<h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-[1.1]">
+                    Life Beyond the <span class="text-primary">Classroom</span>
+</h1>
+<p class="text-xl text-slate-300 mb-8 leading-relaxed font-medium">
+                    Discover a vibrant community where you can pursue your passions, join clubs, play sports, and find lifelong friends at UGS.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-3.5 rounded-xl text-base font-bold hover:bg-orange-600 transition-transform active:scale-95 flex items-center gap-2 shadow-xl shadow-primary/20">
+                        Join a Club
+                        <span class="material-symbols-outlined">group_add</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-3.5 rounded-xl text-base font-bold hover:bg-white/20 transition-colors">
+                        View Events Calendar
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Holistic Development</h2>
+<h3 class="text-4xl font-extrabold text-institutional dark:text-white leading-tight">Engage, Compete, and Thrive</h3>
+<p class="text-lg text-slate-600 dark:text-slate-400 mt-4">We believe the university experience is about more than just grades. It's about building character, resilience, and community.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="group relative overflow-hidden rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-slate-200/50 dark:hover:shadow-none transition-all duration-300">
+<div class="h-48 overflow-hidden">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Students debating in a university club meeting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1oq43LzWSFAIsS-sHA8UE11FrIMsaZ-EmZ5d0jv5iXdPcoJzbxRxjNHfG3FuIY2KQ3gTYRSv0ZYVW_18_kWArDycDUB7IyRs_0Ft_OMmY-Jrf7jNvv4-hZI_n81KgdClpngoN5kJY-pcHkBepqyJSilMXqVp7PMNrCXTFm0vsToj5KzBq5Yvfqo6YgAfm1mlNFzEQiidYMqCBDINJ0GbkjAP-ZEA4kAb1PhxiHrYM7P9P5kw5RQXNZZI4EWaBZlf87fTwAuLJk-GJ');"></div>
+</div>
+<div class="p-8">
+<div class="size-12 bg-blue-100 dark:bg-institutional/30 text-institutional dark:text-blue-300 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<h3 class="text-2xl font-bold text-institutional dark:text-white mb-3">Student Clubs &amp; Organizations</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">From the Debate Society to the Robotics Club, find your tribe. We have over 30 active student organizations tailored to diverse interests.</p>
+<a class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all" href="#">
+                            Browse Directory <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-slate-200/50 dark:hover:shadow-none transition-all duration-300">
+<div class="h-48 overflow-hidden">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Students playing basketball in university court" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPSvYn0w-mkyowXkgJaaKVQwOZ-wEVuJSF9FZDh-wDi8SLwMt1u1qBgdLWicUVlMTe8Xd2BlL3pgfrE2aPGrmKOSYx_rzXwHZLun1DZNWLVKzOdToz4rk25pRb3Qf2KMicRnxfuyH9sF3aomXFGB5cut_JAlzUROL7xPmySnisW8gmSj3KpyFRYQxMrMEN__MmGPTtxkTxbGEDB6Nb-Y0dqnFF7nguS3COaaBD59a84fELjcEn5DGKf4yd-wpPi79GiAHtTOLVmC6u');"></div>
+</div>
+<div class="p-8">
+<div class="size-12 bg-orange-100 dark:bg-primary/20 text-primary rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">sports_basketball</span>
+</div>
+<h3 class="text-2xl font-bold text-institutional dark:text-white mb-3">Athletics &amp; Recreation</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Stay active with our intramural leagues and varsity teams. Our modern sports complex includes basketball courts, a gym, and football fields.</p>
+<a class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all" href="#">
+                            View Sports Schedule <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-slate-200/50 dark:hover:shadow-none transition-all duration-300">
+<div class="h-48 overflow-hidden">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Student receiving guidance from a counselor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-asTiJfpo6xpKo6RTLKpwY-hgjLCepjMuIOvYacyIvRBln3HSmujebIKhL4KnUA5N9U7b8AKs7XRVeMhue3ssJ4eMgX9T2T-GxZYwWW1XHGR-AvT8vwMrMZcrFs1hb0I5wnGZtOWI6g4ehnMaL8PuEoA1n8hr6XxkP0Bw-vqjPnHsBX48-X-0jP12g31SU_Cwhr_UN04PqGKHZgjboBdgVBe7VIuzkre73_-u-hZGeH-jzaz1ZCComieZe4abD0WoELGOqZ_b-c3N');"></div>
+</div>
+<div class="p-8">
+<div class="size-12 bg-green-100 dark:bg-green-900/20 text-green-600 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+</div>
+<h3 class="text-2xl font-bold text-institutional dark:text-white mb-3">Student Support Services</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Your well-being is our priority. Access academic advising, mental health counseling, and career guidance whenever you need it.</p>
+<a class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all" href="#">
+                            Get Support <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-slate-50 dark:bg-slate-950">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-extrabold text-institutional dark:text-white mb-2">Campus Moments</h2>
+<p class="text-slate-500 dark:text-slate-400">A glimpse into daily life at Universidade Gregório Semedo.</p>
+</div>
+<button class="hidden md:flex items-center gap-2 text-institutional dark:text-white font-bold hover:text-primary transition-colors">
+                    Follow us on Instagram <span class="material-symbols-outlined">open_in_new</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+<div class="col-span-2 row-span-2 relative rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDG4tP_z0nuFdogjWjugENdNLRykZ9wZi5lo361kCXATA02KJnyJ29GctVrxKXPjqeDb7k7k6ao0lme-eOfjQsLZb8W0q2zE3tu6PKx6EgXLoB3F_i6I_klN2tEtACbm7qVV52svSMUVP0JjpQIEpWwe1jPaARwCubOIWsClshczB6PeLtRTMWBKx_jALBwi82xdzjlFhE0e63fOCqz8IUKDkIM93d63UGHa88luR7I5dYJmBWWl2zsi9FBv8Prb_nCZIII1ecu2wav');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-bold text-lg">Annual Cultural Festival</p>
+</div>
+</div>
+<div class="col-span-1 row-span-1 relative rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrmR0j0FBI5PgCb5WW6g4RWEPJGND0iDEuhAFnGtcI80H2aHeVwaFbncVLdJanph7-qDv0XIEX8WOrQu1QAQCsWCN-5Ayw8QVstQhKSLS4Q_DjZv3U6--dk9ncbIMNXAq6K3nHvnF6LXYuFVN7a2cGdf83uNzIbgSKTHqj2-PoyQ57u8h7tAKbLXENT0BD5qrHfmXv59lDea44aLbCvaZL8bttI0f0d-KZcghYIt6vc-Vk-ogT5HtS-X-gaLiC9Vxswrn1J7sfnQL7');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<p class="text-white font-bold text-sm">Study Sessions</p>
+</div>
+</div>
+<div class="col-span-1 row-span-1 relative rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCH6NA81BnzwomXZ4Iu3izZSrexdhPPqQ0QfpiM85mO7pZ2ndOXjEpc_B2hW8Ukkw0C8K5pOiHbVQEGOsKAE02V47qKBHC6h5FM8P8pU24rhWaAR2N-LVbaY0T3T0n5HQSx7yS7RUBLEhNgWavEO8_ZS5QYExuTPMsrWYhRio52EoSSa0kkxIFtrz1trh1eKVuSA1M4mxpQUzfkXCZcHlJ4nXiwSVgpg_iyOcveFp52Moos4LtiH1Z80a8CktbGkv8m3a0QvRKNlp1b');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<p class="text-white font-bold text-sm">Tech Workshops</p>
+</div>
+</div>
+<div class="col-span-2 row-span-1 relative rounded-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8w4DK-5b8a5Ci3TwPgqFI2FJ3v37reebjXrkZeMSRib6eOwHl_8uRhHEtNC3UjarhTtIYsHwMuE5OKBnM4VtY0UYv763BlZNQkQnhm_Rq2lssKGKT867iNquJUeSoyIURZnqPE6slSs-8AhsnZwLUhx2gOXTnvNVnUBBlvUuyRgcdxK12FnYFI3LBXLS_B_2Qio9ng68qa836B4wQAIsOAnnFNssPn5A5rWO0elMgwqmRuPbzQKRaQPGeG_gknUlIJmjnFJdzeMyR');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-bold text-lg">Alumni Networking Night</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4 space-y-8">
+<div>
+<h2 class="text-4xl font-extrabold text-institutional dark:text-white mb-4">Upcoming Events</h2>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Stay up to date with what's happening on campus. From academic seminars to social gatherings, there is always something to look forward to.
+                        </p>
+</div>
+<div class="bg-primary/5 border border-primary/10 p-6 rounded-2xl">
+<h4 class="font-bold text-institutional dark:text-white mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">campaign</span>
+                            Don't Miss Out
+                        </h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Subscribe to our weekly newsletter to get event updates directly to your inbox.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm px-4 py-2 focus:ring-primary focus:border-primary" placeholder="Your email" type="email"/>
+<button class="bg-institutional text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-slate-800 transition-colors">
+                                Subscribe
+                            </button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-4">
+<div class="flex flex-col md:flex-row bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-6 hover:border-primary/30 transition-colors shadow-sm hover:shadow-md group cursor-pointer">
+<div class="flex md:flex-col items-center justify-center md:w-24 shrink-0 md:border-r border-slate-100 dark:border-slate-800 md:pr-6 md:mr-6 mb-4 md:mb-0 gap-2 md:gap-0">
+<span class="text-sm font-bold text-primary uppercase tracking-wider">OCT</span>
+<span class="text-3xl font-extrabold text-institutional dark:text-white">15</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-300 text-xs font-bold">ACADEMIC</span>
+<span class="px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-bold">OPEN TO PUBLIC</span>
+</div>
+<h3 class="text-xl font-bold text-institutional dark:text-white mb-2 group-hover:text-primary transition-colors">International Research Symposium 2024</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Join leading academics for a day of presentations and discussions on sustainable development in Southern Africa.</p>
+<div class="flex items-center gap-6 text-sm text-slate-500 font-medium">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">schedule</span> 09:00 AM - 04:00 PM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">location_on</span> Main Auditorium</span>
+</div>
+</div>
+<div class="hidden md:flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-6 hover:border-primary/30 transition-colors shadow-sm hover:shadow-md group cursor-pointer">
+<div class="flex md:flex-col items-center justify-center md:w-24 shrink-0 md:border-r border-slate-100 dark:border-slate-800 md:pr-6 md:mr-6 mb-4 md:mb-0 gap-2 md:gap-0">
+<span class="text-sm font-bold text-primary uppercase tracking-wider">OCT</span>
+<span class="text-3xl font-extrabold text-institutional dark:text-white">22</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-orange-50 dark:bg-orange-900/20 text-orange-600 dark:text-orange-300 text-xs font-bold">SPORTS</span>
+</div>
+<h3 class="text-xl font-bold text-institutional dark:text-white mb-2 group-hover:text-primary transition-colors">Inter-Faculty Basketball Tournament Finals</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Come support your faculty team in the championship game! Refreshments and music will be provided.</p>
+<div class="flex items-center gap-6 text-sm text-slate-500 font-medium">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">schedule</span> 05:00 PM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">location_on</span> Sports Complex</span>
+</div>
+</div>
+<div class="hidden md:flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-6 hover:border-primary/30 transition-colors shadow-sm hover:shadow-md group cursor-pointer">
+<div class="flex md:flex-col items-center justify-center md:w-24 shrink-0 md:border-r border-slate-100 dark:border-slate-800 md:pr-6 md:mr-6 mb-4 md:mb-0 gap-2 md:gap-0">
+<span class="text-sm font-bold text-primary uppercase tracking-wider">NOV</span>
+<span class="text-3xl font-extrabold text-institutional dark:text-white">05</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-300 text-xs font-bold">CAREER</span>
+</div>
+<h3 class="text-xl font-bold text-institutional dark:text-white mb-2 group-hover:text-primary transition-colors">Annual Career Fair &amp; Networking</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Meet recruiters from top companies in Angola. Bring your CV and dress professionally.</p>
+<div class="flex items-center gap-6 text-sm text-slate-500 font-medium">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">schedule</span> 10:00 AM - 03:00 PM</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">location_on</span> Campus Courtyard</span>
+</div>
+</div>
+<div class="hidden md:flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-institutional text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+<div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+<span class="material-symbols-outlined text-6xl text-primary mb-6 opacity-50">format_quote</span>
+<blockquote class="text-2xl md:text-4xl font-bold leading-relaxed mb-10">
+                "UGS isn't just a place to study; it's a place to grow. The supportive community and active campus life gave me the confidence to lead and the network to succeed."
+            </blockquote>
+<div class="flex flex-col items-center gap-2">
+<div class="size-16 rounded-full overflow-hidden border-2 border-primary mb-2">
+<img alt="Student avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_FtuXhCzJTLrk41aitwLbPsLStBUReOa1NMNA6WkOII32cBAplJHELFWS4iCk03sawIcp44egpP4AktYi-7_RzTjPRvUwoqSPuduLNJ8o-Ha9fxy4Iuzdpy89h2Y4lc1oPFCd3Wh-6l0nPk-maPZ_Mck6XyXK_4_A9i-t4_L6yIw4ef-qBeAS3b0-QFHFbw_8LrAMM2hXGjG_0u7X0cRdAvTpF4mNxCxmGxaP_IEp8erMdOAu3n8KiB4KCSAZY5hCsSLG2_CvocaG"/>
+</div>
+<cite class="not-italic font-bold text-lg">Maria Santos</cite>
+<span class="text-primary text-sm font-medium uppercase tracking-wider">Economics Student, Class of '24</span>
+</div>
+</div>
+</section>
+<section class="py-24 bg-slate-50 dark:bg-slate-950">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-extrabold text-institutional dark:text-white mb-6">Ready to Join Our Community?</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
+                Take the first step towards an unforgettable university experience. Apply now or schedule a visit to see the campus for yourself.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="bg-primary text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-primary/20">
+                    Apply Now
+                </button>
+<button class="bg-white dark:bg-slate-900 text-institutional dark:text-white border border-slate-200 dark:border-slate-800 px-10 py-4 rounded-xl text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                    Book a Campus Tour
+                </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-institutional text-white py-16 border-t border-white/10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 lg:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-8 bg-white text-institutional rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">school</span>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight">UGS</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Universidade Gregório Semedo is a private higher education institution in Angola, committed to academic rigor and social development.
+                </p>
+<div class="flex gap-4">
+<a class="size-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="size-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="size-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">play_circle</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6">University</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">About UGS</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Rector's Office</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Accreditation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers at UGS</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Institutional News</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6">Student Resources</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Online Portal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Library Catalog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Student Welfare</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Alumni Network</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Academic Calendar</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6">Contact Us</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>Avenida Deolinda Rodrigues, Luanda, Angola</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span>+244 923 000 000</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span>info@ugs.ed.ao</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-slate-500">© 2024 Universidade Gregório Semedo. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-slate-500">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

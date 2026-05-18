@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calendário Académico | UGS Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "surface-tint": "#f27f0d",
+                    "on-primary-fixed-variant": "#713700",
+                    "on-background": "#0f172a",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#7c2d12",
+                    "background": "#ffffff",
+                    "surface-variant": "#f1f5f9",
+                    "primary-fixed-dim": "#fed7aa",
+                    "on-primary-fixed": "#241912",
+                    "on-tertiary-fixed": "#241912",
+                    "primary-fixed": "#ffedd5",
+                    "surface-container": "#f1f5f9",
+                    "surface-container-highest": "#cbd5e1",
+                    "on-secondary-container": "#f1f5f9",
+                    "secondary-fixed-dim": "#cbd5e1",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#cbd5e1",
+                    "on-primary-container": "#ffffff",
+                    "inverse-on-surface": "#f8fafc",
+                    "tertiary-fixed-dim": "#fed7aa",
+                    "surface-container-high": "#e2e8f0",
+                    "outline": "#94a3b8",
+                    "secondary-container": "#334155",
+                    "surface-container-low": "#f8fafc",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "on-secondary-fixed": "#0f172a",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#0f172a",
+                    "tertiary-container": "#ffedd5",
+                    "inverse-surface": "#1e293b",
+                    "surface-bright": "#ffffff",
+                    "on-surface-variant": "#475569",
+                    "inverse-primary": "#ffb784",
+                    "surface": "#ffffff",
+                    "tertiary": "#f27f0d",
+                    "secondary-fixed": "#e2e8f0",
+                    "primary-container": "#1e2a4a",
+                    "tertiary-fixed": "#ffedd5",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#f1f5f9",
+                    "secondary": "#1e2a4a",
+                    "on-secondary-fixed-variant": "#1e293b",
+                    "primary": "#f27f0d",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "display": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #ffffff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="text-on-surface antialiased overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30 font-body tracking-tight antialiased">
+<div class="flex items-center gap-8">
+<span class="text-xl font-display font-extrabold text-secondary">UGS Portal</span>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Notas</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Serviços</a>
+<a class="text-primary font-bold border-b-2 border-primary py-4 mt-1" href="#">Calendário</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low transition-all rounded-full scale-95 active:scale-90">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low transition-all rounded-full scale-95 active:scale-90">
+<span class="material-symbols-outlined">help</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-secondary-container overflow-hidden border-2 border-primary-fixed">
+<img alt="Student Profile Picture" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling young college student with a diverse background, wearing professional casual attire, set against a blurred academic background of a sunlit modern campus library with books and digital displays. High-key soft lighting emphasizes clarity and warmth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZqf2rADnPQUIO4Y0eodhSEnMOTzQWw9JaSjLdY4fZYkp1CkIWRj-kwW_JKDu4k8y0x6JlStYfmNzKLZ9AYA4zVxH0doN27oEswot0y4fK-RjqqGnkhX4yhoGwi7YgDcrX_690_9oAww8G4q43h7UZpSMV3XQ5TljufQbZc11HeF0XwIqA8OwvGXnFpMJP4CWpRRVDd3JGzL6_yuTpkYoeGx3q7SQ58gpKqQV9WK_QTKCx-VBXeRiGXLJN0Kk1XLXECpAoDnI-2cD3"/>
+</div>
+</div>
+</header>
+<!-- Side Navigation Bar (Desktop) -->
+<aside class="hidden md:flex flex-col fixed left-0 top-0 h-full pt-20 pb-6 bg-surface-container-low w-64 border-r border-outline-variant/20 font-label text-sm font-medium transition-transform duration-300 ease-in-out">
+<div class="px-6 mb-8 flex items-center gap-3">
+<div class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<div>
+<h2 class="font-display font-bold text-secondary">UGS Digital</h2>
+<p class="text-xs text-on-surface-variant/70">Portal do Aluno</p>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span> Home
+            </a>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">school</span> Académico
+            </a>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">payments</span> Financeiro
+            </a>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">edit_note</span> Inscrições
+            </a>
+<a class="flex items-center gap-4 px-6 py-3 bg-surface text-primary border-l-4 border-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">smart_toy</span> LUCY AI
+            </a>
+</nav>
+<div class="px-6 pt-6 mt-6 border-t border-outline-variant/20">
+<button class="w-full py-3 px-4 bg-secondary text-on-primary rounded-lg font-bold hover:scale-[1.02] active:scale-95 transition-all text-xs">
+                Solicitar Documento
+            </button>
+</div>
+<div class="mt-auto space-y-1">
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span> Definições
+            </a>
+<a class="flex items-center gap-4 px-6 py-3 text-error hover:bg-error-container transition-colors" href="#">
+<span class="material-symbols-outlined">logout</span> Sair
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-20 md:pb-8 px-6 lg:px-12 min-h-screen bg-surface">
+<!-- Header Section -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+<div>
+<h1 class="text-3xl font-extrabold tracking-tight text-secondary mb-2">Calendário Académico</h1>
+<p class="text-on-surface-variant text-lg">Mantenha-se atualizado com os prazos e eventos do ano letivo 2023/24.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-surface border border-outline-variant rounded-lg flex items-center gap-2 hover:bg-surface-container-low transition-colors text-sm font-semibold">
+<span class="material-symbols-outlined text-lg">tune</span> Filtros
+                </button>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg flex items-center gap-2 shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all text-sm font-semibold">
+<span class="material-symbols-outlined text-lg">download</span> Exportar PDF
+                </button>
+</div>
+</div>
+<!-- Asymmetric Bento Grid Layout -->
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left: Calendar Widget (8/12 columns) -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Month Navigator -->
+<div class="bg-surface rounded-2xl shadow-xl shadow-slate-200/40 p-6 border border-outline-variant/10">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-4">
+<h2 class="text-2xl font-bold text-secondary">Maio 2024</h2>
+<div class="flex gap-1">
+<button class="p-2 hover:bg-surface-container-low rounded-lg transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 hover:bg-surface-container-low rounded-lg transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="flex bg-surface-container-low p-1 rounded-lg">
+<button class="px-4 py-1.5 bg-surface text-secondary font-bold rounded-md shadow-sm text-sm">Mês</button>
+<button class="px-4 py-1.5 text-on-surface-variant font-medium rounded-md text-sm">Semana</button>
+</div>
+</div>
+<!-- Calendar Grid -->
+<div class="grid grid-cols-7 gap-px bg-outline-variant/20 border border-outline-variant/20 rounded-xl overflow-hidden">
+<!-- Day Headers -->
+<div class="bg-surface-container-low py-3 text-center text-xs font-bold text-on-surface-variant uppercase tracking-wider">Dom</div>
+<div class="bg-surface-container-low py-3 text-center text-xs font-bold text-on-surface-variant uppercase tracking-wider">Seg</div>
+<div class="bg-surface-container-low py-3 text-center text-xs font-bold text-on-surface-variant uppercase tracking-wider">Ter</div>
+<div class="bg-surface-container-low py-3 text-center text-xs font-bold text-on-surface-variant uppercase tracking-wider">Qua</div>
+<div class="bg-surface-container-low py-3 text-center text-xs font-bold text-on-surface-variant uppercase tracking-wider">Qui</div>
+<div class="bg-surface-container-low py-3 text-center text-xs font-bold text-on-surface-variant uppercase tracking-wider">Sex</div>
+<div class="bg-surface-container-low py-3 text-center text-xs font-bold text-on-surface-variant uppercase tracking-wider">Sáb</div>
+<!-- Blank days for start of month -->
+<div class="bg-surface-container-lowest h-32 p-3 text-on-surface-variant/30">28</div>
+<div class="bg-surface-container-lowest h-32 p-3 text-on-surface-variant/30">29</div>
+<div class="bg-surface-container-lowest h-32 p-3 text-on-surface-variant/30">30</div>
+<!-- Calendar Days -->
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors">
+<span class="text-sm font-bold">1</span>
+<div class="mt-2 flex flex-col gap-1">
+<div class="h-1.5 w-full bg-error rounded-full" title="Feriado Nacional"></div>
+</div>
+</div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors">
+<span class="text-sm font-bold">2</span>
+</div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors">
+<span class="text-sm font-bold">3</span>
+</div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors">
+<span class="text-sm font-bold">4</span>
+</div>
+<!-- Week 2 -->
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">5</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">6</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors">
+<span class="text-sm font-bold">7</span>
+<div class="mt-2">
+<div class="px-2 py-1 bg-primary/10 text-primary rounded text-[10px] font-bold truncate">Inscrição Exames</div>
+</div>
+</div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">8</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">9</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors">
+<span class="text-sm font-bold">10</span>
+<div class="mt-2">
+<div class="px-2 py-1 bg-secondary/10 text-secondary rounded text-[10px] font-bold truncate">Aula Magna</div>
+</div>
+</div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">11</span></div>
+<!-- Week 3 (Current Week Focus) -->
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">12</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">13</span></div>
+<div class="bg-primary/5 h-32 p-3 border-2 border-primary ring-inset relative">
+<span class="text-sm font-bold text-primary">14</span>
+<span class="absolute top-3 right-3 flex h-2 w-2 rounded-full bg-primary"></span>
+<div class="mt-2 flex flex-col gap-1">
+<div class="px-2 py-1 bg-primary text-on-primary rounded text-[10px] font-bold truncate">Hoje: Entrega TFC</div>
+</div>
+</div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">15</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">16</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">17</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">18</span></div>
+<!-- Remaining Days... (Condensed for visual integrity) -->
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">19</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">20</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">21</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">22</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">23</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">24</span></div>
+<div class="bg-surface h-32 p-3 group hover:bg-surface-container-low transition-colors"><span class="text-sm font-bold">25</span></div>
+</div>
+</div>
+<!-- Event Category Legend -->
+<div class="flex flex-wrap gap-6 px-4">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-sm font-medium text-on-surface-variant">Prazos e Inscrições</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-sm font-medium text-on-surface-variant">Eventos Académicos</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="text-sm font-medium text-on-surface-variant">Feriados</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<span class="text-sm font-medium text-on-surface-variant">Avaliações</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar Actions & Events (4/12 columns) -->
+<div class="lg:col-span-4 space-y-6">
+<!-- LUCY AI Assistant Widget -->
+<div class="bg-secondary rounded-2xl p-6 text-white shadow-xl relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-md">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">LUCY AI Assist</h3>
+<p class="text-white/60 text-xs uppercase tracking-widest font-semibold">Assistente Académico</p>
+</div>
+</div>
+<p class="text-sm text-white/80 mb-4 leading-relaxed">"Tens 3 entregas de trabalhos esta semana. Queres que te ajude a priorizar o teu tempo de estudo?"</p>
+<button class="w-full py-2.5 bg-primary text-white font-bold rounded-lg hover:bg-surface-tint transition-all text-sm flex items-center justify-center gap-2">
+                        Falar com a LUCY
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Upcoming Events List -->
+<div class="bg-surface rounded-2xl border border-outline-variant/20 shadow-lg p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-bold text-secondary text-lg">Próximos Eventos</h3>
+<a class="text-primary text-xs font-bold hover:underline" href="#">Ver Todos</a>
+</div>
+<div class="space-y-6">
+<!-- Timeline Item 1 -->
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/10 mb-1"></div>
+<div class="w-0.5 h-full bg-outline-variant/30 group-last:bg-transparent"></div>
+</div>
+<div class="pb-6">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-1">14 MAI - HOJE</span>
+<h4 class="font-bold text-secondary mb-1">Entrega Final TFC</h4>
+<p class="text-sm text-on-surface-variant leading-snug">Data limite para submissão digital do Trabalho de Fim de Curso.</p>
+<div class="mt-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-on-surface-variant">schedule</span>
+<span class="text-xs text-on-surface-variant font-medium">Até às 23:59</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<div class="w-4 h-4 rounded-full bg-outline ring-4 ring-outline/10 mb-1"></div>
+<div class="w-0.5 h-full bg-outline-variant/30 group-last:bg-transparent"></div>
+</div>
+<div class="pb-6">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest block mb-1">17 MAI - SEXTA</span>
+<h4 class="font-bold text-secondary mb-1">Exame de Microeconomia</h4>
+<p class="text-sm text-on-surface-variant leading-snug">Avaliação presencial referente ao 2º Semestre. Sala 402.</p>
+<div class="mt-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-on-surface-variant">location_on</span>
+<span class="text-xs text-on-surface-variant font-medium">Campus Principal</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<div class="w-4 h-4 rounded-full bg-secondary ring-4 ring-secondary/10 mb-1"></div>
+<div class="w-0.5 h-full bg-outline-variant/30 group-last:bg-transparent"></div>
+</div>
+<div class="pb-6">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest block mb-1">20 MAI - SEG</span>
+<h4 class="font-bold text-secondary mb-1">Semana da Empregabilidade</h4>
+<p class="text-sm text-on-surface-variant leading-snug">Ciclo de conferências e workshops com empresas parceiras.</p>
+<div class="mt-2 inline-flex items-center px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold text-secondary uppercase">
+                                    Inscrições Abertas
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Download Card -->
+<div class="bg-surface-container-low rounded-2xl p-6 border border-dashed border-outline-variant relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+<div class="relative flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">picture_as_pdf</span>
+</div>
+<div>
+<h4 class="font-bold text-secondary text-sm">Calendário Geral 2023/24</h4>
+<p class="text-xs text-on-surface-variant">Descarregar PDF completo</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-on-surface-variant group-hover:translate-x-1 transition-transform">download</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-outline-variant/10 rounded-t-xl font-label text-xs">
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">grade</span>
+<span>Notas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span>Serviços</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-tertiary-container/30 rounded-xl px-4 py-1 transition-transform scale-95" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span>Calendário</span>
+</a>
+</nav>
+<!-- Contextual Floating Action Button -->
+<button class="fixed right-6 bottom-24 md:bottom-12 p-4 bg-primary text-on-primary rounded-full shadow-2xl shadow-primary/40 hover:scale-110 active:scale-95 transition-all z-40 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">add</span>
+</button>
+</body></html>

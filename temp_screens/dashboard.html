@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#334155",
+                        "on-tertiary-container": "#7c2d12",
+                        "on-secondary-fixed-variant": "#1e293b",
+                        "on-tertiary-fixed": "#241912",
+                        "secondary-fixed-dim": "#cbd5e1",
+                        "secondary": "#1e2a4a",
+                        "on-background": "#0f172a",
+                        "primary-fixed-dim": "#fed7aa",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "surface-container": "#f1f5f9",
+                        "tertiary-container": "#ffedd5",
+                        "secondary-fixed": "#e2e8f0",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#1e293b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#f1f5f9",
+                        "tertiary": "#f27f0d",
+                        "surface-container-low": "#f8fafc",
+                        "inverse-on-surface": "#f8fafc",
+                        "outline": "#94a3b8",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#f27f0d",
+                        "tertiary-fixed": "#ffedd5",
+                        "on-surface-variant": "#475569",
+                        "primary-container": "#1e2a4a",
+                        "surface-bright": "#ffffff",
+                        "outline-variant": "#cbd5e1",
+                        "primary-fixed": "#ffedd5",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#241912",
+                        "on-surface": "#0f172a",
+                        "on-primary-container": "#ffffff",
+                        "on-primary-fixed-variant": "#713700",
+                        "tertiary-fixed-dim": "#fed7aa",
+                        "error-container": "#ffdad6",
+                        "surface": "#ffffff",
+                        "inverse-primary": "#ffb784",
+                        "on-error": "#ffffff",
+                        "background": "#ffffff",
+                        "surface-variant": "#f1f5f9",
+                        "surface-container-highest": "#cbd5e1",
+                        "surface-container-high": "#e2e8f0",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#f1f5f9",
+                        "primary": "#f27f0d",
+                        "on-secondary-fixed": "#0f172a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "display": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface-container-low text-on-surface">
+<!-- TopNavBar Shell -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30 font-body tracking-tight antialiased">
+<div class="flex items-center gap-4">
+<span class="text-xl font-display font-extrabold text-secondary">UGS Portal</span>
+</div>
+<div class="hidden md:flex items-center gap-8 h-full">
+<a class="text-primary font-bold border-b-2 border-primary h-full flex items-center px-1" href="#">Dashboard</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors h-full flex items-center px-1" href="#">Notas</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors h-full flex items-center px-1" href="#">Serviços</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors h-full flex items-center px-1" href="#">Calendário</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="text-sm font-medium text-on-surface hidden sm:block">João Manuel</span>
+<img alt="Student Profile Picture" class="w-10 h-10 rounded-full border-2 border-outline-variant" data-alt="A professional studio portrait of a young adult male student with a friendly expression. He is dressed in business casual attire suitable for a modern university environment. The background is a clean, out-of-focus academic hall with soft, natural lighting that emphasizes a bright and welcoming light-mode atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1nC6qim9UPQZOjlqHs80oVMdTKiixVXRi_R2bVnSJUbVCWEAcTyn_b_q9kU-NGpzDip74z0IljFLukO667fktF6tSGwR_wiiX_3-x9JTHtdjMwM_VZ87pR8T24hYuBj3YGl1JxOCAIGNzhSemd7KAEVixuHaNU5B2pjlaj2cvRfVTVuc5_pRB6i5ivHJ1bSvbFf0hnQ_dy5Oetd85Ajkie2mdoFQ54k_u1lalL2ORBf5l3DVeszmnHWnHyYM6TYhC7EtUChN6onw2"/>
+</div>
+<button class="p-2 hover:bg-surface-container-low transition-all scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low transition-all scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined text-on-surface-variant">help</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar Shell -->
+<aside class="hidden md:flex flex-col fixed left-0 top-0 h-full pt-20 pb-6 bg-surface-container-low w-64 border-r border-outline-variant/20 font-label text-sm font-medium transition-transform duration-300 ease-in-out">
+<div class="px-6 mb-8 flex items-center gap-3">
+<div class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<div>
+<h2 class="font-display font-bold text-secondary text-base leading-tight">UGS Digital</h2>
+<p class="text-xs text-on-surface-variant">Portal do Aluno</p>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 bg-surface text-primary border-l-4 border-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span>Académico</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span>Financeiro</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span>Inscrições</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-primary font-bold hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span>LUCY AI</span>
+</a>
+</nav>
+<div class="px-4 mt-auto space-y-1">
+<button class="w-full mb-4 py-3 bg-primary text-white rounded-lg font-bold shadow-lg hover:bg-primary/90 transition-all active:scale-95">
+                Solicitar Documento
+            </button>
+<a class="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Definições</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-error hover:bg-error-container/20 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span>Sair</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-20 md:pb-10 md:ml-64 px-6 min-h-screen">
+<div class="max-w-7xl mx-auto space-y-8">
+<!-- Welcome Banner -->
+<section class="relative overflow-hidden rounded-2xl bg-secondary p-8 md:p-12 text-white shadow-xl">
+<div class="relative z-10 max-w-2xl">
+<h1 class="text-3xl md:text-4xl font-display font-extrabold tracking-tight mb-4">Bem-vindo de volta, João!</h1>
+<p class="text-lg text-slate-300 font-body mb-6">Continua o teu percurso académico. Tens 2 novos resultados disponíveis e 3 exames agendados para a próxima semana.</p>
+<div class="flex flex-wrap gap-4">
+<button class="px-6 py-2 bg-primary text-white font-bold rounded-lg hover:scale-105 transition-transform active:scale-95">Ver Notas</button>
+<button class="px-6 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-all">Horário Semanal</button>
+</div>
+</div>
+<div class="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-primary/20 to-transparent pointer-events-none"></div>
+<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Recent Grades Column -->
+<section class="lg:col-span-2 space-y-6">
+<div class="bg-surface rounded-2xl p-6 shadow-lg border border-outline-variant/10">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-xl font-display font-bold text-secondary">Notas Recentes</h3>
+<button class="text-sm font-bold text-primary hover:underline">Ver Histórico</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-outline-variant/30 text-on-surface-variant text-sm font-semibold">
+<th class="pb-3 px-2">Cadeira</th>
+<th class="pb-3 px-2">Tipo</th>
+<th class="pb-3 px-2">Data</th>
+<th class="pb-3 px-2 text-right">Resultado</th>
+</tr>
+</thead>
+<tbody class="text-sm font-body">
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-2 font-semibold">Introdução ao Direito</td>
+<td class="py-4 px-2">Exame Final</td>
+<td class="py-4 px-2 text-on-surface-variant">12 Mai 2024</td>
+<td class="py-4 px-2 text-right"><span class="px-3 py-1 bg-green-100 text-green-800 rounded-full font-bold">16 / 20</span></td>
+</tr>
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-2 font-semibold">Economia Política I</td>
+<td class="py-4 px-2">Teste Prático</td>
+<td class="py-4 px-2 text-on-surface-variant">08 Mai 2024</td>
+<td class="py-4 px-2 text-right"><span class="px-3 py-1 bg-green-100 text-green-800 rounded-full font-bold">14 / 20</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-2 font-semibold">Sociologia Jurídica</td>
+<td class="py-4 px-2">Trabalho Grupo</td>
+<td class="py-4 px-2 text-on-surface-variant">05 Mai 2024</td>
+<td class="py-4 px-2 text-right"><span class="px-3 py-1 bg-primary-container/10 text-primary font-bold">Pendente</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Academic Services Quick Access -->
+<div class="bg-surface rounded-2xl p-6 shadow-lg border border-outline-variant/10">
+<h3 class="text-xl font-display font-bold text-secondary mb-6">Serviços Académicos</h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl bg-surface-container-low hover:bg-tertiary-container/30 transition-all border border-transparent hover:border-primary/20 group">
+<div class="w-12 h-12 rounded-full bg-secondary/5 flex items-center justify-center text-secondary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+</div>
+<span class="font-bold text-sm text-on-surface">Declarações</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl bg-surface-container-low hover:bg-tertiary-container/30 transition-all border border-transparent hover:border-primary/20 group">
+<div class="w-12 h-12 rounded-full bg-secondary/5 flex items-center justify-center text-secondary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="app_registration">app_registration</span>
+</div>
+<span class="font-bold text-sm text-on-surface">Inscrições</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-6 rounded-xl bg-surface-container-low hover:bg-tertiary-container/30 transition-all border border-transparent hover:border-primary/20 group">
+<div class="w-12 h-12 rounded-full bg-secondary/5 flex items-center justify-center text-secondary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="rate_review">rate_review</span>
+</div>
+<span class="font-bold text-sm text-on-surface">Reclamações</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Calendar Widget Sidebar Area -->
+<section class="space-y-6">
+<div class="bg-surface rounded-2xl p-6 shadow-lg border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<h3 class="text-xl font-display font-bold text-secondary">Calendário</h3>
+</div>
+<div class="space-y-4">
+<!-- Event 1 -->
+<div class="flex gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex-shrink-0 w-12 h-12 bg-tertiary-container/50 rounded-lg flex flex-col items-center justify-center text-on-tertiary-container">
+<span class="text-xs font-bold uppercase">Jun</span>
+<span class="text-xl font-extrabold leading-none">05</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-on-surface group-hover:text-primary transition-colors">Exame de Direito Civil</p>
+<p class="text-xs text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-xs">schedule</span> 09:00 - Auditório A
+                                    </p>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="flex gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-lg flex flex-col items-center justify-center text-on-surface">
+<span class="text-xs font-bold uppercase">Jun</span>
+<span class="text-xl font-extrabold leading-none">12</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-on-surface group-hover:text-primary transition-colors">Entrega de Trabalho</p>
+<p class="text-xs text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-xs">attachment</span> Metodologia Jurídica
+                                    </p>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="flex gap-4 p-3 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-lg flex flex-col items-center justify-center text-on-surface">
+<span class="text-xs font-bold uppercase">Jun</span>
+<span class="text-xl font-extrabold leading-none">20</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-on-surface group-hover:text-primary transition-colors">Cerimónia Académica</p>
+<p class="text-xs text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-xs">location_on</span> Campus Principal
+                                    </p>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-2 text-sm font-bold text-secondary border border-outline-variant/30 rounded-lg hover:bg-secondary hover:text-white transition-all">Ver Calendário Completo</button>
+</div>
+<!-- LUCY AI Section -->
+<div class="bg-gradient-to-br from-secondary to-[#2a3a5a] rounded-2xl p-6 shadow-xl relative overflow-hidden group">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<span class="font-display font-bold text-white text-lg">LUCY AI</span>
+</div>
+<p class="text-sm text-slate-300 font-body mb-4 leading-relaxed">
+                                Tens dúvidas sobre o teu percurso académico ou precisas de ajuda com um requerimento?
+                            </p>
+<button class="w-full py-3 bg-white text-secondary font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all group-active:scale-95">
+                                Fale com a LUCY AI
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Decorative AI elements -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-2xl group-hover:bg-primary/40 transition-colors"></div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Shell (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-outline-variant/10 font-label text-xs">
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-tertiary-container/30 rounded-xl px-4 py-1 tap-highlight-transparent scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant tap-highlight-transparent scale-95 transition-transform active:bg-surface-container-highest" href="#">
+<span class="material-symbols-outlined" data-icon="grade">grade</span>
+<span>Notas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant tap-highlight-transparent scale-95 transition-transform active:bg-surface-container-highest" href="#">
+<span class="material-symbols-outlined" data-icon="apps">apps</span>
+<span>Serviços</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant tap-highlight-transparent scale-95 transition-transform active:bg-surface-container-highest" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+<span>LUCY</span>
+</a>
+</nav>
+<!-- Floating Action Button (FAB) - Suppression logic: Only Home/Dashboard -->
+<div class="fixed bottom-24 right-6 md:bottom-8 md:right-8 z-40 md:hidden">
+<button class="w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</button>
+</div>
+</body></html>

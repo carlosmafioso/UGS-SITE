@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UGS Student Portal Access</title>
+<!-- Tailwind CSS with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Font: Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f27f0d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                        "brand-navy": "#1a2a40", // Added for institutional depth
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display">
+<!-- Top Navigation Bar Component -->
+<header class="w-full bg-white dark:bg-background-dark/50 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary text-white flex items-center justify-center rounded-lg shadow-sm">
+<svg class="size-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div>
+<h2 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">UGS Portal</h2>
+<p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Universidade Gregório Semedo</p>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Institucional</a>
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Admissões</a>
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Notícias</a>
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Biblioteca</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold h-10 px-6 rounded-lg transition-all shadow-md shadow-primary/20">
+                    Suporte
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-1 flex items-center justify-center p-6 lg:p-12">
+<div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Side: Login Form -->
+<div class="lg:col-span-5">
+<div class="bg-white dark:bg-slate-900 p-8 lg:p-10 rounded-xl shadow-2xl border border-slate-100 dark:border-slate-800">
+<div class="mb-8">
+<h1 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-2">Portal do Aluno</h1>
+<p class="text-slate-500 dark:text-slate-400">Acesse sua vida acadêmica com segurança.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">ID do Aluno ou Email</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors">person</span>
+<input class="w-full h-14 pl-12 pr-4 rounded-lg border-slate-200 dark:border-slate-800 dark:bg-slate-950 focus:ring-primary focus:border-primary text-base transition-all" placeholder="Ex: 20230123" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Senha</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors">lock</span>
+<input class="w-full h-14 pl-12 pr-12 rounded-lg border-slate-200 dark:border-slate-800 dark:bg-slate-950 focus:ring-primary focus:border-primary text-base transition-all" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-sm">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-slate-600 dark:text-slate-400">Lembrar acesso</span>
+</label>
+<a class="text-primary font-bold hover:underline" href="#">Esqueci a senha?</a>
+</div>
+<button class="w-full h-14 bg-primary text-white text-lg font-bold rounded-lg shadow-lg shadow-primary/30 hover:bg-primary/90 hover:-translate-y-0.5 transition-all" type="submit">
+                            Entrar no Portal
+                        </button>
+</form>
+<div class="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800 text-center">
+<p class="text-sm text-slate-500">Novo aluno? <a class="text-primary font-bold hover:underline" href="#">Saiba como ativar seu acesso</a></p>
+</div>
+</div>
+</div>
+<!-- Right Side: Quick Links & Branding -->
+<div class="lg:col-span-7 flex flex-col gap-10">
+<div class="space-y-4">
+<h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                        Sua jornada acadêmica, <span class="text-primary">simplificada.</span>
+</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl">
+                        Acesse notas, calendários de exames, bibliotecas digitais e tudo o que você precisa para excelência acadêmica na UGS.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Quick Link Card 1 -->
+<div class="p-6 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary transition-colors cursor-pointer group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-2xl">grade</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Notas e Faltas</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Acompanhe seu desempenho acadêmico em tempo real.</p>
+</div>
+<!-- Quick Link Card 2 -->
+<div class="p-6 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary transition-colors cursor-pointer group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-2xl">calendar_month</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Calendário Acadêmico</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Exames, feriados e datas importantes do semestre.</p>
+</div>
+<!-- Quick Link Card 3 -->
+<div class="p-6 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary transition-colors cursor-pointer group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Biblioteca Digital</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Milhares de títulos e periódicos científicos à sua disposição.</p>
+</div>
+<!-- Quick Link Card 4 -->
+<div class="p-6 bg-white/60 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary transition-colors cursor-pointer group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-2xl">contact_support</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Serviços ao Aluno</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Requerimentos, declarações e suporte administrativo.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-4 rounded-lg bg-primary/5 border border-primary/10 max-w-md">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Acesso Seguro</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Seus dados estão protegidos por criptografia de ponta a ponta.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-8">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-slate-500 text-sm">
+                © 2024 Universidade Gregório Semedo. Todos os direitos reservados.
+            </div>
+<div class="flex items-center gap-6 text-sm font-medium text-slate-500">
+<a class="hover:text-primary" href="#">Privacidade</a>
+<a class="hover:text-primary" href="#">Termos de Uso</a>
+<a class="hover:text-primary" href="#">Suporte Técnico</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="size-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<svg class="size-4" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a class="size-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<svg class="size-4" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.247 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.247-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.247-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.247 3.608-1.308 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
