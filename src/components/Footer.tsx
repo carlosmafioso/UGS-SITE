@@ -73,7 +73,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="pt-6 sm:pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
-                    <p className="text-xs text-slate-500 text-center md:text-left">© 2024 Universidade Gregório Semedo. Todos os direitos reservados.</p>
+                    <p className="text-xs text-slate-500 text-center md:text-left">© 2026 Universidade Gregório Semedo. Todos os direitos reservados.</p>
                     <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs text-slate-500">
                         <Link className="hover:text-white transition-colors" href="#">Política de Privacidade</Link>
                         <Link className="hover:text-white transition-colors" href="#">Termos de Serviço</Link>

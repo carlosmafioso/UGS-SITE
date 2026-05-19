@@ -21,7 +21,7 @@ export default function SobrePage() {
                         <div
                             className="w-full h-full bg-center bg-cover"
                             style={{
-                                backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8w4DK-5b8a5Ci3TwPgqFI2FJ3v37reebjXrkZeMSRib6eOwHl_8uRhHEtNC3UjarhTtIYsHwMuE5OKBnM4VtY0UYv763BlZNQkQnhm_Rq2lssKGKT867iNquJUeSoyIURZnqPE6slSs-8AhsnZwLUhx2gOXTnvNVnUBBlvUuyRgcdxK12FnYFI3LBXLS_B_2Qio9ng68qa836B4wQAIsOAnnFNssPn5A5rWO0elMgwqmRuPbzQKRaQPGeG_gknUlIJmjnFJdzeMyR')",
+                                backgroundImage: "url('/images/sobre-hero-bg.jpg')",
                             }}
                         ></div>
                     </div>
@@ -351,7 +351,7 @@ export default function SobrePage() {
                                             <div className="rounded-2xl overflow-hidden h-64 shadow-lg relative group">
                                                 <div
                                                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                    style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZPDf4EpdB_utuXhqVMXXAdMzHpzM9ZNYec8-n2Fub28RTRNzgePGT1d8_UxmWfGzEs26Ri2f5SvWPHBWAE4x0vkzFl08SRLRGhREbwgp3Zqr9H5qbU4ZYgoAjQ_8PmAuqoYK8lFolHheSuO5Mxq_PNMLKx_YjjozjIucZN_NwwZeOYJzuOnhg3aLnEHFhG6Fl7HHBIYYQgxVSWRdMIvvXR0dK1qcDDYwQ--73Hs722q-W-kZ1fIirAwk4bbus6d8KJwHNPHNSMxMD')" }}
+                                                    style={{ backgroundImage: "url('/images/vida-academica-vibrante.jpg')" }}
                                                 ></div>
                                                 <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6">
                                                     <span className="text-white font-bold text-lg">
@@ -362,7 +362,7 @@ export default function SobrePage() {
                                             <div className="rounded-2xl overflow-hidden h-64 shadow-lg relative group">
                                                 <div
                                                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                    style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfKdbgPuVJ82esPItv0FxhWj0t9CFPXO3oKi8eN66O60vJ-FJJ3xwzlrvT2EI7q_GB9doPwzsVth1wJzoa2cQnFWcKp3ImuOvnm-9ds__oDR24SfE03zOawIuYU_PBvi2zLb5KYW6bnCyIv8f4gN1y4KfQ3DVCVpE9jk4iRdxYOWwlarW_QJ0uyb1VQWbrEWyddFClmvid_X0mgM2esISBfp8dq6F90WWRhdRTeq6antYjUpi9a6eh1Nk-o6Yg2Q3M_l6MQHi2pYgC')" }}
+                                                    style={{ backgroundImage: "url('/images/auditorios-de-ultima-geracao.jpg')" }}
                                                 ></div>
                                                 <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6">
                                                     <span className="text-white font-bold text-lg">

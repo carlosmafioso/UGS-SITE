@@ -615,7 +615,7 @@ export default function Home() {
           </div>
           <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-slate-500">
-              © 2024 Universidade Gregório Semedo. Todos os direitos reservados.
+              © 2026 Universidade Gregório Semedo. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 text-xs text-slate-500">
               <Link className="hover:text-white transition-colors" href="#">
