@@ -82,6 +82,17 @@
   animation: float 4s ease-in-out infinite;
 }
 
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.animate-ken-burns {
+  animation: kenburns 24s ease-in-out infinite;
+  will-change: transform;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

@@ -341,7 +341,7 @@ export default function CursosPage() {
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/80 to-institutional/40 z-10"></div>
                         <div
-                            className="w-full h-full bg-center bg-cover"
+                            className="w-full h-full bg-center bg-cover animate-ken-burns"
                             style={{
                                 backgroundImage:
                                     "url('/images/cursos.png')",

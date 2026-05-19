@@ -14,12 +14,11 @@ export default function SobrePage() {
         <div className="min-h-screen bg-background-light text-slate-900">
             <Navbar activePage="/sobre" />
             <main>
-                {/* Banner Hero */}
                 <section className="relative w-full h-[240px] sm:h-[280px] md:h-[320px] flex items-center bg-institutional">
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/90 via-institutional/60 to-institutional/30 z-10"></div>
                         <div
-                            className="w-full h-full bg-center bg-cover"
+                            className="w-full h-full bg-center bg-cover animate-ken-burns"
                             style={{
                                 backgroundImage: "url('/images/sobre-hero-bg.jpg')",
                             }}
@@ -350,10 +349,10 @@ export default function SobrePage() {
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                                             <div className="rounded-2xl overflow-hidden h-64 shadow-lg relative group">
                                                 <div
-                                                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                                    className="absolute inset-0 bg-cover bg-center transition-transform duration-[1000ms] ease-out group-hover:scale-110"
                                                     style={{ backgroundImage: "url('/images/vida-academica-vibrante.jpg')" }}
                                                 ></div>
-                                                <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6">
+                                                <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6 z-10">
                                                     <span className="text-white font-bold text-lg">
                                                         Biblioteca Central
                                                     </span>
@@ -361,10 +360,10 @@ export default function SobrePage() {
                                             </div>
                                             <div className="rounded-2xl overflow-hidden h-64 shadow-lg relative group">
                                                 <div
-                                                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                                    className="absolute inset-0 bg-cover bg-center transition-transform duration-[1000ms] ease-out group-hover:scale-110"
                                                     style={{ backgroundImage: "url('/images/auditorios-de-ultima-geracao.jpg')" }}
                                                 ></div>
-                                                <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6">
+                                                <div className="absolute inset-0 bg-gradient-to-t from-institutional/80 to-transparent flex items-end p-6 z-10">
                                                     <span className="text-white font-bold text-lg">
                                                         Auditórios e Laboratórios
                                                     </span>

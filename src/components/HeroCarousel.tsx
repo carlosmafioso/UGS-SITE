@@ -27,10 +27,13 @@ export function HeroCarousel() {
       <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1.08 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
+          transition={{
+            opacity: { duration: 1.5, ease: "easeInOut" },
+            scale: { duration: 5, ease: "linear" }
+          }}
           className="absolute inset-0"
         >
           <Image

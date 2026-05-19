@@ -134,13 +134,13 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.4} variant="fade-left">
               <div className="relative group/about">
-                <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover/about:scale-[1.02]">
+                <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl transition-transform duration-700 ease-out group-hover/about:scale-[1.03]">
                   <Image
                     src="/images/legado.jpg"
                     alt="Nosso Legado - Graduação UGS"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-700 group-hover/about:scale-110"                  />
+                    className="object-cover transition-transform duration-[1000ms] ease-out group-hover/about:scale-110"                  />
                 </div>
                 {/* Pequeno cartão decorativo */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-slate-100 hover:scale-105 transition-transform duration-300 max-w-[260px] sm:max-w-none">
@@ -183,7 +183,7 @@ export default function Home() {
                 <div className="group cursor-pointer">
                   <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[4/5] shadow-lg">
                     <div
-                      className="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full bg-center bg-cover transition-transform duration-[1000ms] ease-out group-hover:scale-110"
                       style={{ backgroundImage: "url('/images/direito.jpg')" }}
                     ></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-institutional/90 via-transparent to-transparent flex items-end p-6 opacity-80 group-hover:opacity-100 transition-opacity">
@@ -203,7 +203,7 @@ export default function Home() {
                 <div className="group cursor-pointer">
                   <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[4/5] shadow-lg">
                     <div
-                      className="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full bg-center bg-cover transition-transform duration-[1000ms] ease-out group-hover:scale-110"
                       style={{ backgroundImage: "url('/images/economia.jpg')" }}
                     ></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-institutional/90 via-transparent to-transparent flex items-end p-6 opacity-80 group-hover:opacity-100 transition-opacity">
@@ -223,7 +223,7 @@ export default function Home() {
                 <div className="group cursor-pointer">
                   <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[4/5] shadow-lg">
                     <div
-                      className="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full bg-center bg-cover transition-transform duration-[1000ms] ease-out group-hover:scale-110"
                       style={{ backgroundImage: "url('/images/engenharia.jpg')" }}
                     ></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-institutional/90 via-transparent to-transparent flex items-end p-6 opacity-80 group-hover:opacity-100 transition-opacity">
@@ -243,7 +243,7 @@ export default function Home() {
                 <div className="group cursor-pointer">
                   <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[4/5] shadow-lg">
                     <div
-                      className="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full bg-center bg-cover transition-transform duration-[1000ms] ease-out group-hover:scale-110"
                       style={{ backgroundImage: "url('/images/ciencias-sociais.jpg')" }}
                     ></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-institutional/90 via-transparent to-transparent flex items-end p-6 opacity-80 group-hover:opacity-100 transition-opacity">
@@ -283,7 +283,7 @@ export default function Home() {
                 <ScrollReveal>
                   <div className="relative group h-full min-h-[400px] overflow-hidden rounded-2xl bg-institutional">
                     <div
-                      className="absolute inset-0 bg-top bg-cover transition-transform duration-700 group-hover:scale-105"
+                      className="absolute inset-0 bg-top bg-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
                       style={{ backgroundImage: "url('/images/21-aniversario-ugs.jpg')" }}
                     ></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
@@ -312,7 +312,7 @@ export default function Home() {
                   <article className="flex gap-4 group cursor-pointer">
                     <div className="size-24 shrink-0 rounded-xl overflow-hidden">
                       <div
-                        className="w-full h-full bg-center bg-cover group-hover:scale-110 transition-transform"
+                        className="w-full h-full bg-center bg-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                         style={{ backgroundImage: "url('/images/outorga-diplomas.jpg')" }}
                       ></div>
                     </div>
@@ -328,7 +328,7 @@ export default function Home() {
                   <article className="flex gap-4 group cursor-pointer">
                     <div className="size-24 shrink-0 rounded-xl overflow-hidden">
                       <div
-                        className="w-full h-full bg-center bg-cover group-hover:scale-110 transition-transform"
+                        className="w-full h-full bg-center bg-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                         style={{ backgroundImage: "url('/images/revista-cientifica.jpg')" }}
                       ></div>
                     </div>
@@ -344,7 +344,7 @@ export default function Home() {
                   <article className="flex gap-4 group cursor-pointer">
                     <div className="size-24 shrink-0 rounded-xl overflow-hidden border border-white/10">
                       <div
-                        className="w-full h-full bg-center bg-cover group-hover:scale-110 transition-transform"
+                        className="w-full h-full bg-center bg-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                         style={{ backgroundImage: "url('/images/missao-reconstruir-benguela.jpg')" }}
                       ></div>
                     </div>
@@ -439,7 +439,7 @@ export default function Home() {
                                         <img 
                                             src="/images/lucy.png" 
                                             alt="LUCY AI - Assistente Virtual AEUGS" 
-                                            className="w-full h-full object-cover relative z-0 transform group-hover:scale-110 transition-transform duration-700"
+                                            className="w-full h-full object-cover relative z-0 transform group-hover:scale-110 transition-transform duration-[1000ms] ease-out"
                                         />
                                         
                                         {/* Floating Glass UI Element */}

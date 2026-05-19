@@ -97,10 +97,10 @@ export default function CampusPage() {
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/90 via-institutional/60 to-transparent z-10"></div>
                         <div
-                            className="w-full h-full bg-center bg-cover"
+                            className="w-full h-full bg-center bg-cover animate-ken-burns"
                             style={{
                                 backgroundImage:
-                                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfiAGWl_iPonQFmPtmJQl2iD6xtHEA2d0Lkerj_7zBjEoC0gIQHo6aGfNW8W1wYogNsVZsHZjigbw8ZW_eFOjtEeKhAImNPzg8JxrHuLgkL2NwRUmoghgJY6Pap7bjmKdJ_8U0V-dT9lVLvM9lO9Y0RRmM1MBKfDoRixn0nkVNsesDdX1V_hYYah8OLE_LR7VfoY4fVo7ZXnmjf9aqQYxe6rE2gEJbU3mkUf-jPheJW4nh_qf7OlUzAXUpURo1TIX1VfmNzFXas_sR')",
+                                    "url('/images/campus-ugs-entrada.jpg')",
                             }}
                         ></div>
                     </div>

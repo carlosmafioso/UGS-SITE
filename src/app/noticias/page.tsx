@@ -7,11 +7,10 @@ export default function NoticiasPage() {
         <div className="min-h-screen bg-background-light text-slate-900">
             <Navbar activePage="/noticias" />
             <main>
-                {/* Banner Hero */}
                 <section className="relative w-full h-[380px] sm:h-[420px] md:h-[480px] flex items-center overflow-hidden bg-institutional">
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/70 to-institutional/30 z-10"></div>
-                        <div className="w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('/images/noticias.jpg')" }}></div>
+                        <div className="w-full h-full bg-center bg-cover animate-ken-burns" style={{ backgroundImage: "url('/images/noticias.jpg')" }}></div>
                     </div>
                     <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full pt-6 sm:pt-10">
                         <ScrollReveal variant="fade-right">
@@ -53,7 +52,7 @@ export default function NoticiasPage() {
                                 </h2>
                                 <article className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col md:flex-row overflow-hidden border border-slate-100 group cursor-pointer mb-8 sm:mb-12">
                                     <div className="relative w-full md:w-1/2 aspect-square md:aspect-auto overflow-hidden bg-slate-100">
-                                        <img src="/images/semana-academica-768x768.png" alt="Semana Académica UGS" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                                        <img src="/images/semana-academica-768x768.png" alt="Semana Académica UGS" className="w-full h-full object-cover object-center transition-transform duration-[1000ms] ease-out group-hover:scale-110" />
                                     </div>
                                     <div className="p-5 sm:p-8 flex flex-col justify-center w-full md:w-1/2">
                                         <div className="flex flex-wrap justify-between items-start mb-4 sm:mb-6 gap-2">
@@ -88,7 +87,7 @@ export default function NoticiasPage() {
                                 <ScrollReveal delay={0.1} variant="scale-up">
                                     <article className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden border border-slate-100 group cursor-pointer">
                                         <div className="relative h-48 w-full overflow-hidden">
-                                            <img src="/images/outorga-diplomas.jpg" alt="Cerimónia de Outorga de Diplomas de Mestrados" className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                                            <img src="/images/outorga-diplomas.jpg" alt="Cerimónia de Outorga de Diplomas de Mestrados" className="w-full h-full object-cover object-top transition-transform duration-[1000ms] ease-out group-hover:scale-110" />
                                         </div>
                                         <div className="p-6 flex flex-col flex-grow">
                                             <div className="flex justify-between items-start mb-4">
@@ -111,7 +110,7 @@ export default function NoticiasPage() {
                                 <ScrollReveal delay={0.2} variant="scale-up">
                                     <article className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden border border-slate-100 group cursor-pointer">
                                         <div className="relative h-48 w-full overflow-hidden">
-                                            <img src="/images/revista-cientifica.jpg" alt="Lançamento da Revista Científica Gregório Semedo" className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                                            <img src="/images/revista-cientifica.jpg" alt="Lançamento da Revista Científica Gregório Semedo" className="w-full h-full object-cover object-top transition-transform duration-[1000ms] ease-out group-hover:scale-110" />
                                         </div>
                                         <div className="p-6 flex flex-col flex-grow">
                                             <div className="flex justify-between items-start mb-4">
@@ -137,7 +136,7 @@ export default function NoticiasPage() {
                                             <img
                                                 src="/images/missao-reconstruir-benguela.jpg"
                                                 alt="Projecto Missão Reconstruir Benguela"
-                                                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                                                className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-[1000ms] ease-out"
                                             />
                                             <div className="absolute top-4 left-4">
                                                 <span className="bg-white/90 backdrop-blur-sm text-primary px-3 py-1 rounded text-xs font-bold shadow-sm">Solidariedade</span>

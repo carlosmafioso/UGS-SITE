@@ -7,11 +7,10 @@ export default function AEUGSPage() {
         <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-primary/20 selection:text-primary">
             <Navbar activePage="/aeugs" />
             <main>
-                {/* Hero Section */}
                 <section className="relative w-full h-[420px] sm:h-[520px] md:h-[640px] flex items-center overflow-hidden bg-institutional">
                     <div className="absolute inset-0 z-0">
-                        <img className="w-full h-full object-cover object-center" alt="Sede da AEUGS" src="/images/sobre-hero-bg.jpg" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 sm:from-institutional/90 via-institutional/60 sm:via-institutional/40 to-transparent pointer-events-none"></div>
+                        <div className="w-full h-full bg-center bg-cover animate-ken-burns" style={{ backgroundImage: "url('/images/sobre-hero-bg.jpg')" }}></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 sm:from-institutional/90 via-institutional/60 sm:via-institutional/40 to-transparent pointer-events-none z-10"></div>
                     </div>
                     <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full">
                         <ScrollReveal variant="fade-right">
@@ -147,7 +146,7 @@ export default function AEUGSPage() {
                                 <ScrollReveal key={idx} delay={0.1 * (idx + 1)} variant="scale-up">
                                     <div className="group cursor-pointer rounded-3xl bg-slate-50 p-3 border border-slate-100 hover:border-primary/30 transition-colors shadow-sm hover:shadow-xl">
                                         <div className="aspect-[4/5] rounded-2xl overflow-hidden relative mb-4 bg-slate-200">
-                                            <img className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" alt={member.name} src={member.img} />
+                                            <img className="w-full h-full object-cover object-top transition-transform duration-[1000ms] ease-out group-hover:scale-110" alt={member.name} src={member.img} />
                                             
                                             {/* Sliding Overlay */}
                                             <div className="absolute inset-0 bg-gradient-to-t from-institutional/90 via-institutional/40 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex flex-col justify-end p-6">

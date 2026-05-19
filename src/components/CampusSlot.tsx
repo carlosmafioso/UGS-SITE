@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface CampusSlotProps {
     title: string;
@@ -12,75 +13,59 @@ interface CampusSlotProps {
 }
 
 export function CampusSlot({ title, images, interval = 6000, delay = 0, className = "", labelSize = "sm" }: CampusSlotProps) {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [nextIndex, setNextIndex] = useState(1);
-    const [showNext, setShowNext] = useState(false);
-    const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-    const intervalRef = useRef<NodeJS.Timeout | null>(null);
+    const [index, setIndex] = useState(0);
 
     useEffect(() => {
         if (images.length <= 1) return;
 
-        const cycle = () => {
-            // Prepare the next image underneath
-            setNextIndex((prev) => (prev + 1) % images.length);
-
-            // Start crossfade
-            setShowNext(true);
-
-            // After the crossfade completes, swap layers
-            timeoutRef.current = setTimeout(() => {
-                setActiveIndex((prev) => (prev + 1) % images.length);
-                setShowNext(false);
-            }, 1500); // matches CSS transition duration
-        };
-
         // Start cycling after staggered delay
         const startTimer = setTimeout(() => {
-            cycle(); // trigger first cycle
-            intervalRef.current = setInterval(cycle, interval);
+            const timer = setInterval(() => {
+                setIndex((prev) => (prev + 1) % images.length);
+            }, interval);
+            return () => clearInterval(timer);
         }, delay);
 
-        return () => {
-            clearTimeout(startTimer);
-            if (intervalRef.current) clearInterval(intervalRef.current);
-            if (timeoutRef.current) clearTimeout(timeoutRef.current);
-        };
+        return () => clearTimeout(startTimer);
     }, [images.length, interval, delay]);
 
-    return (
-        <div className={`relative overflow-hidden ${className}`} style={{ transform: "translate3d(0, 0, 0)" }}>
-            {/* Base layer — current image (always visible) */}
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ 
-                    backgroundImage: `url('${images[activeIndex]}')`,
-                    transform: "translate3d(0, 0, 0)"
-                }}
-            />
+    const activeImage = images[index];
 
-            {/* Crossfade layer — next image fades in on top */}
-            {images.length > 1 && (
-                <div
-                    className="absolute inset-0 bg-cover bg-center transition-opacity duration-[1500ms] ease-in-out"
-                    style={{
-                        backgroundImage: `url('${images[nextIndex]}')`,
-                        opacity: showNext ? 1 : 0,
-                        willChange: "opacity",
-                        transform: "translate3d(0, 0, 0)"
+    return (
+        <div className={`relative overflow-hidden group/slot cursor-pointer ${className}`} style={{ transform: "translate3d(0, 0, 0)" }}>
+            {/* Animated Images with Framer Motion (Ken Burns Effect) */}
+            <AnimatePresence initial={false}>
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    animate={{ opacity: 1, scale: 1.15 }}
+                    exit={{ opacity: 0 }}
+                    transition={{
+                        opacity: { duration: 1.8, ease: "easeInOut" },
+                        scale: { duration: interval / 1000 + 1.8, ease: "linear" }
                     }}
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url('${activeImage}')` }}
                 />
-            )}
+            </AnimatePresence>
 
             {/* Bottom gradient for label readability */}
-            <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/60 to-transparent z-[1]" />
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-[1] pointer-events-none transition-opacity duration-500 group-hover/slot:from-black/95" />
 
-            {/* Title label */}
-            <div className={`absolute bottom-0 left-0 right-0 z-[2] ${labelSize === "lg" ? "p-5 sm:p-6" : "p-3 sm:p-4"}`}>
-                <p className={`text-white font-bold drop-shadow-lg ${labelSize === "lg" ? "text-base sm:text-lg" : "text-xs sm:text-sm"}`}>
-                    {title}
-                </p>
+            {/* Title label with slide-up effect */}
+            <div className={`absolute bottom-0 left-0 right-0 z-[2] pointer-events-none ${labelSize === "lg" ? "p-6 sm:p-8" : "p-4 sm:p-5"}`}>
+                <div className="transform translate-y-1 group-hover/slot:translate-y-0 transition-transform duration-500">
+                    <p className={`text-white font-extrabold drop-shadow-lg leading-tight tracking-wide ${labelSize === "lg" ? "text-lg sm:text-xl md:text-2xl" : "text-sm sm:text-base"}`}>
+                        {title}
+                    </p>
+                    {/* Decorative underline appearing on hover */}
+                    <div className="h-0.5 w-0 group-hover/slot:w-16 bg-primary mt-2 transition-all duration-500 rounded-full" />
+                </div>
             </div>
+            
+            {/* Outer border glow highlight on hover */}
+            <div className="absolute inset-0 border-2 border-transparent group-hover/slot:border-primary/40 rounded-2xl z-[3] pointer-events-none transition-colors duration-500" />
         </div>
     );
 }
+
