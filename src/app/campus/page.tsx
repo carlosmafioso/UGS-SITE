@@ -425,9 +425,7 @@ export default function CampusPage() {
                                     <Image
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_FtuXhCzJTLrk41aitwLbPsLStBUReOa1NMNA6WkOII32cBAplJHELFWS4iCk03sawIcp44egpP4AktYi-7_RzTjPRvUwoqSPuduLNJ8o-Ha9fxy4Iuzdpy89h2Y4lc1oPFCd3Wh-6l0nPk-maPZ_Mck6XyXK_4_A9i-t4_L6yIw4ef-qBeAS3b0-QFHFbw_8LrAMM2hXGjG_0u7X0cRdAvTpF4mNxCxmGxaP_IEp8erMdOAu3n8KiB4KCSAZY5hCsSLG2_CvocaG"
                                         alt="Avatar de estudante"
-                                        fill
-                                        unoptimized
-                                        className="object-cover"
+                                        fill                                        className="object-cover"
                                     />
                                 </div>
                                 <cite className="not-italic font-bold text-lg">

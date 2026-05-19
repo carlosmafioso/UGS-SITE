@@ -270,9 +270,7 @@ function CourseCarousel({ title, coursesList }: { title: string, coursesList: ty
                                     <Image
                                         src={course.img}
                                         alt={course.title}
-                                        fill
-                                        unoptimized
-                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        fill                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
                                     <div className="absolute top-4 left-4">
                                         <span className="bg-white/90 backdrop-blur-md text-institutional text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest shadow-sm">

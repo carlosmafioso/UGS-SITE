@@ -140,9 +140,7 @@ export default function Home() {
                     alt="Nosso Legado - Graduação UGS"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-700 group-hover/about:scale-110"
-                    unoptimized
-                  />
+                    className="object-cover transition-transform duration-700 group-hover/about:scale-110"                  />
                 </div>
                 {/* Pequeno cartão decorativo */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-slate-100 hover:scale-105 transition-transform duration-300 max-w-[260px] sm:max-w-none">

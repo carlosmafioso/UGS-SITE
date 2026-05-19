@@ -315,9 +315,7 @@ export default function SobrePage() {
                                                             <Image
                                                                 src={person.img}
                                                                 alt={person.name}
-                                                                fill
-                                                                unoptimized
-                                                                className="object-cover"
+                                                                fill                                                                className="object-cover"
                                                             />
                                                         </div>
                                                         <div>
@@ -417,9 +415,7 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill
-                                                                    unoptimized
-                                                                    className="object-cover object-top"
+                                                                    fill                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>
@@ -462,9 +458,7 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill
-                                                                    unoptimized
-                                                                    className="object-cover object-top"
+                                                                    fill                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>
@@ -507,9 +501,7 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill
-                                                                    unoptimized
-                                                                    className="object-cover object-top"
+                                                                    fill                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>
@@ -542,9 +534,7 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill
-                                                                    unoptimized
-                                                                    className="object-cover object-top"
+                                                                    fill                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>

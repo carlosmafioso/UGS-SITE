@@ -652,9 +652,7 @@ export default function CourseDetailPage() {
                                                     <Image
                                                         src={currentCourse.videoImg}
                                                         alt="Vida na Faculdade"
-                                                        fill
-                                                        unoptimized
-                                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                        fill                                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
                                                     />
                                                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
                                                         <div className="size-20 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover:scale-110 transition-all">
@@ -745,9 +743,7 @@ export default function CourseDetailPage() {
                                                 <Image
                                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1oq43LzWSFAIsS-sHA8UE11FrIMsaZ-EmZ5d0jv5iXdPcoJzbxRxjNHfG3FuIY2KQ3gTYRSv0ZYVW_18_kWArDycDUB7IyRs_0Ft_OMmY-Jrf7jNvv4-hZI_n81KgdClpngoN5kJY-pcHkBepqyJSilMXqVp7PMNrCXTFm0vsToj5KzBq5Yvfqo6YgAfm1mlNFzEQiidYMqCBDINJ0GbkjAP-ZEA4kAb1PhxiHrYM7P9P5kw5RQXNZZI4EWaBZlf87fTwAuLJk-GJ"
                                                     alt="Admissões"
-                                                    fill
-                                                    unoptimized
-                                                    className="object-cover"
+                                                    fill                                                    className="object-cover"
                                                 />
                                             </div>
                                             <div>

@@ -37,9 +37,9 @@ export function HeroCarousel() {
             src={images[currentIndex]}
             alt={`UGS Hero Banner ${currentIndex + 1}`}
             fill
+            sizes="100vw"
             priority={true}
             className="object-cover object-center"
-            unoptimized
           />
         </motion.div>
       </AnimatePresence>

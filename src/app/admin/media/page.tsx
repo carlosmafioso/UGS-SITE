@@ -122,9 +122,7 @@ export default function AdminMediaManager() {
                                                 alt="Estudantes a estudar na biblioteca"
                                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGduuINzUN_fC9iMsEg9lxcRiAdB2yDCKdkVgkwCHsVCXoo7g2HcspI5NGzotjuMl3bk6NQmlYL93_jIR8TqFCvgujePQlRnq3CCnriXy0nSoGvd79Yh663p-wXvJOoPUD7O3E5cdf4uSdZC1YTqA3nIwwTlLulHa9FCvB-Ir_N8cc47wezx1z5r6A2sVgsyO7TQWnQ2VuGM3i4othx8ZtQs-buf08qw2NPgnG_iCNkaoe8xZvr4ZquHC71fYVftQViuD_f23ypJt0"
-                                                fill
-                                                unoptimized
-                                            /> */}
+                                                fill                                            /> */}
                                             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3 backdrop-blur-[2px]">
                                                 <button className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-lg hover:text-primary hover:scale-105 transition-all">Alterar Imagem</button>
                                                 <button className="size-9 rounded-lg bg-white/20 text-white backdrop-blur-md flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all">
@@ -184,9 +182,7 @@ export default function AdminMediaManager() {
                                                     alt="Exterior do edifício da universidade"
                                                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcX0GS8ZmXPTwnD49P20N7QQzka2EMpzJ3K4Cm5QvmPTGDaKjHGXc13SbccKmCWIZsNRWz0pbWdJa4s2v_DLM6ls9KriR6hdOOO2kpRKCRDr7o3J1CZHPP5iOOk0aczLreeIumQzzmtiPRpJZCoNobo0ZlKPxkcQviP_-oVni7rPds_5LdTfZ6MvZGQ6lBvqrZ9kGezzTHQjuC8cNrvWeEtXgMs2BaWNpJ3VEENiwrG-qSbNFHwgr1sjhet_NBTJbsogBbz3zAykqx"
-                                                    fill
-                                                    unoptimized
-                                                /> */}
+                                                    fill                                                /> */}
                                                 <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
                                                     <button className="size-8 rounded bg-white text-slate-700 shadow-lg flex items-center justify-center hover:text-primary hover:scale-110 transition-all">
                                                         <span className="material-symbols-outlined text-sm">edit</span>
@@ -203,9 +199,7 @@ export default function AdminMediaManager() {
                                                     alt="Cerimónia de graduação"
                                                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQc5xrajnyZo2YRRDP8eJKg-9aFKTZrK12AqVyfr5NQencPHn_YnXKtKnAScUu6tJiqoRqC83JrqO2PaPURGvcdItZcGE7UIF3vhP2WXL3dIVtpAX3n3LYVERA5RUuclNsj8Quy5WevdivjE0m20iGx4LtJ8tkuUbbk1aInzxXB4P1rAE7kL3lwMWSxouoX4RjHcCpR-5uxMOBi-sACc9R93UTAwYRuA9L0OgjWw8SQ-nBHdJKZ4R0aBHm4Hqwqs8tYtxXSOLDxMPe"
-                                                    fill
-                                                    unoptimized
-                                                /> */}
+                                                    fill                                                /> */}
                                                 <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
                                                     <button className="size-8 rounded bg-white text-slate-700 shadow-lg flex items-center justify-center hover:text-primary hover:scale-110 transition-all">
                                                         <span className="material-symbols-outlined text-sm">edit</span>
@@ -221,9 +215,7 @@ export default function AdminMediaManager() {
                                                     alt="Laboratório de ciências"
                                                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazER5c5_ECksQx-f55sLa9mJkyH6nIKj7TRxMo9hzriJwvMsw4fVfqSsF4PuiVwcM5UZvKlvL1zWzwhPzyFDz9wTBHQHy7J2Dgi_xoGBeY0Xl1Gnc-HRFlTUFA1xryXKv5JbiVjnIj6NtEwlypIsXlDeIKMib0N-H-FGdGTKfmVXRfejbupII6ggMWxOIS7RJE42n1j9IO_Odg91kwrZjjvgZa0WcTjaEAznIg-BIf3POSqmKtyzglsdx3kIO9vgpKcUNmW-vEoNI"
-                                                    fill
-                                                    unoptimized
-                                                /> */}
+                                                    fill                                                /> */}
                                                 <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
                                                     <button className="size-8 rounded bg-white text-slate-700 shadow-lg flex items-center justify-center hover:text-primary hover:scale-110 transition-all">
                                                         <span className="material-symbols-outlined text-sm">edit</span>
@@ -264,9 +256,7 @@ export default function AdminMediaManager() {
                                                         alt="Multidão no seminário"
                                                         className="object-cover transition-transform duration-500 group-hover/news:scale-110"
                                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuClDsvxsSruRBTTYQlDaVg83NZXqwWY8qVFxhK-X9JDsGm4vyYzP2623SFbm8NslaW6NhW7OYMqoRwtBMqesu-3nK18RGF8UwetfyAhk6wY2KSUZTAQlIf3Vsnj27I8FHPLX1sy85Y6C9ZdmfhrS8kGXOJHOKdShL1trxucv77Sd5zjNMQvTVV4lrIKIqn8jv5hkYhgNxe22ScIRcxEPKT8EqaFyRgHAh7z31HARz6B9VpYwIrOU9DyDB-yGuxHr9kUicSDysWcNYPr"
-                                                        fill
-                                                        unoptimized
-                                                    /> */}
+                                                        fill                                                    /> */}
                                                     <div className="absolute inset-0 bg-black/0 hover:bg-black/20 flex items-center justify-center transition-colors">
                                                         <span className="material-symbols-outlined text-white opacity-0 group-hover/news:opacity-100 scale-75 group-hover/news:scale-100 transition-all">edit</span>
                                                     </div>
@@ -288,9 +278,7 @@ export default function AdminMediaManager() {
                                                         alt="Estudante a ler"
                                                         className="object-cover transition-transform duration-500 group-hover/news:scale-110"
                                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi6hrg5wkMTX3H2gRTxIakQL67fo7eK0NICMt_oHILVYxFS3Y7_c37f7MKtIGHCj6AXfC_pPTqehZBxUvFnXsdpOcbhOIh6z1t5VfAo-6VzwNvaE4Fyxf0r9Ghz2UCqiRSjudOMClq_4Cwa7Nt7r_aT9-MrWJTGY1SzgVmdLNcoL0tIXz8x9Jtg23QZWj23GRMsm0isYGE8vsEbjzTIpsDzKokiw8B-j03Rr_QRYZE7305zugNlaaW7oJbVeyu4uOOC2pquvrHltSQ"
-                                                        fill
-                                                        unoptimized
-                                                    /> */}
+                                                        fill                                                    /> */}
                                                     <div className="absolute inset-0 bg-black/0 hover:bg-black/20 flex items-center justify-center transition-colors">
                                                         <span className="material-symbols-outlined text-white opacity-0 group-hover/news:opacity-100 scale-75 group-hover/news:scale-100 transition-all">edit</span>
                                                     </div>
@@ -312,9 +300,7 @@ export default function AdminMediaManager() {
                                                         alt="Estudantes a conversar"
                                                         className="object-cover transition-transform duration-500 group-hover/news:scale-110"
                                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3YPvxkU4s7sLyxCfQfO9djk-As91t5E4AnyIXQcvMtWztLk-VT-hfAYU38cV1Z91kHuLEgLEG-7k6sGcVJhbLwhtWAgRMDkVtq01eUZk83GN8LlqxH9dGMliSxQYPs3gDS5If8bpYdOWuv8P0AmkjOlhxDcy0fXJDLgrDWHoCjdwqs1KIcf8PUH2ooocHBf4TBz1UZicSdyd1tmlaKaJunUE3uTyu8rgTchi2mHrYRCKcgDa1j8Yhc0x4Mj0jfm6MK_gcxg6m6vd2"
-                                                        fill
-                                                        unoptimized
-                                                    /> */}
+                                                        fill                                                    /> */}
                                                     <div className="absolute inset-0 bg-black/0 hover:bg-black/20 flex items-center justify-center transition-colors">
                                                         <span className="material-symbols-outlined text-white opacity-0 group-hover/news:opacity-100 scale-75 group-hover/news:scale-100 transition-all">edit</span>
                                                     </div>
