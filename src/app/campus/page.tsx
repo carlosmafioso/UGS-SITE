@@ -223,9 +223,9 @@ export default function CampusPage() {
                             </div>
                         </ScrollReveal>
 
-                        <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+                        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none hide-scrollbar gap-4 md:grid-cols-4 md:grid-rows-2 md:h-[600px] pb-4 md:pb-0">
                             {/* Slot 1 — Large left: Outorgas e Condecorações Académicas */}
-                            <ScrollReveal className="col-span-2 row-span-2 rounded-2xl overflow-hidden">
+                            <ScrollReveal className="min-w-[85vw] sm:min-w-[320px] h-[350px] md:min-w-0 md:h-auto snap-center shrink-0 md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden">
                                 <CampusSlot
                                     title={campusGallery[2].title}
                                     images={campusGallery[2].images}
@@ -237,7 +237,7 @@ export default function CampusPage() {
                             </ScrollReveal>
 
                             {/* Slot 2 — Top right small: Actividades Recreativas e Culturais */}
-                            <ScrollReveal className="col-span-1 row-span-1 rounded-2xl overflow-hidden" delay={0.1}>
+                            <ScrollReveal className="min-w-[85vw] sm:min-w-[320px] h-[350px] md:min-w-0 md:h-auto snap-center shrink-0 md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden" delay={0.1}>
                                 <CampusSlot
                                     title={campusGallery[1].title}
                                     images={campusGallery[1].images}
@@ -248,7 +248,7 @@ export default function CampusPage() {
                             </ScrollReveal>
 
                             {/* Slot 3 — Top far-right small: Palestras em Salão Nobre */}
-                            <ScrollReveal className="col-span-1 row-span-1 rounded-2xl overflow-hidden" delay={0.2}>
+                            <ScrollReveal className="min-w-[85vw] sm:min-w-[320px] h-[350px] md:min-w-0 md:h-auto snap-center shrink-0 md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden" delay={0.2}>
                                 <CampusSlot
                                     title={campusGallery[3].title}
                                     images={campusGallery[3].images}
@@ -259,7 +259,7 @@ export default function CampusPage() {
                             </ScrollReveal>
 
                             {/* Slot 4 — Bottom right small: Actividades Administrativas */}
-                            <ScrollReveal className="col-span-1 row-span-1 rounded-2xl overflow-hidden" delay={0.3}>
+                            <ScrollReveal className="min-w-[85vw] sm:min-w-[320px] h-[350px] md:min-w-0 md:h-auto snap-center shrink-0 md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden" delay={0.3}>
                                 <CampusSlot
                                     title={campusGallery[0].title}
                                     images={campusGallery[0].images}
@@ -270,7 +270,7 @@ export default function CampusPage() {
                             </ScrollReveal>
 
                             {/* Slot 5 — Bottom far-right small: Tribunal Simulado */}
-                            <ScrollReveal className="col-span-1 row-span-1 rounded-2xl overflow-hidden" delay={0.4}>
+                            <ScrollReveal className="min-w-[85vw] sm:min-w-[320px] h-[350px] md:min-w-0 md:h-auto snap-center shrink-0 md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden" delay={0.4}>
                                 <CampusSlot
                                     title={campusGallery[4].title}
                                     images={campusGallery[4].images}
