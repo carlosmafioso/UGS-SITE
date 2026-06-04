@@ -48,7 +48,7 @@ export default function Home() {
         <section className="py-10 sm:py-16 bg-background-light -mt-6 sm:-mt-10 relative z-30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <ScrollReveal delay={0.1} variant="scale-up">
+              <ScrollReveal delay={0} variant="scale-up" duration={0.55}>
                 <div className="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
                   <div className="size-14 bg-blue-50 text-institutional rounded-xl flex items-center justify-center group-hover:bg-institutional group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined text-3xl">lightbulb</span>
@@ -60,7 +60,7 @@ export default function Home() {
                   </p>
                 </div>
               </ScrollReveal>
-              <ScrollReveal delay={0.2} variant="scale-up">
+              <ScrollReveal delay={0.12} variant="scale-up" duration={0.55}>
                 <div className="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
                   <div className="size-14 bg-orange-50 text-primary rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined text-3xl">workspace_premium</span>
@@ -72,7 +72,7 @@ export default function Home() {
                   </p>
                 </div>
               </ScrollReveal>
-              <ScrollReveal delay={0.3} variant="scale-up">
+              <ScrollReveal delay={0.24} variant="scale-up" duration={0.55}>
                 <div className="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
                   <div className="size-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined text-3xl">diversity_3</span>

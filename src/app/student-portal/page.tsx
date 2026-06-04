@@ -15,9 +15,7 @@ export default function StudentPortalPage() {
     const [errorMessage, setErrorMessage] = useState("");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [activeTab, setActiveTab] = useState<"inicio" | "notas" | "calendario" | "pagamentos" | "servicos">("inicio");
-    
-    // Support Modal
-    const [showSupportModal, setShowSupportModal] = useState(false);
+
 
     // Document Requests State
     const [requests, setRequests] = useState([
@@ -180,12 +178,13 @@ export default function StudentPortalPage() {
                             </span>
                         </button>
 
+                        <Link href="/contacto">
                         <button 
-                            onClick={() => setShowSupportModal(true)}
                             className="bg-primary hover:bg-primary/95 text-white text-sm font-bold h-10 px-6 rounded-lg transition-all shadow-md shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0"
                         >
                             Suporte
                         </button>
+                        </Link>
                         
                         {isLoggedIn && (
                             <button
@@ -207,10 +206,10 @@ export default function StudentPortalPage() {
                         /* LOGIN ACCESS PANEL */
                         <motion.div
                             key="login-screen"
-                            initial={{ opacity: 0, y: 10 }}
+                            initial={{ opacity: 0, y: 24 }}
                             animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ duration: 0.3 }}
+                            exit={{ opacity: 0, y: -16 }}
+                            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
                             className="max-w-4xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center"
                         >
                             {/* Left Side: Login Form */}
@@ -354,10 +353,10 @@ export default function StudentPortalPage() {
                         /* LOGGED-IN: INTERACTIVE STUDENT DASHBOARD */
                         <motion.div
                             key="dashboard-screen"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                            initial={{ opacity: 0, scale: 0.99 }}
+                            animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
                             className="w-full h-full bg-white dark:bg-brand-navy transition-all overflow-hidden grid grid-cols-1 lg:grid-cols-12"
                         >
                             
@@ -481,7 +480,14 @@ export default function StudentPortalPage() {
 
                                     {/* TAB CONTENT: INICIO (OVERVIEW) */}
                                     {activeTab === "inicio" && (
-                                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-8">
+                                        <motion.div
+                                            key="tab-inicio"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+                                            className="space-y-8"
+                                        >
                                             {/* Summary Cards */}
                                             <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
                                                 <div className="p-5 bg-institutional/[0.02] dark:bg-ugs-blue border border-institutional/5 dark:border-white/5 rounded-2xl">
@@ -542,7 +548,14 @@ export default function StudentPortalPage() {
 
                                     {/* TAB CONTENT: NOTAS */}
                                     {activeTab === "notas" && (
-                                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
+                                        <motion.div
+                                            key="tab-notas"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+                                            className="space-y-6"
+                                        >
                                             <div className="overflow-x-auto rounded-2xl border border-institutional/5 dark:border-white/5 shadow-[0_2px_8px_rgba(30,42,74,0.04)]">
                                                 <table className="w-full text-left text-sm border-collapse">
                                                     <thead>
@@ -587,7 +600,14 @@ export default function StudentPortalPage() {
 
                                     {/* TAB CONTENT: CALENDARIO */}
                                     {activeTab === "calendario" && (
-                                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
+                                        <motion.div
+                                            key="tab-calendario"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+                                            className="space-y-6"
+                                        >
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                                 {examsMock.map((exam, idx) => (
                                                     <div key={idx} className="p-6 bg-institutional/[0.02] dark:bg-ugs-blue border border-institutional/5 dark:border-white/5 rounded-2xl relative group hover:border-primary/50 transition-all duration-300">
@@ -623,7 +643,14 @@ export default function StudentPortalPage() {
 
                                     {/* TAB CONTENT: PAGAMENTOS */}
                                     {activeTab === "pagamentos" && (
-                                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-8">
+                                        <motion.div
+                                            key="tab-pagamentos"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+                                            className="space-y-8"
+                                        >
                                             
                                             {/* Painel de Pagamento Atual */}
                                             <div className="p-8 bg-white dark:bg-brand-navy border border-institutional/5 dark:border-white/5 rounded-2xl shadow-[0_2px_8px_rgba(30,42,74,0.04)] flex flex-col lg:flex-row gap-8 lg:gap-12 items-start lg:items-center justify-between">
@@ -696,7 +723,14 @@ export default function StudentPortalPage() {
 
                                     {/* TAB CONTENT: SERVICOS */}
                                     {activeTab === "servicos" && (
-                                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                                        <motion.div
+                                            key="tab-servicos"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+                                            className="grid grid-cols-1 md:grid-cols-12 gap-8"
+                                        >
                                             {/* Form section */}
                                             <div className="md:col-span-6 bg-institutional/[0.02] dark:bg-ugs-blue p-6 md:p-8 rounded-2xl border border-institutional/5 dark:border-white/5">
                                                 <h4 className="font-bold text-lg text-institutional dark:text-white mb-5">Novo Requerimento</h4>

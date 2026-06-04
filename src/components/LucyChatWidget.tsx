@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Message {
     id: string;
@@ -169,16 +170,39 @@ export function LucyChatWidget() {
     return (
         <div className="fixed bottom-6 right-6 z-[9999] font-display">
             {/* Toggle Button */}
-            <button
+            <motion.button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`relative size-14 sm:size-16 rounded-full flex items-center justify-center text-white bg-gradient-to-r from-primary to-orange-500 hover:from-orange-600 hover:to-primary hover:scale-105 active:scale-95 transition-all shadow-[0_6px_24px_rgba(242,127,13,0.35)] hover:shadow-[0_8px_32px_rgba(242,127,13,0.5)] z-50 group`}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.93 }}
+                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                className="relative size-14 sm:size-16 rounded-full flex items-center justify-center text-white bg-gradient-to-r from-primary to-orange-500 shadow-[0_6px_24px_rgba(242,127,13,0.35)] hover:shadow-[0_8px_32px_rgba(242,127,13,0.5)] z-50 transition-shadow duration-300"
                 aria-label="Falar com a LUCY"
             >
-                {isOpen ? (
-                    <span className="material-symbols-outlined text-2xl sm:text-3xl transition-transform duration-300 rotate-90">close</span>
-                ) : (
-                    <span className="material-symbols-outlined text-2xl sm:text-3xl animate-pulse">smart_toy</span>
-                )}
+                <AnimatePresence mode="wait" initial={false}>
+                    {isOpen ? (
+                        <motion.span
+                            key="close"
+                            initial={{ rotate: -90, opacity: 0 }}
+                            animate={{ rotate: 0, opacity: 1 }}
+                            exit={{ rotate: 90, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="material-symbols-outlined text-2xl sm:text-3xl"
+                        >
+                            close
+                        </motion.span>
+                    ) : (
+                        <motion.span
+                            key="chat"
+                            initial={{ rotate: 90, opacity: 0 }}
+                            animate={{ rotate: 0, opacity: 1 }}
+                            exit={{ rotate: -90, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="material-symbols-outlined text-2xl sm:text-3xl"
+                        >
+                            smart_toy
+                        </motion.span>
+                    )}
+                </AnimatePresence>
 
                 {/* Pulse Notification Dot */}
                 {hasNewMessage && !isOpen && (
@@ -189,16 +213,20 @@ export function LucyChatWidget() {
                         </span>
                     </span>
                 )}
-            </button>
+            </motion.button>
 
-            {/* Chat Box Interface */}
-            <div
-                className={`absolute bottom-20 right-0 w-[350px] sm:w-[400px] h-[550px] max-h-[calc(100vh-140px)] max-w-[calc(100vw-32px)] bg-white/95 backdrop-blur-md border border-slate-200/60 rounded-[2rem] shadow-[0_20px_50px_rgba(15,23,42,0.15)] flex flex-col overflow-hidden transition-all duration-300 origin-bottom-right ${
-                    isOpen 
-                        ? "opacity-100 scale-100 pointer-events-auto" 
-                        : "opacity-0 scale-75 pointer-events-none translate-y-10"
-                }`}
-            >
+            {/* Chat Box Interface — animated with Framer Motion */}
+            <AnimatePresence>
+                {isOpen && (
+                <motion.div
+                    key="chat-panel"
+                    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.85, y: 16 }}
+                    transition={{ type: "spring", stiffness: 350, damping: 28 }}
+                    style={{ originX: 1, originY: 1 }}
+                    className="absolute bottom-20 right-0 w-[350px] sm:w-[400px] h-[550px] max-h-[calc(100vh-140px)] max-w-[calc(100vw-32px)] bg-white/95 backdrop-blur-md border border-slate-200/60 rounded-[2rem] shadow-[0_20px_50px_rgba(15,23,42,0.15)] flex flex-col overflow-hidden"
+                >
                 {/* Header */}
                 <div className="bg-institutional text-white px-6 py-4 flex items-center justify-between border-b border-white/10 shrink-0">
                     <div className="flex items-center gap-3.5">
@@ -258,15 +286,28 @@ export function LucyChatWidget() {
                     ))}
 
                     {/* Typing Indicator */}
-                    {isTyping && (
-                        <div className="flex justify-start">
-                            <div className="bg-white border border-slate-100 rounded-2xl rounded-tl-none px-4.5 py-3 shadow-sm flex items-center gap-1.5">
-                                <span className="size-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></span>
-                                <span className="size-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></span>
-                                <span className="size-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></span>
-                            </div>
-                        </div>
-                    )}
+                    <AnimatePresence>
+                        {isTyping && (
+                            <motion.div
+                                key="typing"
+                                initial={{ opacity: 0, y: 8 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 4 }}
+                                transition={{ duration: 0.2 }}
+                                className="flex justify-start"
+                            >
+                                <div className="bg-white border border-slate-100 rounded-2xl rounded-tl-none px-4 py-3 shadow-sm flex items-center gap-1.5">
+                                    {[0, 150, 300].map((delay, i) => (
+                                        <span
+                                            key={i}
+                                            className="size-2 bg-primary rounded-full animate-bounce"
+                                            style={{ animationDelay: `${delay}ms`, animationDuration: "0.9s" }}
+                                        />
+                                    ))}
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                     <div ref={messageEndRef} />
                 </div>
 
@@ -315,7 +356,9 @@ export function LucyChatWidget() {
                         </button>
                     </div>
                 </form>
-            </div>
+                </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }

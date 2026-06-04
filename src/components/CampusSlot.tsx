@@ -18,15 +18,18 @@ export function CampusSlot({ title, images, interval = 6000, delay = 0, classNam
     useEffect(() => {
         if (images.length <= 1) return;
 
-        // Start cycling after staggered delay
+        let intervalId: ReturnType<typeof setInterval>;
+        
         const startTimer = setTimeout(() => {
-            const timer = setInterval(() => {
+            intervalId = setInterval(() => {
                 setIndex((prev) => (prev + 1) % images.length);
             }, interval);
-            return () => clearInterval(timer);
         }, delay);
 
-        return () => clearTimeout(startTimer);
+        return () => {
+            clearTimeout(startTimer);
+            if (intervalId) clearInterval(intervalId);
+        };
     }, [images.length, interval, delay]);
 
     const activeImage = images[index];

@@ -49,9 +49,9 @@ export default function Candidatura() {
   ];
 
   const slideVariants = {
-      enter: (dir: number) => ({ x: dir > 0 ? 20 : -20, opacity: 0 }),
+      enter: (dir: number) => ({ x: dir > 0 ? 40 : -40, opacity: 0 }),
       center: { zIndex: 1, x: 0, opacity: 1 },
-      exit: (dir: number) => ({ zIndex: 0, x: dir < 0 ? 20 : -20, opacity: 0 })
+      exit: (dir: number) => ({ zIndex: 0, x: dir < 0 ? 40 : -40, opacity: 0 })
   };
 
   return (
@@ -143,7 +143,7 @@ export default function Candidatura() {
                                 initial="enter"
                                 animate="center"
                                 exit="exit"
-                                transition={{ duration: 0.25, ease: "easeInOut" }}
+                                transition={{ duration: 0.32, ease: [0.25, 0.46, 0.45, 0.94] }}
                             >
                                 {/* Step 1: Dados Pessoais */}
                                 {currentStep === 1 && (
@@ -357,7 +357,7 @@ export default function Candidatura() {
             <motion.div 
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4 }}
+                transition={{ type: "spring", stiffness: 280, damping: 24 }}
                 className="max-w-xl w-full mx-auto bg-white rounded-3xl shadow-2xl shadow-slate-200/50 border border-slate-100 p-10 text-center"
             >
                 <motion.div 
