@@ -361,8 +361,8 @@ export default function StudentPortalPage() {
                         >
                             
                             {/* Dashboard Left Sidebar */}
-                            <div className="lg:col-span-3 bg-institutional/[0.02] dark:bg-ugs-blue p-8 border-r border-institutional/5 dark:border-white/5 flex flex-col justify-between">
-                                <div className="space-y-8">
+                            <div className="lg:col-span-3 bg-institutional/[0.02] dark:bg-ugs-blue p-5 sm:p-6 lg:p-8 border-b lg:border-b-0 lg:border-r border-institutional/5 dark:border-white/5 flex flex-col justify-between">
+                                <div className="space-y-6 lg:space-y-8">
                                     
                                     {/* Student Card */}
                                     <div className="flex items-center gap-4 p-4 bg-white dark:bg-brand-navy border border-institutional/5 dark:border-white/5 rounded-2xl shadow-[0_2px_8px_rgba(30,42,74,0.04)]">
@@ -378,7 +378,7 @@ export default function StudentPortalPage() {
                                     </div>
 
                                     {/* Navigation Tabs */}
-                                    <nav className="flex flex-col gap-2">
+                                    <nav className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 snap-x hide-scrollbar">
                                         <button
                                             onClick={() => setActiveTab("inicio")}
                                             className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all text-left ${
@@ -388,7 +388,7 @@ export default function StudentPortalPage() {
                                             }`}
                                         >
                                             <span className="material-symbols-outlined text-[20px]">dashboard</span>
-                                            Início
+                                            <span className="whitespace-nowrap">Início</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("notas")}
@@ -399,7 +399,7 @@ export default function StudentPortalPage() {
                                             }`}
                                         >
                                             <span className="material-symbols-outlined text-[20px]">grade</span>
-                                            Notas e Faltas
+                                            <span className="whitespace-nowrap">Notas e Faltas</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("calendario")}
@@ -410,7 +410,7 @@ export default function StudentPortalPage() {
                                             }`}
                                         >
                                             <span className="material-symbols-outlined text-[20px]">calendar_month</span>
-                                            Calendário Académico
+                                            <span className="whitespace-nowrap">Calendário Académico</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("pagamentos")}
@@ -421,7 +421,7 @@ export default function StudentPortalPage() {
                                             }`}
                                         >
                                             <span className="material-symbols-outlined text-[20px]">account_balance_wallet</span>
-                                            Mensalidades e Pagamentos
+                                            <span className="whitespace-nowrap">Mensalidades e Pagamentos</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("servicos")}
@@ -432,7 +432,7 @@ export default function StudentPortalPage() {
                                             }`}
                                         >
                                             <span className="material-symbols-outlined text-[20px]">contact_support</span>
-                                            Serviços e Pedidos
+                                            <span className="whitespace-nowrap">Serviços e Pedidos</span>
                                         </button>
                                     </nav>
                                 </div>
@@ -458,7 +458,7 @@ export default function StudentPortalPage() {
                             </div>
 
                             {/* Dashboard Right Panel */}
-                            <div className="lg:col-span-9 p-8 lg:p-12 flex flex-col justify-between overflow-y-auto">
+                            <div className="lg:col-span-9 p-5 sm:p-6 lg:p-12 flex flex-col justify-between overflow-y-auto">
                                 
                                 <div className="flex-1 max-w-6xl">
                                     {/* Dynamic Panel Header */}
@@ -556,8 +556,8 @@ export default function StudentPortalPage() {
                                             transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
                                             className="space-y-6"
                                         >
-                                            <div className="overflow-x-auto rounded-2xl border border-institutional/5 dark:border-white/5 shadow-[0_2px_8px_rgba(30,42,74,0.04)]">
-                                                <table className="w-full text-left text-sm border-collapse">
+                                            <div className="overflow-x-auto rounded-2xl border border-institutional/5 dark:border-white/5 shadow-[0_2px_8px_rgba(30,42,74,0.04)] pb-2 lg:pb-0">
+                                                <table className="w-full min-w-[700px] text-left text-sm border-collapse">
                                                     <thead>
                                                         <tr className="bg-institutional/[0.02] dark:bg-ugs-blue border-b border-institutional/5 dark:border-white/5 text-institutional/60 dark:text-white/60 font-bold uppercase tracking-wider text-[10px] md:text-xs">
                                                             <th className="py-4 px-4 md:px-6">Cód</th>

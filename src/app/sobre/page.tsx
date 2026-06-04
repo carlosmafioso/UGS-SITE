@@ -18,14 +18,13 @@ export default function SobrePage() {
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/90 via-institutional/60 to-institutional/30 z-10"></div>
                         <div
-                            className="w-full h-full bg-center bg-cover animate-ken-burns"
+                            className="w-full h-full bg-center bg-cover"
                             style={{
                                 backgroundImage: "url('/images/sobre-hero-bg.jpg')",
                             }}
                         ></div>
                     </div>
                     <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full pt-6 sm:pt-10">
-                        <ScrollReveal variant="fade-down">
                             <div className="flex items-center gap-2 text-sm text-slate-300 mb-4 font-medium">
                                 <Link href="/" className="hover:text-white">
                                     Início
@@ -42,7 +41,6 @@ export default function SobrePage() {
                                 Construindo um legado de conhecimento, inovação e
                                 responsabilidade social em Angola desde 2004.
                             </p>
-                        </ScrollReveal>
                     </div>
                 </section>
 
