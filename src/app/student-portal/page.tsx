@@ -381,57 +381,57 @@ export default function StudentPortalPage() {
                                     <nav className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 snap-x hide-scrollbar">
                                         <button
                                             onClick={() => setActiveTab("inicio")}
-                                            className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all text-left ${
+                                            className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-bold transition-all text-left ${
                                                 activeTab === "inicio"
                                                     ? "bg-institutional text-white shadow-[0_2px_8px_rgba(30,42,74,0.04)] shadow-institutional/20"
                                                     : "text-institutional/70 dark:text-white/70 hover:bg-institutional/10 dark:hover:bg-white/10"
                                             }`}
                                         >
-                                            <span className="material-symbols-outlined text-[20px]">dashboard</span>
+                                            <span className="material-symbols-outlined text-[18px]">dashboard</span>
                                             <span className="whitespace-nowrap">Início</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("notas")}
-                                            className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all text-left ${
+                                            className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-bold transition-all text-left ${
                                                 activeTab === "notas"
                                                     ? "bg-institutional text-white shadow-[0_2px_8px_rgba(30,42,74,0.04)] shadow-institutional/20"
                                                     : "text-institutional/70 dark:text-white/70 hover:bg-institutional/10 dark:hover:bg-white/10"
                                             }`}
                                         >
-                                            <span className="material-symbols-outlined text-[20px]">grade</span>
+                                            <span className="material-symbols-outlined text-[18px]">grade</span>
                                             <span className="whitespace-nowrap">Notas e Faltas</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("calendario")}
-                                            className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all text-left ${
+                                            className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-bold transition-all text-left ${
                                                 activeTab === "calendario"
                                                     ? "bg-institutional text-white shadow-[0_2px_8px_rgba(30,42,74,0.04)] shadow-institutional/20"
                                                     : "text-institutional/70 dark:text-white/70 hover:bg-institutional/10 dark:hover:bg-white/10"
                                             }`}
                                         >
-                                            <span className="material-symbols-outlined text-[20px]">calendar_month</span>
+                                            <span className="material-symbols-outlined text-[18px]">calendar_month</span>
                                             <span className="whitespace-nowrap">Calendário Académico</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("pagamentos")}
-                                            className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all text-left ${
+                                            className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-bold transition-all text-left ${
                                                 activeTab === "pagamentos"
                                                     ? "bg-institutional text-white shadow-[0_2px_8px_rgba(30,42,74,0.04)] shadow-institutional/20"
                                                     : "text-institutional/70 dark:text-white/70 hover:bg-institutional/10 dark:hover:bg-white/10"
                                             }`}
                                         >
-                                            <span className="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+                                            <span className="material-symbols-outlined text-[18px]">account_balance_wallet</span>
                                             <span className="whitespace-nowrap">Mensalidades e Pagamentos</span>
                                         </button>
                                         <button
                                             onClick={() => setActiveTab("servicos")}
-                                            className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-bold transition-all text-left ${
+                                            className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-bold transition-all text-left ${
                                                 activeTab === "servicos"
                                                     ? "bg-institutional text-white shadow-[0_2px_8px_rgba(30,42,74,0.04)] shadow-institutional/20"
                                                     : "text-institutional/70 dark:text-white/70 hover:bg-institutional/10 dark:hover:bg-white/10"
                                             }`}
                                         >
-                                            <span className="material-symbols-outlined text-[20px]">contact_support</span>
+                                            <span className="material-symbols-outlined text-[18px]">contact_support</span>
                                             <span className="whitespace-nowrap">Serviços e Pedidos</span>
                                         </button>
                                     </nav>
