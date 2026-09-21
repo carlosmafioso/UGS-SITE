@@ -11,16 +11,103 @@ interface Message {
     timestamp: Date;
 }
 
+let messageSequence = 0;
+function createMessage(sender: "user" | "lucy", text: string): Message {
+    messageSequence += 1;
+    return {
+        id: `msg-${messageSequence}-${sender}`,
+        sender,
+        text,
+        timestamp: new Date()
+    };
+}
+
+const INITIAL_MESSAGES: Message[] = [
+    {
+        id: "welcome",
+        sender: "lucy",
+        text: "Olá! Sou a **LUCY**, a assistente inteligente da UGS. 🤖✨\n\nEstou aqui para ajudá-lo com qualquer dúvida sobre inscrições, cursos, propinas, horários ou vida no campus.\n\nComo posso ser útil hoje?",
+        timestamp: new Date()
+    }
+];
+
+function getLucyResponse(input: string): string {
+    const text = input.toLowerCase();
+
+    // 1. CREATOR / IDENTITY
+    if (text.includes("quem") && (text.includes("criou") || text.includes("lucy") || text.includes("te fez") || text.includes("desenvolveu"))) {
+        return "Fui desenvolvida pelo **Departamento de Tecnologia e Inovação da AEUGS** (Associação de Estudantes da Universidade Gregório Semedo) para revolucionar o suporte aos nossos estudantes e candidatos. Sou fruto da criatividade e dedicação académica dos nossos próprios alunos! 💻🔥";
+    }
+
+    // 2. COURSES / CURSOS
+    if (text.includes("curso") || text.includes("licenciatura") || text.includes("mestrado") || text.includes("estudar")) {
+        return "A **UGS** oferece cursos de excelência reconhecidos pelo Ministério do Ensino Superior:\n\n" +
+            "**Licenciaturas (4 Anos):**\n" +
+            "• Direito ⚖️\n" +
+            "• Engenharia Informática 💻\n" +
+            "• Informática de Gestão Financeira 📈\n" +
+            "• Organização e Gestão de Empresas 👔\n" +
+            "• Gestão Comercial e Marketing 📊\n" +
+            "• Gestão de Recursos Humanos 👥\n" +
+            "• Comunicação Empresarial e Línguas 🗣️\n" +
+            "• Ciências Políticas e Administração do Território 🗺️\n\n" +
+            "**Mestrados (2 Anos):**\n" +
+            "• Direito, Engenharia Informática, Gestão de Empresas, e Recursos Humanos.\n\n" +
+            "Qual destas áreas lhe desperta mais interesse?";
+    }
+
+    // 3. CANDIDATURA / INSCRIÇÃO
+    if (text.includes("candidatura") || text.includes("inscre") || text.includes("inscri") || text.includes("matrícula") || text.includes("documento") || text.includes("exame")) {
+        return "As **candidaturas estão abertas** para o ano letivo 2026/27! 📝🌟\n\n" +
+            "**Documentos Necessários:**\n" +
+            "1. Certificado de Habilitações Literárias original (do Ensino Médio para Licenciatura)\n" +
+            "2. Cópia do B.I. (Bilhete de Identidade)\n" +
+            "3. 2 Fotografias tipo passe recentes\n" +
+            "4. Atestado Médico e Talão de Depósito da taxa de inscrição\n\n" +
+            "Pode candidatar-se diretamente na nossa secretaria física ou online clicando no botão **'Candidate-se Agora'** no menu superior.";
+    }
+
+    // 4. PROPINAS / MENSALIDADE
+    if (text.includes("propina") || text.includes("mensalidade") || text.includes("custo") || text.includes("pagar") || text.includes("preço") || text.includes("valor")) {
+        return "O valor das propinas varia de acordo com o curso e o grau académico (Licenciatura ou Mestrado).\n\n" +
+            "Para informações financeiras exatas e atualizadas, recomendo que fale diretamente com os nossos **Serviços Financeiros**:\n" +
+            "• 📞 **Tel**: 936 563 545\n" +
+            "• 📧 **E-mail**: online.sf@ugs.edu.ao\n" +
+            "• 🕒 **Horário**: Seg-Sex: 08h30-21h00 | Sáb: 08h30-12h00\n\n" +
+            "Eles poderão fornecer-lhe a tabela de propinas detalhada do curso que pretende! 👍";
+    }
+
+    // 5. CONTACTS / CONTACTOS
+    if (text.includes("contacto") || text.includes("telefone") || text.includes("email") || text.includes("secretaria") || text.includes("horário") || text.includes("seg-sex") || text.includes("ligar")) {
+        return "Aqui estão os contactos oficiais dos nossos departamentos da **UGS**:\n\n" +
+            "🏢 **Secretaria Geral**\n" +
+            "• 📞 Tel: 931 213 054\n" +
+            "• 📧 E-mail: secgeral@ugs.edu.ao\n" +
+            "• 🕒 Horário: Seg-Sex: 08:00 - 21:00\n\n" +
+            "💰 **Serviços Financeiros**\n" +
+            "• 📞 Tel: 936 563 545\n" +
+            "• 📧 E-mail: online.sf@ugs.edu.ao\n" +
+            "• 🕒 Horário: Seg-Sex: 08:30-21:00 | Sáb: 08:30-12:00\n\n" +
+            "📚 **Serviços Académicos**\n" +
+            "• 📧 E-mail: servacademico@ugs.edu.ao\n" +
+            "• 🕒 Horário: Seg-Sex: 08:00 - 17:00\n\n" +
+            "👑 **Reitoria Geral**\n" +
+            "• 📞 Tel: 943 993 892\n" +
+            "• 📧 E-mail: reitoria.geral@ugs.edu.ao";
+    }
+
+    // 6. GREETINGS
+    if (text.includes("olá") || text.includes("oi") || text.includes("bom dia") || text.includes("boa tarde") || text.includes("boa noite") || text.includes("sauda")) {
+        return "Olá! 😊 Que bom falar consigo. Estou disponível para responder a tudo sobre a Universidade Gregório Semedo. \n\nQual é a sua dúvida de hoje?";
+    }
+
+    // DEFAULT HELP
+    return "Percebo! Como assistente virtual inteligente da UGS, posso dar-lhe detalhes rápidos sobre a oferta formativa, contactos da secretaria ou passos para candidaturas. 🎓✨\n\nPoderia reformular a sua pergunta ou escolher uma das sugestões rápidas abaixo?";
+}
+
 export function LucyChatWidget() {
     const [isOpen, setIsOpen] = useState(false);
-    const [messages, setMessages] = useState<Message[]>([
-        {
-            id: "welcome",
-            sender: "lucy",
-            text: "Olá! Sou a **LUCY**, a assistente inteligente da UGS. 🤖✨\n\nEstou aqui para ajudá-lo com qualquer dúvida sobre inscrições, cursos, propinas, horários ou vida no campus.\n\nComo posso ser útil hoje?",
-            timestamp: new Date()
-        }
-    ]);
+    const [messages, setMessages] = useState<Message[]>(INITIAL_MESSAGES);
     const [inputValue, setInputValue] = useState("");
     const [isTyping, setIsTyping] = useState(false);
     const [hasNewMessage, setHasNewMessage] = useState(true);
@@ -34,12 +121,40 @@ export function LucyChatWidget() {
         }
     }, [messages, isTyping]);
 
-    // Handle initial alert/pulse badge
+    // Handle global trigger events to open Lucy Chat
     useEffect(() => {
-        if (isOpen) {
+        const handleOpenEvent = (e: Event) => {
+            const customEvent = e as CustomEvent<{ prompt?: string }>;
+            setIsOpen(true);
             setHasNewMessage(false);
-        }
-    }, [isOpen]);
+            if (customEvent.detail?.prompt) {
+                const prompt = customEvent.detail.prompt;
+                setTimeout(() => {
+                    const userMsg = createMessage("user", prompt);
+                    setMessages((prev) => [...prev, userMsg]);
+                    setIsTyping(true);
+                    setTimeout(() => {
+                        const replyText = getLucyResponse(prompt);
+                        const lucyMsg = createMessage("lucy", replyText);
+                        setMessages((prev) => [...prev, lucyMsg]);
+                        setIsTyping(false);
+                    }, 1000);
+                }, 300);
+            }
+        };
+
+        window.addEventListener("open-lucy-chat", handleOpenEvent);
+        return () => window.removeEventListener("open-lucy-chat", handleOpenEvent);
+    }, []);
+
+    const handleToggle = () => {
+        setIsOpen((prev) => {
+            if (!prev) {
+                setHasNewMessage(false);
+            }
+            return !prev;
+        });
+    };
 
     const quickQuestions = [
         { label: "🎓 Cursos Oferecidos", query: "Quais os cursos oferecidos na UGS?" },
@@ -48,89 +163,10 @@ export function LucyChatWidget() {
         { label: "🤖 Quem é a LUCY?", query: "Quem é a LUCY IA e quem a criou?" }
     ];
 
-    const getLucyResponse = (input: string): string => {
-        const text = input.toLowerCase();
-
-        // 1. CREATOR / IDENTITY
-        if (text.includes("quem") && (text.includes("criou") || text.includes("lucy") || text.includes("te fez") || text.includes("desenvolveu"))) {
-            return "Fui desenvolvida pelo **Departamento de Tecnologia e Inovação da AEUGS** (Associação de Estudantes da Universidade Gregório Semedo) para revolucionar o suporte aos nossos estudantes e candidatos. Sou fruto da criatividade e dedicação académica dos nossos próprios alunos! 💻🔥";
-        }
-
-        // 2. COURSES / CURSOS
-        if (text.includes("curso") || text.includes("licenciatura") || text.includes("mestrado") || text.includes("estudar")) {
-            return "A **UGS** oferece cursos de excelência reconhecidos pelo Ministério do Ensino Superior:\n\n" +
-                "**Licenciaturas (4 Anos):**\n" +
-                "• Direito ⚖️\n" +
-                "• Engenharia Informática 💻\n" +
-                "• Informática de Gestão Financeira 📈\n" +
-                "• Organização e Gestão de Empresas 👔\n" +
-                "• Gestão Comercial e Marketing 📊\n" +
-                "• Gestão de Recursos Humanos 👥\n" +
-                "• Comunicação Empresarial e Línguas 🗣️\n" +
-                "• Ciências Políticas e Administração do Território 🗺️\n\n" +
-                "**Mestrados (2 Anos):**\n" +
-                "• Direito, Engenharia Informática, Gestão de Empresas, e Recursos Humanos.\n\n" +
-                "Qual destas áreas lhe desperta mais interesse?";
-        }
-
-        // 3. CANDIDATURA / INSCRIÇÃO
-        if (text.includes("candidatura") || text.includes("inscre") || text.includes("inscri") || text.includes("matrícula") || text.includes("documento") || text.includes("exame")) {
-            return "As **candidaturas estão abertas** para o ano letivo 2026/27! 📝🌟\n\n" +
-                "**Documentos Necessários:**\n" +
-                "1. Certificado de Habilitações Literárias original (do Ensino Médio para Licenciatura)\n" +
-                "2. Cópia do B.I. (Bilhete de Identidade)\n" +
-                "3. 2 Fotografias tipo passe recentes\n" +
-                "4. Atestado Médico e Talão de Depósito da taxa de inscrição\n\n" +
-                "Pode candidatar-se diretamente na nossa secretaria física ou online clicando no botão **'Candidate-se Agora'** no menu superior.";
-        }
-
-        // 4. PROPINAS / MENSALIDADE
-        if (text.includes("propina") || text.includes("mensalidade") || text.includes("custo") || text.includes("pagar") || text.includes("preço") || text.includes("valor")) {
-            return "O valor das propinas varia de acordo com o curso e o grau académico (Licenciatura ou Mestrado).\n\n" +
-                "Para informações financeiras exatas e atualizadas, recomendo que fale diretamente com os nossos **Serviços Financeiros**:\n" +
-                "• 📞 **Tel**: 936 563 545\n" +
-                "• 📧 **E-mail**: online.sf@ugs.edu.ao\n" +
-                "• 🕒 **Horário**: Seg-Sex: 08h30-21h00 | Sáb: 08h30-12h00\n\n" +
-                "Eles poderão fornecer-lhe a tabela de propinas detalhada do curso que pretende! 👍";
-        }
-
-        // 5. CONTACTS / CONTACTOS
-        if (text.includes("contacto") || text.includes("telefone") || text.includes("email") || text.includes("secretaria") || text.includes("horário") || text.includes("seg-sex") || text.includes("ligar")) {
-            return "Aqui estão os contactos oficiais dos nossos departamentos da **UGS**:\n\n" +
-                "🏢 **Secretaria Geral**\n" +
-                "• 📞 Tel: 931 213 054\n" +
-                "• 📧 E-mail: secgeral@ugs.edu.ao\n" +
-                "• 🕒 Horário: Seg-Sex: 08:00 - 21:00\n\n" +
-                "💰 **Serviços Financeiros**\n" +
-                "• 📞 Tel: 936 563 545\n" +
-                "• 📧 E-mail: online.sf@ugs.edu.ao\n" +
-                "• 🕒 Horário: Seg-Sex: 08:30-21:00 | Sáb: 08:30-12:00\n\n" +
-                "📚 **Serviços Académicos**\n" +
-                "• 📧 E-mail: servacademico@ugs.edu.ao\n" +
-                "• 🕒 Horário: Seg-Sex: 08:00 - 17:00\n\n" +
-                "👑 **Reitoria Geral**\n" +
-                "• 📞 Tel: 943 993 892\n" +
-                "• 📧 E-mail: reitoria.geral@ugs.edu.ao";
-        }
-
-        // 6. GREETINGS
-        if (text.includes("olá") || text.includes("oi") || text.includes("bom dia") || text.includes("boa tarde") || text.includes("boa noite") || text.includes("sauda")) {
-            return "Olá! 😊 Que bom falar consigo. Estou disponível para responder a tudo sobre a Universidade Gregório Semedo. \n\nQual é a sua dúvida de hoje?";
-        }
-
-        // DEFAULT HELP
-        return "Percebo! Como assistente virtual inteligente da UGS, posso dar-lhe detalhes rápidos sobre a oferta formativa, contactos da secretaria ou passos para candidaturas. 🎓✨\n\nPoderia reformular a sua pergunta ou escolher uma das sugestões rápidas abaixo?";
-    };
-
     const handleSendMessage = (text: string) => {
         if (!text.trim()) return;
 
-        const userMsg: Message = {
-            id: `msg-${Date.now()}-user`,
-            sender: "user",
-            text: text,
-            timestamp: new Date()
-        };
+        const userMsg = createMessage("user", text);
 
         setMessages((prev) => [...prev, userMsg]);
         setInputValue("");
@@ -139,12 +175,7 @@ export function LucyChatWidget() {
         // Simulate AI thinking and typing
         setTimeout(() => {
             const replyText = getLucyResponse(text);
-            const lucyMsg: Message = {
-                id: `msg-${Date.now()}-lucy`,
-                sender: "lucy",
-                text: replyText,
-                timestamp: new Date()
-            };
+            const lucyMsg = createMessage("lucy", replyText);
             setMessages((prev) => [...prev, lucyMsg]);
             setIsTyping(false);
         }, 1000);
@@ -171,7 +202,7 @@ export function LucyChatWidget() {
         <div className="fixed bottom-6 right-6 z-[9999] font-display">
             {/* Toggle Button */}
             <motion.button
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={handleToggle}
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.93 }}
                 transition={{ type: "spring", stiffness: 400, damping: 20 }}
@@ -236,6 +267,7 @@ export function LucyChatWidget() {
                                 src="/images/lucy.png"
                                 alt="LUCY"
                                 fill
+                                sizes="40px"
                                 className="object-cover"
                             />
                         </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -9,7 +10,14 @@ export default function AEUGSPage() {
             <main>
                 <section className="relative w-full h-[420px] sm:h-[520px] md:h-[640px] flex items-center overflow-hidden bg-institutional">
                     <div className="absolute inset-0 z-0">
-                        <div className="w-full h-full bg-center bg-cover animate-ken-burns" style={{ backgroundImage: "url('/images/sobre-hero-bg.jpg')" }}></div>
+                        <Image
+                            src="/images/sobre-hero-bg.jpg"
+                            alt="AEUGS Hero"
+                            fill
+                            priority
+                            sizes="100vw"
+                            className="object-cover animate-ken-burns"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 sm:from-institutional/90 via-institutional/60 sm:via-institutional/40 to-transparent pointer-events-none z-10"></div>
                     </div>
                     <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full">
@@ -70,10 +78,13 @@ export default function AEUGSPage() {
                                 <ScrollReveal variant="scale-up">
                                     <div className="relative">
                                         <div className="absolute inset-0 bg-primary/10 blur-2xl rounded-full scale-105 pointer-events-none"></div>
-                                        <img 
+                                        <Image 
                                             src="/images/aeugs-logo.png" 
                                             alt="Logótipo AEUGS" 
+                                            width={360}
+                                            height={360}
                                             className="relative z-10 max-w-[280px] md:max-w-[360px] w-full h-auto drop-shadow-xl animate-float"
+                                            priority
                                         />
                                     </div>
                                 </ScrollReveal>
@@ -146,7 +157,13 @@ export default function AEUGSPage() {
                                 <ScrollReveal key={idx} delay={0.1 * (idx + 1)} variant="scale-up">
                                     <div className="group cursor-pointer rounded-3xl bg-slate-50 p-3 border border-slate-100 hover:border-primary/30 transition-colors shadow-sm hover:shadow-xl">
                                         <div className="aspect-[4/5] rounded-2xl overflow-hidden relative mb-4 bg-slate-200">
-                                            <img className="w-full h-full object-cover object-top transition-transform duration-[1000ms] ease-out group-hover:scale-110" alt={member.name} src={member.img} />
+                                            <Image 
+                                                className="object-cover object-top transition-transform duration-[1000ms] ease-out group-hover:scale-110" 
+                                                alt={member.name} 
+                                                src={member.img}
+                                                fill
+                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                            />
                                             
                                             {/* Sliding Overlay */}
                                             <div className="absolute inset-0 bg-gradient-to-t from-institutional/90 via-institutional/40 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex flex-col justify-end p-6">

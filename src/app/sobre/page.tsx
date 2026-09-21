@@ -17,12 +17,14 @@ export default function SobrePage() {
                 <section className="relative w-full h-[240px] sm:h-[280px] md:h-[320px] flex items-center bg-institutional">
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/90 via-institutional/60 to-institutional/30 z-10"></div>
-                        <div
-                            className="w-full h-full bg-center bg-cover"
-                            style={{
-                                backgroundImage: "url('/images/sobre-hero-bg.jpg')",
-                            }}
-                        ></div>
+                        <Image
+                            src="/images/sobre-hero-bg.jpg"
+                            alt="Sobre a UGS"
+                            fill
+                            priority
+                            sizes="100vw"
+                            className="object-cover"
+                        />
                     </div>
                     <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full pt-6 sm:pt-10">
                             <div className="flex items-center gap-2 text-sm text-slate-300 mb-4 font-medium">
@@ -312,7 +314,9 @@ export default function SobrePage() {
                                                             <Image
                                                                 src={person.img}
                                                                 alt={person.name}
-                                                                fill                                                                className="object-cover"
+                                                                fill
+                                                                sizes="80px"
+                                                                className="object-cover"
                                                             />
                                                         </div>
                                                         <div>
@@ -412,7 +416,9 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill                                                                    className="object-cover object-top"
+                                                                    fill
+                                                                    sizes="80px"
+                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>
@@ -455,7 +461,9 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill                                                                    className="object-cover object-top"
+                                                                    fill
+                                                                    sizes="80px"
+                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>
@@ -498,7 +506,9 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill                                                                    className="object-cover object-top"
+                                                                    fill
+                                                                    sizes="80px"
+                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>
@@ -531,7 +541,9 @@ export default function SobrePage() {
                                                                 <Image
                                                                     src={person.img}
                                                                     alt={person.name}
-                                                                    fill                                                                    className="object-cover object-top"
+                                                                    fill
+                                                                    sizes="80px"
+                                                                    className="object-cover object-top"
                                                                 />
                                                             </div>
                                                             <div>

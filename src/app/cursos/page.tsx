@@ -270,7 +270,9 @@ function CourseCarousel({ title, coursesList }: { title: string, coursesList: ty
                                     <Image
                                         src={course.img}
                                         alt={course.title}
-                                        fill                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        fill
+                                        sizes="(max-width: 768px) 300px, (max-width: 1024px) 360px, 400px"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
                                     <div className="absolute top-4 left-4">
                                         <span className="bg-white/90 backdrop-blur-md text-institutional text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest shadow-sm">
@@ -339,14 +341,15 @@ export default function CursosPage() {
                 {/* Banner Hero */}
                 <section className="relative w-full h-[400px] flex items-center bg-institutional overflow-hidden">
                     <div className="absolute inset-0 z-0">
+                        <Image
+                            src="/images/cursos.png"
+                            alt="Oferta Académica UGS"
+                            fill
+                            priority
+                            sizes="100vw"
+                            className="object-cover animate-ken-burns"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/80 to-institutional/40 z-10"></div>
-                        <div
-                            className="w-full h-full bg-center bg-cover animate-ken-burns"
-                            style={{
-                                backgroundImage:
-                                    "url('/images/cursos.png')",
-                            }}
-                        ></div>
                     </div>
                     <div className="relative z-20 max-w-7xl mx-auto px-6 w-full pt-10">
                         <ScrollReveal variant="fade-right">

@@ -29,7 +29,11 @@ export default function StudentPortalPage() {
     // Sync theme on mount
     useEffect(() => {
         const isDark = document.documentElement.classList.contains("dark");
-        setTheme(isDark ? "dark" : "light");
+        if (isDark) {
+            requestAnimationFrame(() => {
+                setTheme("dark");
+            });
+        }
     }, []);
 
     const toggleTheme = () => {

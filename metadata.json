@@ -1,0 +1,6 @@
+{
+  "name": "UGS Portal",
+  "description": "Portal institucional e de gestão académica da Universidade Gregório Semedo",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
