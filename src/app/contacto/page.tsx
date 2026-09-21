@@ -22,25 +22,23 @@ export default function ContactoPage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/80 to-institutional/60 z-10"></div>
                     </div>
-                    <div className="relative z-20 max-w-7xl mx-auto px-6 w-full pt-10">
-                        <ScrollReveal variant="fade-right">
-                            <div className="max-w-3xl">
-                                <div className="flex items-center gap-2 text-primary font-bold text-sm mb-4 uppercase tracking-wider">
-                                    <span className="material-symbols-outlined text-lg">
-                                        support_agent
-                                    </span>
-                                    CENTRO DE APOIO
-                                </div>
-                                <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-                                    Contacto & Apoio
-                                </h1>
-                                <p className="text-lg text-slate-300 leading-relaxed font-medium max-w-2xl">
-                                    Tem perguntas sobre admissões, vida no campus ou programas
-                                    académicos? Estamos aqui para ajudá-lo a navegar na sua
-                                    jornada na UGS.
-                                </p>
+                    <div className="relative z-20 max-w-7xl mx-auto px-6 w-full pt-10 animate-in fade-in duration-500">
+                        <div className="max-w-3xl">
+                            <div className="flex items-center gap-2 text-primary font-bold text-sm mb-4 uppercase tracking-wider">
+                                <span className="material-symbols-outlined text-lg">
+                                    support_agent
+                                </span>
+                                CENTRO DE APOIO
                             </div>
-                        </ScrollReveal>
+                            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                                Contacto & Apoio
+                            </h1>
+                            <p className="text-lg text-slate-300 leading-relaxed font-medium max-w-2xl">
+                                Tem perguntas sobre admissões, vida no campus ou programas
+                                académicos? Estamos aqui para ajudá-lo a navegar na sua
+                                jornada na UGS.
+                            </p>
+                        </div>
                     </div>
                 </section>
 

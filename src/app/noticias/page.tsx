@@ -20,30 +20,28 @@ export default function NoticiasPage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/70 to-institutional/30 z-10"></div>
                     </div>
-                    <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full pt-6 sm:pt-10">
-                        <ScrollReveal variant="fade-right">
-                            <div className="max-w-3xl">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-full text-xs font-bold mb-4 sm:mb-6 tracking-wide">
-                                    <span className="material-symbols-outlined text-sm text-primary">newspaper</span>
-                                    ATUALIDADE UGS
-                                </div>
-                                <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">
-                                    Notícias & <span className="text-primary">Eventos</span>
-                                </h1>
-                                <p className="text-sm sm:text-base md:text-xl text-slate-300 mb-6 sm:mb-8 leading-relaxed font-medium">
-                                    Fique a par de tudo o que acontece no universo da Universidade Gregório Semedo.
-                                </p>
-                                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-                                    <button className="bg-primary text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-bold hover:bg-orange-600 transition-transform active:scale-95 flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
-                                        Ler Destaques
-                                        <span className="material-symbols-outlined text-base">arrow_downward</span>
-                                    </button>
-                                    <button className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-bold hover:bg-white/20 transition-colors">
-                                        Subscrever Newsletter
-                                    </button>
-                                </div>
+                    <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full pt-6 sm:pt-10 animate-in fade-in duration-500">
+                        <div className="max-w-3xl">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-full text-xs font-bold mb-4 sm:mb-6 tracking-wide">
+                                <span className="material-symbols-outlined text-sm text-primary">newspaper</span>
+                                ATUALIDADE UGS
                             </div>
-                        </ScrollReveal>
+                            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">
+                                Notícias & <span className="text-primary">Eventos</span>
+                            </h1>
+                            <p className="text-sm sm:text-base md:text-xl text-slate-300 mb-6 sm:mb-8 leading-relaxed font-medium">
+                                Fique a par de tudo o que acontece no universo da Universidade Gregório Semedo.
+                            </p>
+                            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                                <button className="bg-primary text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-bold hover:bg-orange-600 transition-transform active:scale-95 flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
+                                    Ler Destaques
+                                    <span className="material-symbols-outlined text-base">arrow_downward</span>
+                                </button>
+                                <button className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-bold hover:bg-white/20 transition-colors">
+                                    Subscrever Newsletter
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </section>
 

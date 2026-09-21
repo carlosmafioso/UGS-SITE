@@ -20,22 +20,20 @@ export default function AEUGSPage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 sm:from-institutional/90 via-institutional/60 sm:via-institutional/40 to-transparent pointer-events-none z-10"></div>
                     </div>
-                    <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full">
-                        <ScrollReveal variant="fade-right">
-                            <div className="max-w-3xl">
-                                <span className="inline-block py-1 px-3 mb-4 sm:mb-6 bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest rounded-full border border-primary/30">Associação de Estudantes</span>
-                                <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tighter mb-4 sm:mb-6">
-                                    AEUGS: Unidos pela Educação Construindo um Futuro Melhor
-                                </h1>
-                                <p className="text-sm sm:text-base md:text-xl text-slate-200 mb-6 sm:mb-10 leading-relaxed max-w-2xl">
-                                    Comprometidos com a representação estudantil e o fomento de uma cultura de campus vibrante, inovadora e inclusiva para todos os alunos da UGS.
-                                </p>
-                                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-                                    <button className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white rounded-lg font-bold shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all text-sm sm:text-base">Juntar-se à AEUGS</button>
-                                    <button className="px-6 sm:px-8 py-3 sm:py-4 bg-institutional text-white rounded-lg font-bold shadow-lg hover:-translate-y-1 hover:bg-institutional/90 transition-all text-sm sm:text-base">Saber Mais</button>
-                                </div>
+                    <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full animate-in fade-in duration-500">
+                        <div className="max-w-3xl">
+                            <span className="inline-block py-1 px-3 mb-4 sm:mb-6 bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest rounded-full border border-primary/30">Associação de Estudantes</span>
+                            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tighter mb-4 sm:mb-6">
+                                AEUGS: Unidos pela Educação Construindo um Futuro Melhor
+                            </h1>
+                            <p className="text-sm sm:text-base md:text-xl text-slate-200 mb-6 sm:mb-10 leading-relaxed max-w-2xl">
+                                Comprometidos com a representação estudantil e o fomento de uma cultura de campus vibrante, inovadora e inclusiva para todos os alunos da UGS.
+                            </p>
+                            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                                <button className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white rounded-lg font-bold shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all text-sm sm:text-base">Juntar-se à AEUGS</button>
+                                <button className="px-6 sm:px-8 py-3 sm:py-4 bg-institutional text-white rounded-lg font-bold shadow-lg hover:-translate-y-1 hover:bg-institutional/90 transition-all text-sm sm:text-base">Saber Mais</button>
                             </div>
-                        </ScrollReveal>
+                        </div>
                     </div>
                 </section>
 

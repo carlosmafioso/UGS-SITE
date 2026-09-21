@@ -23,23 +23,23 @@ interface ScrollRevealProps {
 
 const revealVariants: Record<AnimationVariant, Variants> = {
     "fade-up": {
-        hidden: { opacity: 0, y: 40 },
+        hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0 },
     },
     "fade-down": {
-        hidden: { opacity: 0, y: -40 },
+        hidden: { opacity: 0, y: -20 },
         visible: { opacity: 1, y: 0 },
     },
     "fade-left": {
-        hidden: { opacity: 0, x: 50 },
+        hidden: { opacity: 0, x: 24 },
         visible: { opacity: 1, x: 0 },
     },
     "fade-right": {
-        hidden: { opacity: 0, x: -50 },
+        hidden: { opacity: 0, x: -24 },
         visible: { opacity: 1, x: 0 },
     },
     "scale-up": {
-        hidden: { opacity: 0, scale: 0.92, y: 20 },
+        hidden: { opacity: 0, scale: 0.96, y: 10 },
         visible: { opacity: 1, scale: 1, y: 0 },
     },
     "none": {
@@ -52,10 +52,10 @@ export const ScrollReveal = ({
     children,
     width = "100%",
     delay = 0,
-    duration = 0.6,
+    duration = 0.45,
     className,
     variant = "fade-up",
-    amount = 0.15,
+    amount = 0.05,
 }: ScrollRevealProps) => {
     return (
         <motion.div
@@ -63,11 +63,11 @@ export const ScrollReveal = ({
             variants={revealVariants[variant]}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount }}
+            viewport={{ once: true, amount, margin: "0px 0px -20px 0px" }}
             transition={{
                 duration,
-                delay,
-                ease: [0.25, 0.46, 0.45, 0.94], // custom cubic-bezier for silky smooth feel
+                delay: Math.min(delay, 0.25),
+                ease: [0.16, 1, 0.3, 1], // refined ease-out curve
             }}
             style={{ width }}
         >

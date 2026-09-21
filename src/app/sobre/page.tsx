@@ -50,9 +50,8 @@ export default function SobrePage() {
                     <div className="flex flex-col lg:flex-row gap-8 sm:gap-12">
                         {/* Sidebar */}
                         <aside className="w-full lg:w-1/4 shrink-0">
-                            <div className="lg:sticky lg:top-28 space-y-6 sm:space-y-8">
-                                <ScrollReveal variant="fade-right">
-                                    <div className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                            <div className="lg:sticky lg:top-28 space-y-6 sm:space-y-8 animate-in fade-in duration-500">
+                                <div className="bg-slate-50 rounded-xl p-6 border border-slate-100">
                                         <h3 className="font-bold text-institutional mb-4 text-lg">
                                             Institucional
                                         </h3>
@@ -85,41 +84,37 @@ export default function SobrePage() {
                                             })}
                                         </nav>
                                     </div>
-                                </ScrollReveal>
 
-                                <ScrollReveal delay={0.2} variant="fade-right">
-                                    <div className="bg-institutional text-white rounded-xl p-6 relative overflow-hidden">
-                                        <div className="relative z-10">
-                                            <h4 className="font-bold text-xl mb-2">
-                                                Inscrições Abertas
-                                            </h4>
-                                            <p className="text-sm text-slate-300 mb-4">
-                                                O ano letivo 2026/2027 está quase a começar. Garanta o seu
-                                                lugar.
-                                            </p>
-                                            <Link href="/candidatura" className="w-full inline-block text-center bg-primary hover:bg-orange-600 text-white font-bold py-2.5 rounded-lg text-sm transition-colors">
-                                                Candidatar-se Agora
-                                            </Link>
-                                        </div>
-                                        <div className="absolute -bottom-4 -right-4 text-white/5">
-                                            <span className="material-symbols-outlined text-9xl">
-                                                school
-                                            </span>
-                                        </div>
+                                <div className="bg-institutional text-white rounded-xl p-6 relative overflow-hidden">
+                                    <div className="relative z-10">
+                                        <h4 className="font-bold text-xl mb-2">
+                                            Inscrições Abertas
+                                        </h4>
+                                        <p className="text-sm text-slate-300 mb-4">
+                                            O ano letivo 2026/2027 está quase a começar. Garanta o seu
+                                            lugar.
+                                        </p>
+                                        <Link href="/candidatura" className="w-full inline-block text-center bg-primary hover:bg-orange-600 text-white font-bold py-2.5 rounded-lg text-sm transition-colors">
+                                            Candidatar-se Agora
+                                        </Link>
                                     </div>
-                                </ScrollReveal>
+                                    <div className="absolute -bottom-4 -right-4 text-white/5">
+                                        <span className="material-symbols-outlined text-9xl">
+                                            school
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </aside>
 
                         {/* Content Container */}
-                        <div className="w-full lg:w-3/4 space-y-16">
+                        <div className="w-full lg:w-3/4 space-y-16 animate-in fade-in duration-500">
                             {activeTab === "História e Legado" && (
                                 <>
-                                    <ScrollReveal>
-                                        <section>
-                                            <h2 className="text-3xl font-extrabold text-institutional mb-6">
-                                                Uma Tradição de Excelência
-                                            </h2>
+                                    <section>
+                                        <h2 className="text-3xl font-extrabold text-institutional mb-6">
+                                            Uma Tradição de Excelência
+                                        </h2>
                                             <div className="prose prose-lg prose-slate max-w-none text-slate-600">
                                                 <p className="mb-4">
                                                     A Universidade Gregório Semedo (UGS) afirma-se como um farol
@@ -164,7 +159,6 @@ export default function SobrePage() {
                                                 </div>
                                             </div>
                                         </section>
-                                    </ScrollReveal>
 
                                     <section>
                                         <ScrollReveal>

@@ -105,34 +105,32 @@ export default function CampusPage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/90 via-institutional/60 to-transparent z-10"></div>
                     </div>
-                    <div className="relative z-20 max-w-7xl mx-auto px-6 w-full">
-                        <ScrollReveal variant="fade-right">
-                            <div className="max-w-3xl">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-xs font-bold mb-6 tracking-wide">
-                                    <span className="material-symbols-outlined text-sm text-primary">
-                                        diversity_2
-                                    </span>
-                                    EXPERIÊNCIA DO ESTUDANTE
-                                </div>
-                                <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-[1.1]">
-                                    Vida Além da <span className="text-primary">Sala de Aula</span>
-                                </h1>
-                                <p className="text-xl text-slate-300 mb-8 leading-relaxed font-medium">
-                                    Descubra uma comunidade vibrante onde pode seguir as suas
-                                    paixões, juntar-se a clubes, praticar desporto e encontrar
-                                    amigos para a vida na UGS.
-                                </p>
-                                <div className="flex flex-wrap gap-4">
-                                    <button className="bg-primary text-white px-8 py-3.5 rounded-xl text-base font-bold hover:bg-orange-600 transition-transform active:scale-95 flex items-center gap-2 shadow-xl shadow-primary/20">
-                                        Juntar-se a um Clube
-                                        <span className="material-symbols-outlined">group_add</span>
-                                    </button>
-                                    <button className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-3.5 rounded-xl text-base font-bold hover:bg-white/20 transition-colors">
-                                        Ver Calendário de Eventos
-                                    </button>
-                                </div>
+                    <div className="relative z-20 max-w-7xl mx-auto px-6 w-full animate-in fade-in duration-500">
+                        <div className="max-w-3xl">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-xs font-bold mb-6 tracking-wide">
+                                <span className="material-symbols-outlined text-sm text-primary">
+                                    diversity_2
+                                </span>
+                                EXPERIÊNCIA DO ESTUDANTE
                             </div>
-                        </ScrollReveal>
+                            <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-[1.1]">
+                                Vida Além da <span className="text-primary">Sala de Aula</span>
+                            </h1>
+                            <p className="text-xl text-slate-300 mb-8 leading-relaxed font-medium">
+                                Descubra uma comunidade vibrante onde pode seguir as suas
+                                paixões, juntar-se a clubes, praticar desporto e encontrar
+                                amigos para a vida na UGS.
+                            </p>
+                            <div className="flex flex-wrap gap-4">
+                                <button className="bg-primary text-white px-8 py-3.5 rounded-xl text-base font-bold hover:bg-orange-600 transition-transform active:scale-95 flex items-center gap-2 shadow-xl shadow-primary/20">
+                                    Juntar-se a um Clube
+                                    <span className="material-symbols-outlined">group_add</span>
+                                </button>
+                                <button className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-3.5 rounded-xl text-base font-bold hover:bg-white/20 transition-colors">
+                                    Ver Calendário de Eventos
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </section>
 

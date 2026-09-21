@@ -52,7 +52,7 @@ export function HeroCarousel() {
                             x: d > 0 ? -40 : 40,
                         }),
                     }}
-                    initial="enter"
+                    initial={false}
                     animate="center"
                     exit="exit"
                     transition={{

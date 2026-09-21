@@ -15,34 +15,32 @@ export default function Home() {
         <section className="relative w-full h-[480px] sm:h-[560px] md:h-[640px] flex items-center overflow-hidden bg-institutional">
           {/* Carrossel de Fundo */}
           <HeroCarousel />
-          <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full">
-            <ScrollReveal>
-              <div className="max-w-2xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold mb-4 sm:mb-6 tracking-wide">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-50"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  ADMISSÕES ABERTAS 2026/27
-                </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-[1.1]">
-                  Molde o seu Futuro na <span className="text-primary">Universidade</span> Gregório Semedo
-                </h1>
-                <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-6 sm:mb-10 leading-relaxed font-medium">
-                  Dedicada à excelência académica e inovação moderna em Angola. Descubra os nossos
-                  diversos programas e junte-se a uma comunidade de pensadores.
-                </p>
-                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-                  <Link href="/candidatura" className="bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-orange-600 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20">
-                    Candidate-se Agora
-                    <span className="material-symbols-outlined">arrow_forward</span>
-                  </Link>
-                  <button className="bg-institutional text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-institutional/20">
-                    Visita Virtual
-                  </button>
-                </div>
+          <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full animate-in fade-in duration-500">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold mb-4 sm:mb-6 tracking-wide">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-50"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                ADMISSÕES ABERTAS 2026/27
               </div>
-            </ScrollReveal>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-[1.1]">
+                Molde o seu Futuro na <span className="text-primary">Universidade</span> Gregório Semedo
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-6 sm:mb-10 leading-relaxed font-medium">
+                Dedicada à excelência académica e inovação moderna em Angola. Descubra os nossos
+                diversos programas e junte-se a uma comunidade de pensadores.
+              </p>
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                <Link href="/candidatura" className="bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-orange-600 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20">
+                  Candidate-se Agora
+                  <span className="material-symbols-outlined">arrow_forward</span>
+                </Link>
+                <button className="bg-institutional text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-institutional/20">
+                  Visita Virtual
+                </button>
+              </div>
+            </div>
           </div>
         </section>
         {/* Proposições de Valor */}
