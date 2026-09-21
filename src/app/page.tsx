@@ -138,7 +138,7 @@ export default function Home() {
                     src="/images/legado.jpg"
                     alt="Nosso Legado - Graduação UGS"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 1024px) 100vw, 600px"
                     className="object-cover transition-transform duration-[1000ms] ease-out group-hover/about:scale-110"                  />
                 </div>
                 {/* Pequeno cartão decorativo */}

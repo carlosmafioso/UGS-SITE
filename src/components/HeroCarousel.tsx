@@ -1,83 +1,90 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
-const images = [
-    "/images/banner-slogan-2048x1157.jpg",
-    "/images/campus-ugs-entrada.jpg",
+const slides = [
+    {
+        src: "/images/banner-slogan-2048x1157.jpg",
+        alt: "Universidade Gregório Semedo - Excelência e Inovação",
+    },
+    {
+        src: "/images/campus-ugs-entrada.jpg",
+        alt: "Campus Universitário da Universidade Gregório Semedo",
+    },
 ];
 
 export function HeroCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [direction, setDirection] = useState(1); // 1 = forward, -1 = backward
+    const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+    const startTimer = () => {
+        if (timerRef.current) clearInterval(timerRef.current);
+        timerRef.current = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % slides.length);
+        }, 6500);
+    };
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setDirection(1);
-            setCurrentIndex((prev) => (prev + 1) % images.length);
-        }, 6000);
-        return () => clearInterval(interval);
+        startTimer();
+        return () => {
+            if (timerRef.current) clearInterval(timerRef.current);
+        };
     }, []);
 
     const goTo = (index: number) => {
-        setDirection(index > currentIndex ? 1 : -1);
         setCurrentIndex(index);
+        startTimer();
     };
 
     return (
-        <div className="absolute inset-0 z-0 overflow-hidden bg-institutional">
+        <div className="absolute inset-0 z-0 overflow-hidden bg-institutional" id="hero-carousel-container">
             {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-institutional/90 via-institutional/50 to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/65 to-transparent z-10 pointer-events-none" />
 
-            <AnimatePresence initial={false} custom={direction}>
-                <motion.div
-                    key={currentIndex}
-                    custom={direction}
-                    variants={{
-                        enter: (d: number) => ({
-                            opacity: 0,
-                            scale: 1.05,
-                            x: d > 0 ? 40 : -40,
-                        }),
-                        center: {
-                            opacity: 1,
-                            scale: 1.08,
-                            x: 0,
-                        },
-                        exit: (d: number) => ({
-                            opacity: 0,
-                            scale: 1,
-                            x: d > 0 ? -40 : 40,
-                        }),
-                    }}
-                    initial={false}
-                    animate="center"
-                    exit="exit"
-                    transition={{
-                        opacity: { duration: 1.2, ease: "easeInOut" },
-                        scale: { duration: 6, ease: "linear" },
-                        x: { duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94] },
-                    }}
-                    className="absolute inset-0"
-                >
-                    <Image
-                        src={images[currentIndex]}
-                        alt={`UGS Hero Banner ${currentIndex + 1}`}
-                        fill
-                        sizes="100vw"
-                        priority={currentIndex === 0}
-                        className="object-cover object-center"
-                    />
-                </motion.div>
-            </AnimatePresence>
+            {/* Seamless Infinite Cross-Fade Images */}
+            {slides.map((slide, index) => {
+                const isActive = index === currentIndex;
+                return (
+                    <motion.div
+                        key={slide.src}
+                        id={`hero-slide-${index}`}
+                        className="absolute inset-0 pointer-events-none"
+                        initial={false}
+                        animate={{
+                            opacity: isActive ? 1 : 0,
+                            scale: isActive ? 1.05 : 1,
+                        }}
+                        transition={{
+                            opacity: {
+                                duration: 2.2, // slow and smooth cross-fade
+                                ease: "easeInOut",
+                            },
+                            scale: {
+                                duration: 8,
+                                ease: "easeOut",
+                            },
+                        }}
+                    >
+                        <Image
+                            src={slide.src}
+                            alt={slide.alt}
+                            fill
+                            sizes="100vw"
+                            priority={index === 0}
+                            className="object-cover object-center"
+                        />
+                    </motion.div>
+                );
+            })}
 
             {/* Dots */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-                {images.map((_, index) => (
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2" id="hero-carousel-dots">
+                {slides.map((_, index) => (
                     <button
                         key={index}
+                        id={`hero-dot-${index}`}
                         onClick={() => goTo(index)}
                         className={`h-2 rounded-full transition-all duration-500 ease-out ${
                             index === currentIndex
@@ -91,3 +98,4 @@ export function HeroCarousel() {
         </div>
     );
 }
+

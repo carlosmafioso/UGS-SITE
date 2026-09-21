@@ -62,7 +62,7 @@ export default function NoticiasPage() {
                                             src="/images/semana-academica-768x768.png" 
                                             alt="Semana Académica UGS" 
                                             fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 450px"
                                             className="object-cover object-center transition-transform duration-[1000ms] ease-out group-hover:scale-110" 
                                         />
                                     </div>
@@ -103,7 +103,7 @@ export default function NoticiasPage() {
                                                 src="/images/outorga-diplomas.jpg" 
                                                 alt="Cerimónia de Outorga de Diplomas de Mestrados" 
                                                 fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 420px"
                                                 className="object-cover object-top transition-transform duration-[1000ms] ease-out group-hover:scale-110" 
                                             />
                                         </div>
@@ -132,7 +132,7 @@ export default function NoticiasPage() {
                                                 src="/images/revista-cientifica.jpg" 
                                                 alt="Lançamento da Revista Científica Gregório Semedo" 
                                                 fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 420px"
                                                 className="object-cover object-top transition-transform duration-[1000ms] ease-out group-hover:scale-110" 
                                             />
                                         </div>
@@ -161,7 +161,7 @@ export default function NoticiasPage() {
                                                 src="/images/missao-reconstruir-benguela.jpg"
                                                 alt="Projecto Missão Reconstruir Benguela"
                                                 fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 420px"
                                                 className="object-cover object-top group-hover:scale-110 transition-transform duration-[1000ms] ease-out"
                                             />
                                             <div className="absolute top-4 left-4 z-10">

@@ -160,7 +160,7 @@ export default function AEUGSPage() {
                                                 alt={member.name} 
                                                 src={member.img}
                                                 fill
-                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                                             />
                                             
                                             {/* Sliding Overlay */}
