@@ -44,13 +44,13 @@ export function LucyPromoCard({ className = "", onOpenChat }: LucyPromoCardProps
                 />
 
                 {/* Floating Glass UI Element */}
-                <div className="absolute bottom-6 left-5 right-5 z-20 transform group-hover:-translate-y-2 transition-transform duration-500">
-                    <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl flex items-center gap-4 hover:bg-white/20 transition-colors shadow-xl">
-                        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(242,127,13,0.5)] group-hover:shadow-[0_0_25px_rgba(242,127,13,0.8)] transition-shadow duration-300">
-                            <span className="material-symbols-outlined text-white animate-pulse">smart_toy</span>
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-5 sm:right-5 z-20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                    <div className="bg-white/10 backdrop-blur-md border border-white/20 p-3 sm:p-4 rounded-2xl flex items-center gap-3 sm:gap-4 hover:bg-white/20 transition-colors shadow-xl">
+                        <div className="size-10 sm:size-12 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(242,127,13,0.5)] group-hover:shadow-[0_0_25px_rgba(242,127,13,0.8)] transition-shadow duration-300">
+                            <span className="material-symbols-outlined text-white animate-pulse text-lg sm:text-xl">smart_toy</span>
                         </div>
                         <div>
-                            <h4 className="text-white font-bold tracking-wide">LUCY</h4>
+                            <h4 className="text-white font-bold tracking-wide text-sm sm:text-base">LUCY</h4>
                             <p className="text-white/80 text-xs flex items-center gap-1.5 font-medium mt-0.5">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -79,7 +79,7 @@ export function LucyChatButton({
             onClick={() => triggerLucyChat()}
             className={
                 className ||
-                "mt-8 px-8 py-4 bg-institutional text-white rounded-xl font-bold shadow-xl shadow-institutional/20 hover:-translate-y-1 hover:bg-slate-800 transition-all flex items-center gap-2 group"
+                "mt-6 sm:mt-8 w-full sm:w-auto justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-institutional text-white rounded-xl font-bold shadow-xl shadow-institutional/20 hover:-translate-y-1 hover:bg-slate-800 active:scale-95 transition-all flex items-center gap-2 group"
             }
         >
             {text}

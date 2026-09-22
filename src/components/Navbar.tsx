@@ -42,7 +42,7 @@ export function Navbar({ activePage }: { activePage?: string }) {
                         alt="UGS Logo"
                         width={300}
                         height={80}
-                        className="h-10 sm:h-14 w-auto object-contain"
+                        className="h-8 sm:h-12 md:h-14 max-w-[140px] sm:max-w-[220px] md:max-w-none w-auto object-contain"
                         priority
                     />
                 </Link>
@@ -72,7 +72,7 @@ export function Navbar({ activePage }: { activePage?: string }) {
                     ))}
                 </nav>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 sm:gap-3">
                     <Link href="/student-portal" className="hidden sm:block">
                         <button className="bg-institutional text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold flex items-center gap-2 hover:bg-primary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
                             <span className="material-symbols-outlined text-base sm:text-lg">
@@ -82,21 +82,22 @@ export function Navbar({ activePage }: { activePage?: string }) {
                         </button>
                     </Link>
 
-                    {/* Mobile Hamburger */}
+                    {/* Mobile Hamburger Button - Accessible SVG to prevent text ligature cutoff */}
                     <button
-                        className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-slate-100 transition-colors"
+                        className="lg:hidden flex items-center justify-center w-10 h-10 min-w-[40px] min-h-[40px] rounded-lg hover:bg-slate-100 active:bg-slate-200 transition-colors text-institutional focus:outline-none focus:ring-2 focus:ring-primary/40 shrink-0"
                         onClick={() => setMobileOpen(!mobileOpen)}
-                        aria-label="Abrir menu"
+                        aria-label={mobileOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
+                        aria-expanded={mobileOpen}
                     >
-                        <motion.span
-                            key={mobileOpen ? "close" : "menu"}
-                            initial={{ rotate: -90, opacity: 0 }}
-                            animate={{ rotate: 0, opacity: 1 }}
-                            transition={{ duration: 0.2 }}
-                            className="material-symbols-outlined text-2xl text-institutional"
-                        >
-                            {mobileOpen ? "close" : "menu"}
-                        </motion.span>
+                        {mobileOpen ? (
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        ) : (
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        )}
                     </button>
                 </div>
             </div>
@@ -110,7 +111,7 @@ export function Navbar({ activePage }: { activePage?: string }) {
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                        className="lg:hidden overflow-hidden border-t border-slate-100"
+                        className="lg:hidden overflow-hidden border-t border-slate-100 max-h-[calc(100vh-4rem)] overflow-y-auto"
                     >
                         <nav className="flex flex-col px-4 py-4 bg-white shadow-lg">
                             {navLinks.map((link, i) => (

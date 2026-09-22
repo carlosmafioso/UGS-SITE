@@ -22,7 +22,7 @@ export default function ContactoPage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/80 to-institutional/60 z-10"></div>
                     </div>
-                    <div className="relative z-20 max-w-7xl mx-auto px-6 w-full pt-10 animate-in fade-in duration-500">
+                    <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full pt-10 animate-in fade-in duration-500">
                         <div className="max-w-3xl">
                             <div className="flex items-center gap-2 text-primary font-bold text-sm mb-4 uppercase tracking-wider">
                                 <span className="material-symbols-outlined text-lg">
@@ -30,10 +30,10 @@ export default function ContactoPage() {
                                 </span>
                                 CENTRO DE APOIO
                             </div>
-                            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">
                                 Contacto & Apoio
                             </h1>
-                            <p className="text-lg text-slate-300 leading-relaxed font-medium max-w-2xl">
+                            <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium max-w-2xl">
                                 Tem perguntas sobre admissões, vida no campus ou programas
                                 académicos? Estamos aqui para ajudá-lo a navegar na sua
                                 jornada na UGS.
@@ -44,7 +44,7 @@ export default function ContactoPage() {
 
                 {/* Info Cards */}
                 <section className="relative z-30 -mt-16 pb-16">
-                    <div className="max-w-7xl mx-auto px-6">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6">
                         <ScrollReveal variant="fade-up">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {/* Secretaria Geral */}
@@ -111,7 +111,7 @@ export default function ContactoPage() {
 
                 {/* Form and Map Section */}
                 <section className="py-12 bg-background-light">
-                    <div className="max-w-7xl mx-auto px-6">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                             <ScrollReveal variant="fade-right">
                                 <div className="order-2 lg:order-1">

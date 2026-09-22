@@ -199,14 +199,14 @@ export function LucyChatWidget() {
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-[9999] font-display">
+        <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[9999] font-display pointer-events-none">
             {/* Toggle Button */}
             <motion.button
                 onClick={handleToggle}
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.93 }}
                 transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                className="relative size-14 sm:size-16 rounded-full flex items-center justify-center text-white bg-gradient-to-r from-primary to-orange-500 shadow-[0_6px_24px_rgba(242,127,13,0.35)] hover:shadow-[0_8px_32px_rgba(242,127,13,0.5)] z-50 transition-shadow duration-300"
+                className="pointer-events-auto relative size-13 sm:size-16 rounded-full flex items-center justify-center text-white bg-gradient-to-r from-primary to-orange-500 shadow-[0_6px_24px_rgba(242,127,13,0.35)] hover:shadow-[0_8px_32px_rgba(242,127,13,0.5)] z-50 transition-shadow duration-300 touch-manipulation"
                 aria-label="Falar com a LUCY"
             >
                 <AnimatePresence mode="wait" initial={false}>
@@ -251,15 +251,15 @@ export function LucyChatWidget() {
                 {isOpen && (
                 <motion.div
                     key="chat-panel"
-                    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                    initial={{ opacity: 0, scale: 0.85, y: 16 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.85, y: 16 }}
                     transition={{ type: "spring", stiffness: 350, damping: 28 }}
                     style={{ originX: 1, originY: 1 }}
-                    className="absolute bottom-20 right-0 w-[350px] sm:w-[400px] h-[550px] max-h-[calc(100vh-140px)] max-w-[calc(100vw-32px)] bg-white/95 backdrop-blur-md border border-slate-200/60 rounded-[2rem] shadow-[0_20px_50px_rgba(15,23,42,0.15)] flex flex-col overflow-hidden"
+                    className="pointer-events-auto fixed inset-x-3 bottom-20 sm:inset-auto sm:absolute sm:bottom-20 sm:right-0 w-auto sm:w-[400px] h-[550px] max-h-[min(560px,calc(100dvh-6.5rem))] bg-white/95 backdrop-blur-md border border-slate-200/60 rounded-[1.75rem] sm:rounded-[2rem] shadow-[0_20px_50px_rgba(15,23,42,0.15)] flex flex-col overflow-hidden"
                 >
                 {/* Header */}
-                <div className="bg-institutional text-white px-6 py-4 flex items-center justify-between border-b border-white/10 shrink-0">
+                <div className="bg-institutional text-white px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between border-b border-white/10 shrink-0">
                     <div className="flex items-center gap-3.5">
                         {/* Profile Image */}
                         <div className="size-10 rounded-full bg-primary/20 relative overflow-hidden flex items-center justify-center border border-white/20">

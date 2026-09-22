@@ -40,8 +40,8 @@ export function HeroCarousel() {
 
     return (
         <div className="absolute inset-0 z-0 overflow-hidden bg-institutional" id="hero-carousel-container">
-            {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/65 to-transparent z-10 pointer-events-none" />
+            {/* Overlay gradient - high contrast on mobile to guarantee readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-institutional/95 via-institutional/85 to-institutional/60 sm:to-transparent sm:via-institutional/65 z-10 pointer-events-none" />
 
             {/* Seamless Infinite Cross-Fade Images */}
             {slides.map((slide, index) => {
@@ -73,14 +73,14 @@ export function HeroCarousel() {
                             fill
                             sizes="100vw"
                             priority={index === 0}
-                            className="object-cover object-center"
+                            className="object-cover object-[center_28%] sm:object-center"
                         />
                     </motion.div>
                 );
             })}
 
             {/* Dots */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2" id="hero-carousel-dots">
+            <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2" id="hero-carousel-dots">
                 {slides.map((_, index) => (
                     <button
                         key={index}

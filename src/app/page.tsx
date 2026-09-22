@@ -12,31 +12,31 @@ export default function Home() {
       <Navbar activePage="/" />
       <main>
         {/* Secção Hero */}
-        <section className="relative w-full h-[480px] sm:h-[560px] md:h-[640px] flex items-center overflow-hidden bg-institutional">
+        <section className="relative w-full min-h-[500px] sm:min-h-[560px] md:h-[640px] flex items-center overflow-hidden bg-institutional py-12 sm:py-16 md:py-0">
           {/* Carrossel de Fundo */}
           <HeroCarousel />
           <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full animate-in fade-in duration-500">
             <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold mb-4 sm:mb-6 tracking-wide">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold mb-3 sm:mb-6 tracking-wide">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-50"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
                 ADMISSÕES ABERTAS 2026/27
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-[1.1]">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-3 sm:mb-6 leading-[1.15] sm:leading-[1.1]">
                 Molde o seu Futuro na <span className="text-primary">Universidade</span> Gregório Semedo
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-6 sm:mb-10 leading-relaxed font-medium">
+              <p className="text-sm sm:text-lg md:text-xl text-slate-300 mb-6 sm:mb-10 leading-relaxed font-medium">
                 Dedicada à excelência académica e inovação moderna em Angola. Descubra os nossos
                 diversos programas e junte-se a uma comunidade de pensadores.
               </p>
-              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-                <Link href="/candidatura" className="bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-orange-600 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                <Link href="/candidatura" className="w-full sm:w-auto min-h-[48px] sm:min-h-[52px] bg-primary text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-orange-600 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20">
                   Candidate-se Agora
                   <span className="material-symbols-outlined">arrow_forward</span>
                 </Link>
-                <button className="bg-institutional text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-institutional/20">
+                <button className="w-full sm:w-auto min-h-[48px] sm:min-h-[52px] bg-institutional text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-institutional/20 flex items-center justify-center">
                   Visita Virtual
                 </button>
               </div>
@@ -44,11 +44,11 @@ export default function Home() {
           </div>
         </section>
         {/* Proposições de Valor */}
-        <section className="py-10 sm:py-16 bg-background-light -mt-6 sm:-mt-10 relative z-30">
+        <section className="py-8 sm:py-16 bg-background-light -mt-4 sm:-mt-10 relative z-30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               <ScrollReveal delay={0} variant="scale-up" duration={0.55}>
-                <div className="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
+                <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
                   <div className="size-14 bg-blue-50 text-institutional rounded-xl flex items-center justify-center group-hover:bg-institutional group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined text-3xl">lightbulb</span>
                   </div>
@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={0.12} variant="scale-up" duration={0.55}>
-                <div className="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
+                <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
                   <div className="size-14 bg-orange-50 text-primary rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined text-3xl">workspace_premium</span>
                   </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={0.24} variant="scale-up" duration={0.55}>
-                <div className="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
+                <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col gap-4 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
                   <div className="size-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-colors">
                     <span className="material-symbols-outlined text-3xl">diversity_3</span>
                   </div>
@@ -142,15 +142,15 @@ export default function Home() {
                     className="object-cover transition-transform duration-[1000ms] ease-out group-hover/about:scale-110"                  />
                 </div>
                 {/* Pequeno cartão decorativo */}
-                <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-slate-100 hover:scale-105 transition-transform duration-300 max-w-[260px] sm:max-w-none">
-                  <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <div className="absolute -bottom-4 left-2 sm:-bottom-6 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-slate-100 hover:scale-105 transition-transform duration-300 max-w-[calc(100%-1rem)] sm:max-w-none">
+                  <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <span className="material-symbols-outlined">auto_graph</span>
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-bold uppercase tracking-tighter">
                       Ranking
                     </p>
-                    <p className="text-sm font-bold">Top 5 Universidades em Angola</p>
+                    <p className="text-xs sm:text-sm font-bold">Top 5 Universidades em Angola</p>
                   </div>
                 </div>
               </div>
@@ -280,25 +280,25 @@ export default function Home() {
               {/* Cartão de Evento em Destaque */}
               <div className="lg:col-span-2">
                 <ScrollReveal>
-                  <div className="relative group h-full min-h-[400px] overflow-hidden rounded-2xl bg-institutional">
+                  <div className="relative group h-full min-h-[360px] sm:min-h-[400px] overflow-hidden rounded-2xl bg-institutional">
                     <div
                       className="absolute inset-0 bg-top bg-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
                       style={{ backgroundImage: "url('/images/21-aniversario-ugs.jpg')" }}
                     ></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="inline-block px-3 py-1 bg-primary rounded text-xs font-bold mb-4">
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 p-5 sm:p-6 md:p-8 w-full">
+                      <span className="inline-block px-3 py-1 bg-primary rounded text-xs font-bold mb-3 sm:mb-4 text-white">
                         SIMPÓSIO
                       </span>
-                      <h3 className="text-3xl font-bold mb-4 leading-tight max-w-xl">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 leading-tight max-w-xl text-white">
                         Simpósio Internacional Anual de Investigação e Inovação 2024
                       </h3>
-                      <div className="flex items-center gap-6 text-sm text-slate-300">
+                      <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm text-slate-300">
                         <span className="flex items-center gap-2">
-                          <span className="material-symbols-outlined text-sm">calendar_month</span> 15-17 Out
+                          <span className="material-symbols-outlined text-sm text-primary">calendar_month</span> 15-17 Out
                         </span>
                         <span className="flex items-center gap-2">
-                          <span className="material-symbols-outlined text-sm">location_on</span> Auditório do Campus Principal
+                          <span className="material-symbols-outlined text-sm text-primary">location_on</span> Auditório do Campus Principal
                         </span>
                       </div>
                     </div>
@@ -443,11 +443,11 @@ export default function Home() {
                 Junte-se a milhares de estudantes que estão a definir os seus próprios caminhos na UGS.
                 As candidaturas são avaliadas de forma contínua. Comece hoje mesmo.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link href="/candidatura" className="bg-institutional text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all shadow-2xl">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <Link href="/candidatura" className="w-full sm:w-auto min-h-[48px] px-6 sm:px-10 py-3.5 sm:py-4 bg-institutional text-white rounded-xl text-base sm:text-lg font-bold hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all shadow-2xl flex items-center justify-center">
                   Iniciar Candidatura
                 </Link>
-                <button className="bg-white text-primary px-10 py-4 rounded-xl text-lg font-bold hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all">
+                <button className="w-full sm:w-auto min-h-[48px] px-6 sm:px-10 py-3.5 sm:py-4 bg-white text-primary rounded-xl text-base sm:text-lg font-bold hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all flex items-center justify-center">
                   Descarregar Brochura
                 </button>
               </div>
@@ -456,9 +456,9 @@ export default function Home() {
         </section>
       </main>
       {/* Rodapé */}
-      <footer className="bg-institutional text-white py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <footer className="bg-institutional text-white py-12 sm:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">
             {/* Branding */}
             <div className="col-span-1 lg:col-span-1">
               <div className="flex items-center mb-6">
@@ -577,11 +577,11 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             <p className="text-xs text-slate-500">
               © 2026 Universidade Gregório Semedo. Todos os direitos reservados.
             </p>
-            <div className="flex gap-6 text-xs text-slate-500">
+            <div className="flex flex-wrap justify-center md:justify-end gap-3 sm:gap-6 text-xs text-slate-500">
               <Link className="hover:text-white transition-colors" href="#">
                 Política de Privacidade
               </Link>

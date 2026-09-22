@@ -31,15 +31,15 @@ const revealVariants: Record<AnimationVariant, Variants> = {
         visible: { opacity: 1, y: 0 },
     },
     "fade-left": {
-        hidden: { opacity: 0, x: 24 },
+        hidden: { opacity: 0, x: 14 },
         visible: { opacity: 1, x: 0 },
     },
     "fade-right": {
-        hidden: { opacity: 0, x: -24 },
+        hidden: { opacity: 0, x: -14 },
         visible: { opacity: 1, x: 0 },
     },
     "scale-up": {
-        hidden: { opacity: 0, scale: 0.96, y: 10 },
+        hidden: { opacity: 0, scale: 0.97, y: 10 },
         visible: { opacity: 1, scale: 1, y: 0 },
     },
     "none": {
@@ -59,7 +59,7 @@ export const ScrollReveal = ({
 }: ScrollRevealProps) => {
     return (
         <motion.div
-            className={className}
+            className={`max-w-full ${className || ""}`}
             variants={revealVariants[variant]}
             initial="hidden"
             whileInView="visible"
@@ -69,7 +69,7 @@ export const ScrollReveal = ({
                 delay: Math.min(delay, 0.25),
                 ease: [0.16, 1, 0.3, 1], // refined ease-out curve
             }}
-            style={{ width }}
+            style={{ width, maxWidth: "100%" }}
         >
             {children}
         </motion.div>

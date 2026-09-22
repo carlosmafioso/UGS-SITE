@@ -280,7 +280,7 @@ function CourseCarousel({ title, coursesList }: { title: string, coursesList: ty
                                         </span>
                                     </div>
                                 </div>
-                                <div className="p-8 flex flex-col flex-1">
+                                <div className="p-5 sm:p-6 md:p-8 flex flex-col flex-1">
                                     <div className="flex items-center gap-4 mb-3">
                                         <span className="flex items-center gap-1.5 text-xs font-bold text-slate-400">
                                             <span className="material-symbols-outlined text-sm text-primary">
